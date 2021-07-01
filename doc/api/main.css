@@ -1,0 +1,17 @@
+#redoc-main-menu .redoc-main-menu-entry{
+    display: block;
+}
+
+.class-name{
+    font-size: 30px;    
+}
+
+.redoc-variable-name, .redoc-variable-type{
+    display: inline-block;
+    padding: 5;
+}
+
+
+.redoc-method-container{
+    border: 1px solid black;
+}
