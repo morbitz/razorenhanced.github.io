@@ -1,0 +1,75 @@
+<!Doctype html>
+<header>
+<title>AutoLoot - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">AutoLoot</div>
+<div class="class-description">
+            <summary>
+            The Autoloot class allow to interact with the Autoloot Agent, via scripting.
+            </summary>
+        </div>
+<div class="class-properties">TODO: AutoLoot Properties</div>
+<div class="class-contructors">TODO: AutoLoot Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">ChangeList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">listName</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Change the Autoloot's active list.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">listName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of an existing organizer list.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">GetList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">lootListName</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Given an AutoLoot list name, return a list of AutoLootItem associated.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">lootListName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the AutoLoot list.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[AutoLoot.AutoLootItem]</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">GetLootBag</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get current Autoloot destination container.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">UInt32</div><div class="redoc-method-return-desc">Serial of the container.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">ResetIgnore</div>
+<div class="method-signature">()</div>
+<div class="method-description">Reset the Autoloot ignore list.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">RunOnce</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">lootListName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">millisec</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">filter</div><div class="redoc-variable-type">Items.Filter</div></div>)</div>
+<div class="method-description">Start Autoloot with custom parameters.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">lootListName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the Autoloot listfilter for search on ground.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">millisec</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Delay in milliseconds. (unused)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">filter</div><div class="redoc-variable-type">Items.Filter</div><div class="redoc-method-params-desc">Item filter</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">SetNoOpenCorpse</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">noOpen</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Toggle "No Open Corpse" on/off. The change doesn't persist if you reopen razor.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">noOpen</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: "No Open Corpse" is active - False: otherwise</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">Previous value of "No Open Corpse"</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">Start</div>
+<div class="method-signature">()</div>
+<div class="method-description">Start the Autoloot Agent on the currently active list.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">Status</div>
+<div class="method-signature">()</div>
+<div class="method-description">Check Autoloot Agent status</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if the Autoloot is running - False: otherwise</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">AutoLoot</div>
+<div class="method-name">Stop</div>
+<div class="method-signature">()</div>
+<div class="method-description">Stop the Autoloot Agent.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div></div></div>
+</body>
+</html>

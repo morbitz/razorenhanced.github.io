@@ -1,0 +1,186 @@
+<!Doctype html>
+<header>
+<title>Gumps - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Gumps</div>
+<div class="class-description">
+            <summary>
+            The Gumps class is used to read and interact with in-game gumps, via scripting.
+            
+            NOTE
+            ----
+            During development of scripts that involves interecting with Gumps, is often needed to know gumpids and buttonids.
+            For this purpose, can be particularly usefull to use *Inspect Gumps* and *Record*, top right, in the internal RE script editor.
+            </summary>
+        </div>
+<div class="class-properties">TODO: Gumps Properties</div>
+<div class="class-contructors">TODO: Gumps Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">CloseGump</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>)</div>
+<div class="method-description">Close a specific Gump.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">ID of the gump</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">CurrentGump</div>
+<div class="method-signature">()</div>
+<div class="method-description">Return the ID of most recent, still open Gump.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">UInt32</div><div class="redoc-method-return-desc">ID of gump.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">HasGump</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get status if have a gump open or not.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: There is a Gump open - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpGetLine</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">line_num</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Get a specific line from the most recent and still open Gump. Filter by line number.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">line_num</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Number of the line.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Text content of the line. (empty: line not found)</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpGetLineList</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get all text from the most recent and still open Gump.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">Text of the gump.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpRawData</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the Raw Data of the most recent and still open Gump.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Raw Data of the gump.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpRawText</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the Raw Text of the most recent and still open Gump.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">List of Raw Text.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpTextExist</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Search for text inside the most recent and still open Gump.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text found in active Gump - False: otherwise</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpTextExistByLine</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">line_num</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Search for text, in a spacific line of the most recent and still open Gump.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">line_num</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Number of the line.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">LastGumpTile</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the list of Gump Tile (! this documentation is a stub !)</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Int32]</div><div class="redoc-method-return-desc">List of Gump Tile.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">ResetGump</div>
+<div class="method-signature">()</div>
+<div class="method-description">Clean current status of Gumps.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Send a Gump response by gumpid and buttonid.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">ID of the gump.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of the Button to press.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_id</div><div class="redoc-variable-type">List[Int32]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">textlist_str</div><div class="redoc-variable-type">List[String]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">SendAdvancedAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">buttonid</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">switchs</div><div class="redoc-variable-type">List[Int32]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Gumps</div>
+<div class="method-name">WaitForGump</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Waits for a specific Gump to appear, for a maximum amount of time. If gumpid is 0 it will match any Gump.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">ID of the gump. (0: any)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum wait, in milliseconds.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div></div></div>
+</body>
+</html>

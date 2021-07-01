@@ -1,5 +1,6 @@
-#redoc-main-menu .redoc-main-menu-entry{
-    display: block;
+*{
+    font-family: monospace;
+    unicode-bidi: embed;
 }
 
 .class-name{
@@ -12,6 +13,54 @@
 }
 
 
+#redoc-main-menu{
+    display: inline-flex;
+    flex-direction: column;
+    list-style: circle;
+}
+
+.redoc-main-menu-entry{
+    padding: 3px;
+    display: list-item;
+}
+
 .redoc-method-container{
-    border: 1px solid black;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.redoc-method-container{
+    padding: 10 px;
+    margin: 10px;
+}
+
+.method-name, .method-signature, .redoc-variable-type, .redoc-variable-name {
+    display: inline-flex;
+    padding-left: 5px;
+}
+
+.method-name{
+    font-size: 15px;
+}
+
+.redoc-variable-type{
+    font-weight: bold;
+}
+
+.method-class-name{
+    display: none;  /*hidden for now*/
+    margin:0;
+    padding: 0;
+}
+
+.method-parameters{
+    margin-left: 20px;  
+}
+
+.redoc-method-params-desc, .class-description, .method-description {
+    /*
+    unicode-bidi: embed;
+    font-family: monospace;
+    */
+    white-space: pre;
+    margin: 20px;
 }

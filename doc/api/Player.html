@@ -1,0 +1,1653 @@
+<!Doctype html>
+<header>
+<title>Player - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Player</div>
+<div class="class-description">
+            <summary>
+            The Player class represent the currently logged in character.
+            </summary>
+        </div>
+<div class="class-properties">TODO: Player Properties</div>
+<div class="class-contructors">TODO: Player Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Area</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the name of the area in which the Player is currently in. (Ex: Britain, Destard, Vesper, Moongate, etc)
+Regions are defined inside by Config/regions.json.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Name of the area. Unknown if not recognized.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Attack</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Attack a Mobile.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial or Mobile to attack.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Attack</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Attack</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Attack a Mobile.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial or Mobile to attack.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Attack</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">AttackLast</div>
+<div class="method-signature">()</div>
+<div class="method-description">Attack last target.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">BuffsExist</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">buffname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Check if a buff is active, by buff name.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">buffname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Meditation
+Agility
+Animal Form
+Arcane Enpowerment
+Arcane Enpowerment (new)
+Arch Protection
+Armor Pierce
+Attunement
+Aura of Nausea
+Bleed
+Bless
+Block
+Bload Oath (caster)
+Bload Oath (curse)
+BloodWorm Anemia
+City Trade Deal
+Clumsy
+Confidence
+Corpse Skin
+Counter Attack
+Criminal
+Cunning
+Curse
+Curse Weapon
+Death Strike
+Defense Mastery
+Despair
+Despair (target)
+Disarm (new)
+Disguised
+Dismount Prevention
+Divine Fury
+Dragon Slasher Fear
+Enchant
+Enemy Of One
+Enemy Of One (new)
+Essence Of Wind
+Ethereal Voyage
+Evasion
+Evil Omen
+Faction Loss
+Fan Dancer Fan Fire
+Feeble Mind
+Feint
+Force Arrow
+Berserk
+Fly
+Gaze Despair
+Gift Of Life
+Gift Of Renewal
+Healing
+Heat Of Battle
+Hiding
+Hiryu Physical Malus
+Hit Dual Wield
+Hit Lower Attack
+Hit Lower Defense
+Honorable Execution
+Honored
+Horrific Beast
+Hawl Of Cacophony
+Immolating Weapon
+Incognito
+Inspire
+Invigorate
+Invisibility
+Lich Form
+Lighting Strike
+Magic Fish
+Magic Reflection
+Mana Phase
+Mass Curse
+Medusa Stone
+Mind Rot
+Momentum Strike
+Mortal Strike
+Night Sight
+NoRearm
+Orange Petals
+Pain Spike
+Paralyze
+Perfection
+Perseverance
+Poison
+Poison Resistance
+Polymorph
+Protection
+Psychic Attack
+Consecrate Weapon
+Rage
+Rage Focusing
+Rage Focusing (target)
+Reactive Armor
+Reaper Form
+Resilience
+Rose Of Trinsic
+Rotworm Blood Disease
+Rune Beetle Corruption
+Skill Use Delay
+Sleep
+Spell Focusing
+Spell Focusing (target)
+Spell Plague
+Splintering Effect
+Stone Form
+Strangle
+Strength
+Surge
+Swing Speed
+Talon Strike
+Vampiric Embrace
+Weaken
+Wraith Form</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if the buff is active - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatAlliance</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message to the alliace chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatAlliance</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatAlliance</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message to the alliace chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatAlliance</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatChannel</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an chat channel message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatChannel</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatChannel</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an chat channel message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatChannel</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatEmote</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an emote in game.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatEmote</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatEmote</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an emote in game.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatEmote</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatGuild</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message to the guild chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatGuild</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatGuild</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message to the guild chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatGuild</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatParty</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">recepient_serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Send message in arty chat. If a recepient_serial is specified, the message is private.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to send.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">recepient_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Target of private message.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message in game.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message in game.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatWhisper</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an wishper message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatWhisper</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatWhisper</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an wishper message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatWhisper</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatYell</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an yell message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatYell</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatYell</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send an yell message.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the text</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ChatYell</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">CheckLayer</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Check if a Layer is equipped by the Item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Layers:
+   RightHand
+   LeftHand
+   Shoes
+   Pants
+   Shirt
+   Head
+   Gloves
+   Ring
+   Neck
+   Hair
+   Waist
+   InnerTorso
+   Bracelet
+   FacialHair
+   MiddleTorso
+   Earrings
+   Arms
+   Cloak
+   OuterTorso
+   OuterLegs
+   InnerLegs
+   Talisman</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: the Layer is occupied by an Item - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+<div class="method-description">Returns the distance between the Player and a Mobile or an Item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">The other Mobile or Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+<div class="method-description">Returns the distance between the Player and a Mobile or an Item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">The other Mobile or Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EmoteAction</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">action</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">action</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EquipItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Equip an Item</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial or Item to equip.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EquipItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EquipItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Equip an Item</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial or Item to equip.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EquipItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">EquipUO3D</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serials</div><div class="redoc-variable-type">List[Int32]</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serials</div><div class="redoc-variable-type">List[Int32]</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Fly</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Enable or disable Gargoyle Flying.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: Gargoyle Fly ON - False: Gargoyle fly OFF</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetItemOnLayer</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Returns the Item associated with a Mobile Layer.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Layers:
+   RightHand
+   LeftHand
+   Shoes
+   Pants
+   Shirt
+   Head
+   Gloves
+   Ring
+   Neck
+   Hair
+   Waist
+   InnerTorso
+   Bracelet
+   FacialHair
+   MiddleTorso
+   Earrings
+   Arms
+   Cloak
+   OuterTorso
+   OuterLegs
+   InnerLegs
+   Talisman</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Item</div><div class="redoc-method-return-desc">Item for the layer. Return null if not found or Layer invalid.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetPropStringByIndex</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">index</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Get a single line of Properties of the Player, from the tooltip, as text.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">index</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Line number, start from 0.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Single line of text.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetPropStringList</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the list of Properties of the Player, as list of lines of the tooltip.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">List of text lines.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetPropValue</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get the numeric value of a specific Player property, from the tooltip.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the property.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">n: value of the propery 
+0: property not found.
+1: property found, but not numeric.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetRealSkillValue</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get the base/real value of the skill for the given the skill name.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Double</div><div class="redoc-method-return-desc">Value of the skill.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetSkillCap</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get the skill cap for the given the skill name.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Double</div><div class="redoc-method-return-desc">Value of the skill cap.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetSkillStatus</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get lock status for a specific skill.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Lock status:
+     0: Up     
+     1: Down 
+     2: Locked 
+    -1: Error</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetSkillValue</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get the value of the skill, with modifiers, for the given the skill name.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Double</div><div class="redoc-method-return-desc">Value of the skill.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GetStatStatus</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">statname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get lock status for a specific stats.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">statname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Strength
+Dexterity
+Intelligence</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Lock status:
+     0: Up     
+     1: Down 
+     2: Locked</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">GuildButton</div>
+<div class="method-signature">()</div>
+<div class="method-description">Press the Guild menu button in the paperdoll.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">HeadMessage</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Display a message above the Player. Visible only by the Player.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the Text.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text of the message.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">HeadMessage</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">HeadMessage</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Display a message above the Player. Visible only by the Player.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the Text.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text of the message.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">HeadMessage</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeItem</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeMobile</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeMobile</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeMobile</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InRangeMobile</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">range</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">InvokeVirtue</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">virtue</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Invoke a virtue by name.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">virtue</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Honor
+Sacrifice
+Valor
+Compassion
+Honesty
+Humility
+Justice</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">KickMember</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Kick a member from party by serial. Only for party leader</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Mobile to remove.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">LeaveParty</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">force</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Leaves a party.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">force</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: Leave the party invite even you notin any party.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">MapSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message in the Map chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">MapSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">MapSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Send message in the Map chat.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Message to send</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">MapSay</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">msg</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">OpenPaperDoll</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Press the Open PaperDoll.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PartyAccept</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">from_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">force</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Accept an incoming party offer. In case of multiple party oebnding invitation, from_serial is specified,</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">from_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial to accept party from.( in case of multiple offers )</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">force</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: Accept the party invite even you are already in a party.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if you are now in a party - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PartyCanLoot</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">CanLoot</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Set the Party loot permissions.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">CanLoot</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PartyInvite</div>
+<div class="method-signature">()</div>
+<div class="method-description">Invite a person to a party. Prompt for a in-game Target.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PathFindTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Go to the given coordinates using Client-provided pathfinding.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X map coordinates or Point3D</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y map coordinates</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z map coordinates</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PathFindTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">Location</div><div class="redoc-variable-type">Point3D</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">Location</div><div class="redoc-variable-type">Point3D</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PathFindTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Go to the given coordinates using Client-provided pathfinding.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X map coordinates or Point3D</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y map coordinates</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z map coordinates</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">PathFindTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">Location</div><div class="redoc-variable-type">Point3D</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">Location</div><div class="redoc-variable-type">Point3D</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">QuestButton</div>
+<div class="method-signature">()</div>
+<div class="method-description">Press the Quest menu button in the paperdoll.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Run</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">direction</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">checkPosition</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Run one step in the specified direction and wait for the confirmation of the new position by the server.
+If the character is not facing the direction, the first step only "turn" the Player in the required direction.
+Optional:
+When checkPosition is True allow for slower but safe walking, the new position confirmed at each step via return value.
+When checkPosition is Flase allow for faster walking/running, but requires custom delay and position checking.
+Info:
+Walking:  5 tiles/sec (~200ms between each step)
+Running: 10 tiles/sec (~100ms between each step)</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">direction</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">North
+South
+East
+West
+Up
+Down
+Left
+Right</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">checkPosition</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: Wait until the server confirm the new Player.Position - False: Don't wait.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Destination reached - False: Coudn't reach the destination.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">SetSkillStatus</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Set lock status for a specific skill.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Lock status:
+     0: Up     
+     1: Down 
+     2: Locked</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">SetStatStatus</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">statname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Set lock status for a specific skill.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">statname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">status</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Lock status:
+     0: Up     
+     1: Down 
+     2: Locked</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">SetWarMode</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">warflag</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Set war Mode on on/off.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">warflag</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: War - False: Peace</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">SpellIsEnabled</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">spellname</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Check if spell is active using the spell name (for spells that have this function).</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">spellname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: the spell is enabled - False: otherwise,.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">SumAttribute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">attributename</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Scan all the equipped Item, returns the total value of a specific property. (ex: Lower Reagent Cost )
+NOTE: This function is slow.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">attributename</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the property.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Single</div><div class="redoc-method-return-desc">The total value as number.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">ToggleAlwaysRun</div>
+<div class="method-signature">()</div>
+<div class="method-description">Toggle on/off the awlays run flag. 
+NOTE: Works only on OSI client.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UnEquipItemByLayer</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Unequip the Item associated with a specific Layer.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Layers:
+   RightHand
+   LeftHand
+   Shoes
+   Pants
+   Shirt
+   Head
+   Gloves
+   Ring
+   Neck
+   Hair
+   Waist
+   InnerTorso
+   Bracelet
+   FacialHair
+   MiddleTorso
+   Earrings
+   Arms
+   Cloak
+   OuterTorso
+   OuterLegs
+   InnerLegs
+   Talisman</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Wait for confirmation from the server.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Use a specific skill, and optionally apply that skill to the target specified.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Use a specific skill, and optionally apply that skill to the target specified.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Use a specific skill, and optionally apply that skill to the target specified.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Use a specific skill, and optionally apply that skill to the target specified.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Use a specific skill, and optionally apply that skill to the target specified.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Alchemy
+Anatomy
+Animal Lore
+Item ID
+Arms Lore
+Parry
+Begging
+Blacksmith
+Fletching
+Peacemaking
+Camping
+Carpentry
+Cartography
+Cooking
+Detect Hidden
+Discordance
+EvalInt
+Healing
+Fishing
+Forensics
+Herding
+Hiding
+Provocation
+Inscribe
+Lockpicking
+Magery
+Magic Resist
+Mysticism
+Tactics
+Snooping
+Musicianship
+Poisoning
+Archery
+Spirit Speak
+Stealing
+Tailoring
+Animal Taming
+Taste ID
+Tinkering
+Tracking
+Veterinary
+Swords
+Macing
+Fencing
+Wrestling
+Lumberjacking
+Mining
+Meditation
+Stealth
+Remove Trap
+Necromancy
+Focus
+Chivalry
+Bushido
+Ninjitsu
+Spell Weaving
+Imbuing</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkill</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">UseSkillOnly</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">skillname</div><div class="redoc-variable-type">String</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Walk</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">direction</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">checkPosition</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Walk one step in the specified direction and wait for the confirmation of the new position by the server.
+If the character is not facing the direction, the first step only "turn" the Player in the required direction.
+Optional:
+When checkPosition is True allow for slower but safe walking, the new position confirmed at each step via return value.
+When checkPosition is Flase allow for faster walking/running, but requires custom delay and position checking.
+Info:
+Walking:  5 tiles/sec (~200ms between each step)
+Running: 10 tiles/sec (~100ms between each step)</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">direction</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">North
+South
+East
+West
+Up
+Down
+Left
+Right</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">checkPosition</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: Wait until the server confirm the new Player.Position - False: Don't wait.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Destination reached - False: Coudn't reach the destination.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">WeaponClearSA</div>
+<div class="method-signature">()</div>
+<div class="method-description">Disable any active Special Ability of the weapon.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">WeaponDisarmSA</div>
+<div class="method-signature">()</div>
+<div class="method-description">Toggle Disarm Ability.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">WeaponPrimarySA</div>
+<div class="method-signature">()</div>
+<div class="method-description">Toggle on/off the primary Special Ability of the weapon.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">WeaponSecondarySA</div>
+<div class="method-signature">()</div>
+<div class="method-description">Toggle on/off the secondary Special Ability of the weapon.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">WeaponStunSA</div>
+<div class="method-signature">()</div>
+<div class="method-description">Toggle Stun Ability.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Player</div>
+<div class="method-name">Zone</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get the type of zone in which the Player is currently in.
+Regions are defined inside by Config/regions.json.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Towns
+Dungeons
+Guarded
+Forest
+Unknown</div></div></div></div></div></div></div>
+</body>
+</html>

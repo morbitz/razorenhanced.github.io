@@ -52,15 +52,25 @@ import os
 
 
 def main():
-    output_path = "/api/"
+    ## SETTINGS
+    
+    debug=True
+    # Write to your Script/Docs/ folder
+    output_path = Misc.CurrentScriptDirectory() + "/Docs/"
+    # or write to a specific folder:
+    # output_path = "C:/Users/Cesare/Projects/razorenhanced.github.io/doc/api/"
+    
+    
+    ## RUN 
+    
     # setup AutoDocHTML to a test path
-    doc_path = Misc.CurrentScriptDirectory()+output_path
-    adhtml=AutoDocHTML(doc_path)
+    adhtml=AutoDocHTML(output_path)
+    version = adhtml.DocVersionHTML()
     
     # generates the main menu from the list of classes
     menu = adhtml.MainMenuHTML()
-    index_html = HTML.BasePage(menu,"RazorEnhanced API Documentation")
-    adhtml.WriteToFile("{}index.html".format(output_path), index_html)
+    index_html = HTML.BasePage(version+menu,"RazorEnhanced API Documentation")
+    adhtml.WriteToFile("index.html".format(), index_html)
     
     # generates doc page for the Player class ( usefull for testing ) 
     # player_html = adhtml.ClassHTML("Player")
@@ -70,10 +80,10 @@ def main():
     ## generates doc pages for All the classes.
     for cls in adhtml.ad.GetClasses():
         className = cls["itemClass"]
-        filename = "{}{}.html".format(output_path,className)
+        filename = "{}.html".format(className)
         player_html = adhtml.ClassHTML(className)
-        player_html = HTML.BasePage(player_html,"{} - RazorEnhanced API".format(className))
-        adhtml.WriteToFile(filename, player_html)
+        player_html = HTML.BasePage(version+player_html,"{} - RazorEnhanced API".format(className))
+        adhtml.WriteToFile(filename, player_html, debug=debug)
     
     
     
@@ -145,7 +155,7 @@ class HTML():
         body_html = "" if len(body)==0 else "\n<body>\n{}\n</body>\n".format(body)
         return '<!Doctype html>{}{}</html>'.format(header_html, body_html)
     
-# subemenets
+# sub-elements
     
  
     @staticmethod
@@ -190,6 +200,13 @@ class HTML():
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-return-desc')
         return '<div{}{}>{}{}</div>'.format(cssId, cssClass, type_html, desc_html)
     
+    @staticmethod
+    def DocVersion(version, cssId=None,  cssClass=None):
+        if cssClass is None: cssClass = 'redoc-doc-version'
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = ' class="{}"'.format(cssClass)
+        return '<div{}{}><a href="./index.html">RE API v{}</a></div>'.format(cssId, cssClass, version)
+        
         
 # base html elements
     @staticmethod
@@ -225,6 +242,10 @@ class AutoDocHTML:
     def __init__(self, output_path=None):
         self.doc_path = Misc.CurrentScriptDirectory() + "/Docs/" if output_path is None else output_path
         self.ad = AutoDoc()
+        
+    def DocVersionHTML(self):
+        version = self.ad.GetVersion()
+        return HTML.DocVersion(version)
     
     def MainMenuHTML(self, menuId='redoc-main-menu', itemClass='redoc-main-menu-entry'):
         classList = self.ad.GetClasses()
@@ -294,12 +315,14 @@ class AutoDocHTML:
         
         return methods_html
         
-    def WriteToFile(self, path, content):
+    def WriteToFile(self, path, content, debug=False):
         fullpath = self.doc_path + path
+        Misc.SendMessage(fullpath,178)
         dirpath  = os.path.dirname(fullpath)
         if not os.path.exists(dirpath):
+            Misc.SendMessage("Make Dir: "+dirpath,148)
             os.makedirs(dirpath)
-        Misc.SendMessage(fullpath)
+        #
         file = open(fullpath,'w+')
         file.write(content)
         file.close()
@@ -312,14 +335,18 @@ class AutoDocHTML:
 class AutoDoc:
     # Load data from AutoComplete.json and provides several convenience methods to query the content.
     
-    def __init__(self):
+    def __init__(self, path=None):
         self.api_data = None
-        self.api_path = Misc.ConfigDirectory() + "/AutoComplete.json"
+        self.api_path = Misc.ConfigDirectory() + "/AutoComplete.json" if path is None else path
         
     def GetSettings(self):
         api = self.GetPythonAPI()
         docs = api["settings"]
         return docs
+        
+    def GetVersion(self):
+        settings = self.GetSettings()
+        return settings["version"]
         
     def GetClasses(self, filterClass=None):
         api = self.GetPythonAPI()

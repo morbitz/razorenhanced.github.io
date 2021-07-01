@@ -1,0 +1,49 @@
+<!Doctype html>
+<header>
+<title>PathFinding - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">PathFinding</div>
+<div class="class-description">
+            <summary>
+            This class implements the PathFinding algorithm using A-Star. 
+            </summary>
+        </div>
+<div class="class-properties">TODO: PathFinding Properties</div>
+<div class="class-contructors">TODO: PathFinding Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">PathFinding</div>
+<div class="method-name">GetPath</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">dst_x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">dst_y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">ignoremob</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Compute the path for the given destination and returns a list of Tile (coordinates).</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">dst_x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Destination X.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">dst_y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Destination Y.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">ignoremob</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Ignores any mobiles with the path calculation.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Tile]</div><div class="redoc-method-return-desc">List of Tile objects, each holds a .X and .Y coordinates.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">PathFinding</div>
+<div class="method-name">Go</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">r</div><div class="redoc-variable-type">PathFinding.Route</div></div>)</div>
+<div class="method-description">Check if a destination is reachable.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">r</div><div class="redoc-variable-type">PathFinding.Route</div><div class="redoc-method-params-desc">A customized Route object.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if a destination is reachable.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">PathFinding</div>
+<div class="method-name">RunPath</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">path</div><div class="redoc-variable-type">List[Tile]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">timeout</div><div class="redoc-variable-type">Single</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">debugMessage</div><div class="redoc-variable-type">Boolean</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">useResync</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">path</div><div class="redoc-variable-type">List[Tile]</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">timeout</div><div class="redoc-variable-type">Single</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">debugMessage</div><div class="redoc-variable-type">Boolean</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">useResync</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">PathFinding</div>
+<div class="method-name">Tile</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Create a Tile starting from X,Y coordinates (see PathFindig.RunPath)</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Tile</div><div class="redoc-method-return-desc">Returns a Tile object</div></div></div></div></div></div></div>
+</body>
+</html>

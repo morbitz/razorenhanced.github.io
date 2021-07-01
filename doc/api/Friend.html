@@ -1,0 +1,47 @@
+<!Doctype html>
+<header>
+<title>Friend - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Friend</div>
+<div class="class-description"></div>
+<div class="class-properties">TODO: Friend Properties</div>
+<div class="class-contructors">TODO: Friend Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Friend</div>
+<div class="method-name">AddFriendTarget</div>
+<div class="method-signature">()</div>
+
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Friend</div>
+<div class="method-name">AddPlayer</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Add the player specified to the Friend list named in FriendListName parameter</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the the Friend List. (See Agent tab)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the Friend want to add.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Friend you want to add.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Friend</div>
+<div class="method-name">ChangeList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Change friend list, List must be exist in friend list GUI configuration</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the list of friend.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Friend</div>
+<div class="method-name">GetList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Retrive list of serial in list, List must be exist in friend Agent tab.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">friendlist</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the list of friend.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Int32]</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Friend</div>
+<div class="method-name">IsFriend</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Check if Player is in FriendList, returns a bool value.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial you want to check</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is a friend - False: otherwise</div></div></div></div></div></div></div>
+</body>
+</html>

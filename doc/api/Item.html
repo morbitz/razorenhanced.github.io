@@ -1,0 +1,82 @@
+<!Doctype html>
+<header>
+<title>Item - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Item</div>
+<div class="class-description">
+            <summary>
+            The Item class represent a single in-game Item object. Examples of Item are: Swords, bags, bandages, reagents, clothing.
+            While the Item.Serial is unique for each Item, Item.ItemID is the unique for the Item apparence, or image. Sometimes is also called ID or Graphics ID.
+            Item can also be house foriture as well as decorative items on the ground, like lamp post and banches.
+            However, for Item on the ground that cannot be picked up, they might be part of the world map, see Statics class.
+            </summary>
+        </div>
+<div class="class-properties">TODO: Item Properties</div>
+<div class="class-contructors">TODO: Item Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+<div class="method-description">Return the distance in number of tiles, from Item to Mobile.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+<div class="method-description">Return the distance in number of tiles, from Item to Mobile.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">GetWorldPosition</div>
+<div class="method-signature">()</div>
+
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Point3D</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">IsChildOf</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div></div>)</div>
+<div class="method-description">Check if an Item is contained in a container. Can be a Item or a Mobile (wear by).</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">IsChildOf</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">IsChildOf</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div></div>)</div>
+<div class="method-description">Check if an Item is contained in a container. Can be a Item or a Mobile (wear by).</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">IsChildOf</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Item</div>
+<div class="method-name">ToString</div>
+<div class="method-signature">()</div>
+
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div></div></div>
+</body>
+</html>

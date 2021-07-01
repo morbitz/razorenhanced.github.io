@@ -1,0 +1,495 @@
+<!Doctype html>
+<header>
+<title>Target - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Target</div>
+<div class="class-description">
+            <summary>
+            The Target class provides various method for targeting Land, Items and Mobiles in game.
+            </summary>
+        </div>
+<div class="class-properties">TODO: Target Properties</div>
+<div class="class-contructors">TODO: Target Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">AttackTargetFromList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Attack Target from gui filter selector, in Targetting tab.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">Cancel</div>
+<div class="method-signature">()</div>
+<div class="method-description">Cancel the current target.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">ClearLast</div>
+<div class="method-signature">()</div>
+<div class="method-description">Clear the last target.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">ClearLastandQueue</div>
+<div class="method-signature">()</div>
+<div class="method-description">Clear last target and target queue.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">ClearQueue</div>
+<div class="method-signature">()</div>
+<div class="method-description">Clear Queue Target.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">GetLast</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get serial number of last target</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Serial as number.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">GetLastAttack</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get serial number of last attack target</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Serial as number.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">GetTargetFromList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Get Mobile object from GUI filter selector, in Targetting tab.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the target filter.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Mobile</div><div class="redoc-method-return-desc">Mobile object matching. None: not found</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">HasTarget</div>
+<div class="method-signature">()</div>
+<div class="method-description">Get status if have in-game cursor has target shape.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Cursor has target - False: otherwise</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">Last</div>
+<div class="method-signature">()</div>
+<div class="method-description">Execute the target on the last Item or Mobile targeted.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">LastQueued</div>
+<div class="method-signature">()</div>
+<div class="method-description">Enqueue the next target on the last Item or Mobile targeted.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">PerformTargetFromList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Execute Target from GUI filter selector, in Targetting tab.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the target filter.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">PromptGroundTarget</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">message</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Prompt a target in-game, wait for the Player to select the ground. Can also specific a text message for prompt.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">message</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Hint on what to select.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the message. (default: 945, gray)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Point3D</div><div class="redoc-method-return-desc">A Point3D object, containing the X,Y,Z coordinate</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">PromptTarget</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">message</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Prompt a target in-game, wait for the Player to select an Item or a Mobile. Can also specific a text message for prompt.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">message</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Hint on what to select.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the message. (default: 945, gray)</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Serial of the selected object.</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">Self</div>
+<div class="method-signature">()</div>
+<div class="method-description">Execute the target on the Player.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SelfQueued</div>
+<div class="method-signature">()</div>
+<div class="method-description">Enqueue the next target on the Player.</div>
+
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SetLast</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Set the last target to specific mobile, using the serial.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Mobile.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Wait confirmation from the server.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SetLast</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SetLast</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Set the last target to specific mobile, using the serial.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Mobile.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Wait confirmation from the server.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SetLast</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">SetLastTargetFromList</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Set Last Target from GUI filter selector, in Targetting tab.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target_name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the target filter.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of Land/Tile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Target</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of Land/Tile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Target</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of Land/Tile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Target</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of Land/Tile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Target</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">X coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Y coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Z coordinate.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">StaticID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">ID of Land/Tile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">x</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">y</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">z</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the Target</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecute</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to Target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecuteRelative</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific land point with offset distance from Mobile. Distance is calculated by target Mobile.Direction.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to target.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Distance from the target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecuteRelative</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecuteRelative</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Execute target on specific land point with offset distance from Mobile. Distance is calculated by target Mobile.Direction.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile object to target.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Distance from the target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetExecuteRelative</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the mobile</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">offset</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Find and target a resource using the specified item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Resource as standard name or custom number
+               0: ore
+               1: sand
+               2: wood
+               3: graves
+               4: red_mushrooms
+               n: custom</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Find and target a resource using the specified item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Resource as standard name or custom number
+               0: ore
+               1: sand
+               2: wood
+               3: graves
+               4: red_mushrooms
+               n: custom</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Find and target a resource using the specified item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Resource as standard name or custom number
+               0: ore
+               1: sand
+               2: wood
+               3: graves
+               4: red_mushrooms
+               n: custom</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+<div class="method-description">Find and target a resource using the specified item.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_number</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Resource as standard name or custom number
+               0: ore
+               1: sand
+               2: wood
+               3: graves
+               4: red_mushrooms
+               n: custom</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item_serial</div><div class="redoc-variable-type">Int32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resource_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item object to use.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resouce_name</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">TargetResource</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div>)</div>
+
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">item</div><div class="redoc-variable-type">Item</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">resoruce_number</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Target</div>
+<div class="method-name">WaitForTarget</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">noshow</div><div class="redoc-variable-type">Boolean</div></div>)</div>
+<div class="method-description">Wait for the cursor to show the target, pause the script for a maximum amount of time. and optional flag True or False. True Not show cursor, false show it</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum amount to wait, in milliseconds</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">noshow</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Pevent the cursor to display the target.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div></div></div></div>
+</body>
+</html>

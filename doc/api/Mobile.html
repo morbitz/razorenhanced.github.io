@@ -1,0 +1,53 @@
+<!Doctype html>
+<header>
+<title>Mobile - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</header>
+
+<body>
+<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Mobile</div>
+<div class="class-description">
+            <summary>
+            The Mobile class represents an single alive entity. 
+            While the Mobile.Serial is unique for each Mobile, Mobile.MobileID is the unique for the Mobile apparence, or image. Sometimes is also called Body or Body ID.
+            Mobiles which dies and leave a corpse behind, they stop existing as Mobiles and instead leave a corpse as a Item object appears.
+            </summary>
+        </div>
+<div class="class-properties">TODO: Mobile Properties</div>
+<div class="class-contructors">TODO: Mobile Constructors</div>
+<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Mobile</div>
+<div class="method-name">DistanceTo</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">other_mobile</div><div class="redoc-variable-type">Mobile</div></div>)</div>
+<div class="method-description">Returns the distance between the current Mobile and another one.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">other_mobile</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">The other mobile.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in tiles</div></div></div></div>
+<div class="redoc-method-container"><div class="method-class-name">Mobile</div>
+<div class="method-name">GetItemOnLayer</div>
+<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div></div>)</div>
+<div class="method-description">Returns the Item associated with a Mobile Layer.</div>
+<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">layer</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Layers:
+   Layername
+   RightHand
+   LeftHand
+   Shoes
+   Pants
+   Shirt
+   Head
+   Gloves
+   Ring
+   Neck
+   Waist
+   InnerTorso
+   Bracelet
+   MiddleTorso
+   Earrings
+   Arms
+   Cloak
+   OuterTorso
+   OuterLegs
+   InnerLegs</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Item</div><div class="redoc-method-return-desc">Item for the layer. Return null if not found or Layer invalid.</div></div></div></div></div></div></div>
+</body>
+</html>
