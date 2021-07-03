@@ -1,8 +1,8 @@
-# Razor Enhanced: Documentation
+# Razor Enhanced: Documentation     
 
 First version of the Documentation API, genereted by autodoc.py     
 https://razorenhanced.com/doc/api/     
-or
+or     
 https://razorenhanced.github.io/doc/api/     
 
 
@@ -18,7 +18,7 @@ A lot can be done just by tuning the main.css which is the only but manually gen
 To view: https://github.com/RazorEnhanced/razorenhanced.github.io/blob/main/doc/api/main.css     
 To edit online: https://github.com/RazorEnhanced/razorenhanced.github.io/blob/main/doc/api/main.css     
 
-Feel free to improve on whatever I've done, you can just edit the files online via github.com website ( veeeery easy ) also pull requests are very welcome     
+Feel free to improve on whatever I've done, you can just edit the files online via github.com website ( veeeery easy ) also pull requests are very welcome.     
 
 
 # Examples
