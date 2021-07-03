@@ -19,12 +19,12 @@ To edit online: https://github.com/RazorEnhanced/razorenhanced.github.io/blob/ma
 Feel free to improve on whatever I've done, you can just edit the files online via github.com website ( veeeery easy ) also pull requests are very welcome     
 
 
-# EXAMPLES
+# Examples
 
 TODO: Read Discord Channel #examples and turn each post into: ./examples/class_name.function_name/example_name.py     
 TODO: Highlight code examples -> https://stackoverflow.com/questions/10520714/syntax-highlighting-in-pre-tags/10520765     
 
-# TUTORIALS
+# Tutorials
 
 TODO: port tutorials from wiki: http://razorenhanced.net/dokuwiki/doku.php     
 TODO: define ./tutorials/ subfolder structure. ( flat wikipedia-like ? or topic forlders ?)     
