@@ -52,6 +52,24 @@ import json
 import re
 
 
+heal = True
+if Player.GetSkillValue('Healing') > 0:
+    
+    if '0/1 items' in Items.GetPropStringByIndex(firstaidbelt,5):
+        Player.HeadMessage(1100, 'No Bandage')
+        
+
+    if len(Items.FindBySerial(firstaidbelt).Contains) == 0:
+        Items.UseItem(firstaidbelt)
+        Misc.Pause(700)
+    
+    if heal: 
+        bandage = Items.FindByID(0x0E21,-1,firstaidbelt)
+        
+        if (Player.Hits < 110 or Player.Poisoned) and not Player.BuffsExist('Healing'):
+            Items.UseItem(bandage,Player.Serial)
+            Misc.Pause(250)        
+
 def main():
     ## SETTINGS
     

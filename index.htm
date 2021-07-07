@@ -30,6 +30,24 @@
     cursor: pointer;
     font-size: 15px;
     }
+
+    .navbar-header, .navbar-right{
+      border-left: 1px solid rgb(233, 233, 233);
+      padding: 0px;
+    }
+    
+    .navbar-link{
+      width: 180px;
+      display: inline-block;
+      height: 50px;
+      border-right: 1px solid rgb(233, 233, 233);
+      text-align: center;
+      vertical-align: center;
+      padding: 10px;
+      margin: 0px;
+      font-weight: bold;
+    }
+
     </style>
   <!link href="css/bootstrap.css" rel="stylesheet" media="screen"-->
   <link href="css/stili-custom.css" rel="stylesheet" media="screen">
@@ -40,10 +58,21 @@
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
+        <a class="navbar-link" href="https://razorenhanced.net/doc/api/">
+          API <small>(beta)</small>
+        </a>
+        <a class="navbar-link" href="https://razorenhanced.net/dokuwiki/">
+          Wiki
+        </a>
+
+            
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-        </ul>
+      <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+          
+            <a class="navbar-link" href="https://razorenhanced.net/">
+              RazorEnhanced
+            </a>
+
       </div>
     </div>
   </nav>
