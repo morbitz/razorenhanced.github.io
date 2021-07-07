@@ -47,8 +47,9 @@ Updates:
         At the time of writing, the main() function is messy because is used to test everything else.
 """
 
-import json
 import os
+import json
+import re
 
 
 def main():
@@ -82,7 +83,7 @@ def main():
         className = cls["itemClass"]
         filename = "{}.html".format(className)
         player_html = adhtml.ClassHTML(className)
-        player_html = HTML.BasePage(version+player_html,"{} - RazorEnhanced API".format(className))
+        player_html = HTML.LeftRightPage(version+menu,player_html,"{} - RazorEnhanced API".format(className))
         adhtml.WriteToFile(filename, player_html, debug=debug)
     
     
@@ -115,9 +116,11 @@ class HTML():
         # TODO
         return ""
         
+        
 # content
     @staticmethod
-    def MethodContainer(className, methodName, description, signature, parameters, returns, cssId=None, cssClass=None ):
+    def MethodContainer(permalink, className, methodName, description, signature, parameters, returns, cssId=None, cssClass=None ):
+        permalink_html = HTML.Doc
         className_html = HTML.Div(className,cssClass="method-class-name")
         methodName_html = HTML.Div(methodName,cssClass="method-name")
         signature_html = HTML.Div(signature,cssClass="method-signature")
@@ -126,8 +129,7 @@ class HTML():
         returns_html = "" if len(returns) == 0 else HTML.Div(returns,cssClass="method-returns")
         
         method_content = "\n".join([
-            className_html,
-            methodName_html,
+            className_html+"."+methodName_html,
             signature_html,
             description_html,
             parameters_html,
@@ -136,15 +138,21 @@ class HTML():
         
         class_html = HTML.Div(method_content, cssId=cssId, cssClass=cssClass)
         return class_html
+        
+        
+        
+        
     
 # pages
+    
+    
     @staticmethod
     def BasePage(body, title=""):
         css_html = HTML.CSS("./main.css")
         js_html = HTML.JS("./main.js")
         header_html = css_html +"\n"+ js_html
-        body_html = HTML.Div(body,cssId="redoc-page-container")
-        
+        body_html = HTML.Div(body,cssClass="redoc-page-container")
+        Player.AR
         return HTML.EmptyPage(body_html, title, header_html)
         
         
@@ -155,6 +163,16 @@ class HTML():
         body_html = "" if len(body)==0 else "\n<body>\n{}\n</body>\n".format(body)
         return '<!Doctype html>{}{}</html>'.format(header_html, body_html)
     
+# LAYOUT
+    @staticmethod
+    def LeftRightPage(left_content, right_content, title=""):
+        left_html = HTML.Div(left_content,cssClass="redoc-page-left")
+        right_html = HTML.Div(right_content,cssClass="redoc-page-right")
+        body = left_html + right_html
+        
+        return HTML.BasePage(body, title)
+    
+        
 # sub-elements
     
  
@@ -207,6 +225,12 @@ class HTML():
         cssClass = ' class="{}"'.format(cssClass)
         return '<div{}{}><a href="./index.html">RE API v{}</a></div>'.format(cssId, cssClass, version)
         
+    def DocPermalink(url, content='&#x1F517', cssId=None,  cssClass=None):
+        url = '' if url is None else ' href="{}"'.format(url)
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
+        return '<a{}{}{}>{}</a>'.format(cssId, cssClass, url, content)
+        
         
 # base html elements
     @staticmethod
@@ -222,26 +246,31 @@ class HTML():
         js_html = js_html.format(url)
         return js_html
     
-        
-    @staticmethod
-    def Div(content, cssId=None,  cssClass=None ):
-        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
-        cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
-        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
-        
     @staticmethod
     def Link(content, url=None, cssId=None,  cssClass=None ):
         url = '' if url is None else ' href="{}"'.format(url)
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
         return '<a{}{}{}>{}</a>'.format(cssId, cssClass, url, content)
-        
+    
+    @staticmethod
+    def Div(content, cssId=None,  cssClass=None ):
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
+        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
         
     
 class AutoDocHTML:
     def __init__(self, output_path=None):
-        self.doc_path = Misc.CurrentScriptDirectory() + "/Docs/" if output_path is None else output_path
+        self.doc_path = Misc.ScriptDirectory() + "/Docs/" if output_path is None else output_path
         self.ad = AutoDoc()
+        
+    def KeyToSlug(self, xmlkey):
+        return re.sub("[^a-zA-Z]","",xmlkey)
+        
+    def PermalinkHTML(self,xmlkey):
+        anchor_slug = "#"+self.KeyToSlug(xmlkey)
+        return HTML.DocPermalink(anchor_slug, cssClass='redoc-permalink' )
         
     def DocVersionHTML(self):
         version = self.ad.GetVersion()
@@ -274,10 +303,23 @@ class AutoDocHTML:
         return class_html
         
     def ProperiesHTML(self, className):
-        # TODO
-        return "TODO: "+className+" Properties"
+        propertyList = self.ad.GetProperties(className)
+        if (len(propertyList) == 0): return ''
+        prop_html_list = []
+        for property in propertyList:
+            link = self.PermalinkHTML(property["xmlKey"])
+            prop_html = HTML.ParamForDescription(property['itemName'], property['propertyType'], property['itemDescription'])
+            prop_html = HTML.Div(link+prop_html, cssClass="redoc-class-property-entry")
+            prop_html_list.append(prop_html)
+        
+        props_html = "\n".join(prop_html_list)
+        props_html = HTML.Div(props_html, cssClass="redoc-property-box")
+        props_html = HTML.Div("Properties",cssClass="redoc-property-box-title") + props_html
+        return props_html
         
     def ConstructorsHTML(self, className):
+        constructorList = self.ad.GetConstructors(className)
+        if (len(constructorList) == 0): return "TODO: "+className+" Constructors"
         # TODO
         return "TODO: "+className+" Constructors" 
         
@@ -288,7 +330,8 @@ class AutoDocHTML:
             methods_html_list.append( self.MethodDetailHTML(className, method["itemName"]) )
         #    
         methods_html = "\n".join(methods_html_list)
-        
+        methods_html = HTML.Div(methods_html, cssClass="redoc-method-box")
+        methods_html = HTML.Div("Methods",cssClass="redoc-method-box-title") + methods_html
         return methods_html
         
         
@@ -296,6 +339,7 @@ class AutoDocHTML:
         methodList = self.ad.GetMethods(className, methodName)
         methods_html_list = []
         for method in methodList:
+            link = self.PermalinkHTML(method["xmlKey"])
             description = method["itemDescription"]
             paramList = method["paramList"]
             methodReturn = HTML.MethodReturn(method["returnType"], method["returnDesc"] )
@@ -304,10 +348,12 @@ class AutoDocHTML:
             cssClass = 'redoc-method-container' 
             
             signature_html = "({})".format( ", ".join(paramSignature) )
-            paramsDesc = "\n".join(paramDescription)
-            
+            paramsDesc = "\n".join(paramDescription).strip()
+            if paramsDesc != "":
+                paramsDesc = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") + paramsDesc
             
             method_html = HTML.MethodContainer(className, methodName, description, signature_html, paramsDesc, methodReturn, cssClass=cssClass )
+            method_html = HTML.Div(link+method_html, cssClass="redoc-class-method-entry")
             methods_html_list.append(method_html)
             
         #    

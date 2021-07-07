@@ -7,7 +7,45 @@
 </header>
 
 <body>
-<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Item</div>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.36</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
+<a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
+<a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
+<a class="redoc-main-menu-entry" href="./DPSMeter.html">DPSMeter</a>
+<a class="redoc-main-menu-entry" href="./Dress.html">Dress</a>
+<a class="redoc-main-menu-entry" href="./Friend.html">Friend</a>
+<a class="redoc-main-menu-entry" href="./Gumps.html">Gumps</a>
+<a class="redoc-main-menu-entry" href="./HotKeyEvent.html">HotKeyEvent</a>
+<a class="redoc-main-menu-entry" href="./Item.html">Item</a>
+<a class="redoc-main-menu-entry" href="./Items.html">Items</a>
+<a class="redoc-main-menu-entry" href="./Items.Filter.html">Items.Filter</a>
+<a class="redoc-main-menu-entry" href="./Journal.html">Journal</a>
+<a class="redoc-main-menu-entry" href="./Journal.JournalEntry.html">Journal.JournalEntry</a>
+<a class="redoc-main-menu-entry" href="./Misc.html">Misc</a>
+<a class="redoc-main-menu-entry" href="./Misc.Context.html">Misc.Context</a>
+<a class="redoc-main-menu-entry" href="./Misc.MapInfo.html">Misc.MapInfo</a>
+<a class="redoc-main-menu-entry" href="./Mobile.html">Mobile</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.html">Mobiles</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.Filter.html">Mobiles.Filter</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.TrackingInfo.html">Mobiles.TrackingInfo</a>
+<a class="redoc-main-menu-entry" href="./Organizer.html">Organizer</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.html">PathFinding</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.Route.html">PathFinding.Route</a>
+<a class="redoc-main-menu-entry" href="./Player.html">Player</a>
+<a class="redoc-main-menu-entry" href="./Point2D.html">Point2D</a>
+<a class="redoc-main-menu-entry" href="./Point3D.html">Point3D</a>
+<a class="redoc-main-menu-entry" href="./Property.html">Property</a>
+<a class="redoc-main-menu-entry" href="./Restock.html">Restock</a>
+<a class="redoc-main-menu-entry" href="./Scavenger.html">Scavenger</a>
+<a class="redoc-main-menu-entry" href="./SellAgent.html">SellAgent</a>
+<a class="redoc-main-menu-entry" href="./Spells.html">Spells</a>
+<a class="redoc-main-menu-entry" href="./Statics.html">Statics</a>
+<a class="redoc-main-menu-entry" href="./Statics.TileInfo.html">Statics.TileInfo</a>
+<a class="redoc-main-menu-entry" href="./Target.html">Target</a>
+<a class="redoc-main-menu-entry" href="./Tile.html">Tile</a>
+<a class="redoc-main-menu-entry" href="./Timer.html">Timer</a>
+<a class="redoc-main-menu-entry" href="./Vendor.html">Vendor</a>
+<a class="redoc-main-menu-entry" href="./Vendor.BuyItem.html">Vendor.BuyItem</a></div></div><div class="redoc-page-right"><div id="redoc-class-" class="redoc-class"><div class="class-name">Item</div>
 <div class="class-description">
             <summary>
             The Item class represent a single in-game Item object. Examples of Item are: Swords, bags, bandages, reagents, clothing.
@@ -16,67 +54,91 @@
             However, for Item on the ground that cannot be picked up, they might be part of the world map, see Statics class.
             </summary>
         </div>
-<div class="class-properties">TODO: Item Properties</div>
+<div class="class-properties"><div class="redoc-property-box-title">Properties</div><div class="redoc-property-box"><div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemAmount">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Amount</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Read amount from item type object.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemContainer">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Container</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the container which contains the object.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemContains">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Contains</div><div class="redoc-variable-type">List[Item]</div><div class="redoc-method-params-desc">Contains the list of Item inside a container.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedEnhancedEntityDeleted">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Deleted</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemDirection">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Direction</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Item direction.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemDurability">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Durability</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Get the current durability of an Item. (0: no durability)</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemGridNum">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">GridNum</div><div class="redoc-variable-type">Byte</div><div class="redoc-method-params-desc">Returns the GridNum of the item. (need better documentation)</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedEnhancedEntityHue">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Hue</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemImage">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Image</div><div class="redoc-variable-type">Bitmap</div><div class="redoc-method-params-desc">Get the in-game image on an Item as Bitmap object.
+See MSDN: https://docs.microsoft.com/dotnet/api/system.drawing.bitmap</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsBagOfSending">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsBagOfSending</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a bag of sending - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsContainer">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsContainer</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a container - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsCorpse">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsCorpse</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a corpse - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsDoor">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsDoor</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a door - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsInBank">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsInBank</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is in the Player's bank - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsLootable">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsLootable</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: For regualar items - False: for hair, beards, etc.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsPotion">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsPotion</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a potion - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsResource">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsResource</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a resource (ore, sand, wood, stone, fish) - False: otherwise</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsSearchable">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsSearchable</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a pouch - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsTwoHanded">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsTwoHanded</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a 2-handed weapon - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemIsVirtueShield">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">IsVirtueShield</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is a virtue shield - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemItemID">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">ItemID</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Represents the type of Item, usually unique for the Item image.  Sometime called ID or Graphics ID.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemLayer">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Layer</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Gets the Layer, for werable items only. (need better documentation)</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemMaxDurability">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">MaxDurability</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Get the maximum durability of an Item. (0: no durability)</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemMovable">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Movable</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Item is movable</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemName">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Item name</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemOnGround">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">OnGround</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if the item is on the ground - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedEnhancedEntityPosition">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Position</div><div class="redoc-variable-type">Point3D</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemProperties">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Properties</div><div class="redoc-variable-type">List[Property]</div><div class="redoc-method-params-desc">Get the list of Properties of an Item.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemPropsUpdated">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">PropsUpdated</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">True: if Properties are updated - False: otherwise.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemRootContainer">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">RootContainer</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Get serial of root container of item.</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedEnhancedEntitySerial">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Serial</div><div class="redoc-variable-type">Int32</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemUpdated">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Updated</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Check if the Item already have been updated with all the properties. (need better documentation)</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemVisible">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Visible</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Item is Visible</div></div></div>
+<div class="redoc-class-property-entry"><a class="redoc-permalink" href="#PRazorEnhancedItemWeight">&#x1F517</a><div class="redoc-method-params"><div class="redoc-variable-name">Weight</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Get the weight of a item. (0: no weight)</div></div></div></div></div>
 <div class="class-contructors">TODO: Item Constructors</div>
-<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">DistanceTo</div>
+<div class="class-methods"><div class="redoc-method-box-title">Methods</div><div class="redoc-method-box"><div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemDistanceToRazorEnhancedMobile">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">DistanceTo</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
 <div class="method-description">Return the distance in number of tiles, from Item to Mobile.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">DistanceTo</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemDistanceToRazorEnhancedItem">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">DistanceTo</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">DistanceTo</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemDistanceToRazorEnhancedMobile">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">DistanceTo</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div></div>)</div>
 <div class="method-description">Return the distance in number of tiles, from Item to Mobile.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">DistanceTo</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">mob</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Target as Mobile</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div><div class="redoc-method-return-desc">Distance in number of tiles.</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemDistanceToRazorEnhancedItem">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">DistanceTo</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">GetWorldPosition</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">itm</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Target as Item</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Int32</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemGetWorldPosition">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">GetWorldPosition</div>
 <div class="method-signature">()</div>
 
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Point3D</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">IsChildOf</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Point3D</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemIsChildOfRazorEnhancedItem">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">IsChildOf</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div></div>)</div>
 <div class="method-description">Check if an Item is contained in a container. Can be a Item or a Mobile (wear by).</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">IsChildOf</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemIsChildOfRazorEnhancedMobile">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">IsChildOf</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">IsChildOf</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemIsChildOfRazorEnhancedItem">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">IsChildOf</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div></div>)</div>
 <div class="method-description">Check if an Item is contained in a container. Can be a Item or a Mobile (wear by).</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">IsChildOf</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Item</div><div class="redoc-method-params-desc">Item as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: if is contained - False: otherwise.</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemIsChildOfRazorEnhancedMobile">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">IsChildOf</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Item</div>
-<div class="method-name">ToString</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">container</div><div class="redoc-variable-type">Mobile</div><div class="redoc-method-params-desc">Mobile as container.</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedItemToString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Item</div>.<div class="method-name">ToString</div>
 <div class="method-signature">()</div>
 
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div></div></div></div></div></div>
 </body>
 </html>

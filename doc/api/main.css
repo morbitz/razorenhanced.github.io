@@ -1,22 +1,37 @@
 *{
     font-family: monospace;
     unicode-bidi: embed;
+    text-align: justify;
 }
+
+.redoc-page-left, .redoc-page-right{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.redoc-page-left
+{
+    width: 10em;
+}
+.redoc-page-right{
+    width: calc(80%);
+}
+
 
 .class-name{
     font-size: 30px;    
 }
 
-.redoc-variable-name, .redoc-variable-type{
-    display: inline-block;
-    padding: 5;
-}
 
+.redoc-page-container{
+    display: inline-flex;
+    flex-direction: row;
+}
 
 #redoc-main-menu{
     display: inline-flex;
     flex-direction: column;
-    list-style: circle;
 }
 
 .redoc-main-menu-entry{
@@ -24,37 +39,61 @@
     display: list-item;
 }
 
+
 .redoc-method-container{
     border: 1px solid rgb(75, 75, 75);
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 90%;
 }
 
-.redoc-method-container{
-    padding: 10 px;
-    margin: 10px;
-}
-
-.method-name, .method-signature, .redoc-variable-type, .redoc-variable-name {
+.method-name, .method-signature, .redoc-variable-type, .redoc-variable-name, .method-class-name {
     display: inline-flex;
-    padding-left: 5px;
+    vertical-align: baseline;
+    padding: 0px;
+}
+
+.redoc-variable-name, .redoc-variable-type{
+    display: inline-block;
+    padding-inline: 2px;
+}
+
+.redoc-variable-name{
+    font-family: 'Courier New', Courier, monospace;
+    color: orange;
+    font-weight: bold;
+}
+
+.redoc-method-container .redoc-variable-name{
+    color:rgb(57, 219, 70)  
+}
+
+.method-name, .method-class-name{
+    font-size: 15px;
+}
+
+.method-class-name{
+    color: red;
 }
 
 .method-name{
-    font-size: 15px;
+    color: lightskyblue;
+}
+
+.redoc-method-params-box-title{
+    text-decoration: underline;
 }
 
 .redoc-variable-type{
     font-weight: bold;
 }
 
-.method-class-name{
-    display: none;  /*hidden for now*/
-    margin:0;
-    padding: 0;
-}
 
 .method-parameters{
     margin-left: 20px;  
 }
+
 
 .redoc-method-params-desc, .class-description, .method-description {
     /*
@@ -63,4 +102,27 @@
     */
     white-space: pre;
     margin: 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+
+.redoc-property-box-title, .redoc-method-box-title{
+    font-size: 20px;    
+    margin-bottom: 10px;
+}
+
+
+.redoc-permalink, .redoc-method-container{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.redoc-permalink{
+    text-decoration: none;
+    color:rgb(175, 175, 175)
 }

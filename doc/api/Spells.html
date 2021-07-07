@@ -7,105 +7,132 @@
 </header>
 
 <body>
-<div id="redoc-page-container"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.32</a></div><div id="redoc-class-" class="redoc-class"><div class="class-name">Spells</div>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.36</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
+<a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
+<a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
+<a class="redoc-main-menu-entry" href="./DPSMeter.html">DPSMeter</a>
+<a class="redoc-main-menu-entry" href="./Dress.html">Dress</a>
+<a class="redoc-main-menu-entry" href="./Friend.html">Friend</a>
+<a class="redoc-main-menu-entry" href="./Gumps.html">Gumps</a>
+<a class="redoc-main-menu-entry" href="./HotKeyEvent.html">HotKeyEvent</a>
+<a class="redoc-main-menu-entry" href="./Item.html">Item</a>
+<a class="redoc-main-menu-entry" href="./Items.html">Items</a>
+<a class="redoc-main-menu-entry" href="./Items.Filter.html">Items.Filter</a>
+<a class="redoc-main-menu-entry" href="./Journal.html">Journal</a>
+<a class="redoc-main-menu-entry" href="./Journal.JournalEntry.html">Journal.JournalEntry</a>
+<a class="redoc-main-menu-entry" href="./Misc.html">Misc</a>
+<a class="redoc-main-menu-entry" href="./Misc.Context.html">Misc.Context</a>
+<a class="redoc-main-menu-entry" href="./Misc.MapInfo.html">Misc.MapInfo</a>
+<a class="redoc-main-menu-entry" href="./Mobile.html">Mobile</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.html">Mobiles</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.Filter.html">Mobiles.Filter</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.TrackingInfo.html">Mobiles.TrackingInfo</a>
+<a class="redoc-main-menu-entry" href="./Organizer.html">Organizer</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.html">PathFinding</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.Route.html">PathFinding.Route</a>
+<a class="redoc-main-menu-entry" href="./Player.html">Player</a>
+<a class="redoc-main-menu-entry" href="./Point2D.html">Point2D</a>
+<a class="redoc-main-menu-entry" href="./Point3D.html">Point3D</a>
+<a class="redoc-main-menu-entry" href="./Property.html">Property</a>
+<a class="redoc-main-menu-entry" href="./Restock.html">Restock</a>
+<a class="redoc-main-menu-entry" href="./Scavenger.html">Scavenger</a>
+<a class="redoc-main-menu-entry" href="./SellAgent.html">SellAgent</a>
+<a class="redoc-main-menu-entry" href="./Spells.html">Spells</a>
+<a class="redoc-main-menu-entry" href="./Statics.html">Statics</a>
+<a class="redoc-main-menu-entry" href="./Statics.TileInfo.html">Statics.TileInfo</a>
+<a class="redoc-main-menu-entry" href="./Target.html">Target</a>
+<a class="redoc-main-menu-entry" href="./Tile.html">Tile</a>
+<a class="redoc-main-menu-entry" href="./Timer.html">Timer</a>
+<a class="redoc-main-menu-entry" href="./Vendor.html">Vendor</a>
+<a class="redoc-main-menu-entry" href="./Vendor.BuyItem.html">Vendor.BuyItem</a></div></div><div class="redoc-page-right"><div id="redoc-class-" class="redoc-class"><div class="class-name">Spells</div>
 <div class="class-description">
             <summary>
             The Spells class allow you to cast any spell and use abilities, via scripting.
             </summary>
         </div>
-<div class="class-properties">TODO: Spells Properties</div>
+
 <div class="class-contructors">TODO: Spells Constructors</div>
-<div class="class-methods"><div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="class-methods"><div class="redoc-method-box-title">Methods</div><div class="redoc-method-box"><div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast spell using the spell name. See the skill-specific functions to get the full list of spell names.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast spell using the spell name. See the skill-specific functions to get the full list of spell names.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast spell using the spell name. See the skill-specific functions to get the full list of spell names.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Cast</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastBushido</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastBushidoSystemStringSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastBushido</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Bushido spell using the spell name.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Honorable Execution
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Honorable Execution
 Confidence
 Counter Attack
 Lightning Strike
 Evasion
 Momentum Strike</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Chivalry spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -124,28 +151,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Chivalry spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -164,28 +188,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Chivalry spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -204,28 +225,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastChivalry</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastChivalrySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Cleric spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
 Circle Of Thorns : Creates a ring of thorns preventing an enemy from moving.
 Deadly Spores : The enemy is afflicted by poisonous spores.
 Enchanted Grove : Causes a grove of magical trees to grow, hiding the player for a short time.
@@ -247,28 +265,25 @@ Treefellow : Summons a powerful woodland spirit to fight for the Druid.
 Volcanic Eruption : A blast of molten lava bursts from the ground, hitting every enemy nearby.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Cleric spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
 Circle Of Thorns : Creates a ring of thorns preventing an enemy from moving.
 Deadly Spores : The enemy is afflicted by poisonous spores.
 Enchanted Grove : Causes a grove of magical trees to grow, hiding the player for a short time.
@@ -290,28 +305,25 @@ Treefellow : Summons a powerful woodland spirit to fight for the Druid.
 Volcanic Eruption : A blast of molten lava bursts from the ground, hitting every enemy nearby.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Cleric spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
 Circle Of Thorns : Creates a ring of thorns preventing an enemy from moving.
 Deadly Spores : The enemy is afflicted by poisonous spores.
 Enchanted Grove : Causes a grove of magical trees to grow, hiding the player for a short time.
@@ -333,28 +345,25 @@ Treefellow : Summons a powerful woodland spirit to fight for the Druid.
 Volcanic Eruption : A blast of molten lava bursts from the ground, hitting every enemy nearby.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastCleric</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastClericSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Druid spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
 Banish Evil : Banishes Undead targets. Auto kills rotting corpses, lich lords, etc. Works well at Doom Champ. Does not produce a corpse however
 Dampen Spirit : Drains the stamina of your target, according to the description
 Divine Focus : Heal for more, but may be broken.
@@ -366,30 +375,27 @@ Sacrifice : Heals your party members when you take damage. Sort of like thorns, 
 Smite : Causes energy damage
 Touch of Life : Heals even if Mortal Strike or poison are active on the target
 Trial by Fire : Attackers receive damage when they strike you, sort of like a temporary RPD buff</div></div>
-<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">target to use the druid spell on</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Druid spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
 Banish Evil : Banishes Undead targets. Auto kills rotting corpses, lich lords, etc. Works well at Doom Champ. Does not produce a corpse however
 Dampen Spirit : Drains the stamina of your target, according to the description
 Divine Focus : Heal for more, but may be broken.
@@ -401,30 +407,27 @@ Sacrifice : Heals your party members when you take damage. Sort of like thorns, 
 Smite : Causes energy damage
 Touch of Life : Heals even if Mortal Strike or poison are active on the target
 Trial by Fire : Attackers receive damage when they strike you, sort of like a temporary RPD buff</div></div>
-<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">target to use the druid spell on</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Druid spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
 Banish Evil : Banishes Undead targets. Auto kills rotting corpses, lich lords, etc. Works well at Doom Champ. Does not produce a corpse however
 Dampen Spirit : Drains the stamina of your target, according to the description
 Divine Focus : Heal for more, but may be broken.
@@ -436,96 +439,83 @@ Sacrifice : Heals your party members when you take damage. Sort of like thorns, 
 Smite : Causes energy damage
 Touch of Life : Heals even if Mortal Strike or poison are active on the target
 Trial by Fire : Attackers receive damage when they strike you, sort of like a temporary RPD buff</div></div>
-<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">target to use the druid spell on</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastDruid</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastDruidSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast again the last casted spell, on last target.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast again the last casted spell, on last target.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast again the last casted spell, on last target.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">m</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpell</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastLastSpellLastTarget</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastLastSpellLastTarget">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpellLastTarget</div>
 <div class="method-signature">()</div>
 <div class="method-description">Cast again the last casted spell, on last target.</div>
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Magery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
 Create Food
 Feeblemind
 Heal
@@ -591,28 +581,25 @@ Summon Fire Elemental
 Summon Water Elemental</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Magery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
 Create Food
 Feeblemind
 Heal
@@ -678,28 +665,25 @@ Summon Fire Elemental
 Summon Water Elemental</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Magery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
 Create Food
 Feeblemind
 Heal
@@ -765,28 +749,25 @@ Summon Fire Elemental
 Summon Water Elemental</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMagery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMagerySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mastery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
 Invigorate
 Resilience
 Perseverance
@@ -833,28 +814,25 @@ Combat Training
 Boarding</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mastery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
 Invigorate
 Resilience
 Perseverance
@@ -901,28 +879,25 @@ Combat Training
 Boarding</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mastery spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
 Invigorate
 Resilience
 Perseverance
@@ -969,28 +944,25 @@ Combat Training
 Boarding</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMastery</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMasterySystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mysticism spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
 Healing Stone
 Purge
 Enchant
@@ -1007,28 +979,25 @@ Nether Cyclone
 Rising Colossus</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mysticism spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
 Healing Stone
 Purge
 Enchant
@@ -1045,28 +1014,25 @@ Nether Cyclone
 Rising Colossus</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Mysticism spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
 Healing Stone
 Purge
 Enchant
@@ -1083,28 +1049,25 @@ Nether Cyclone
 Rising Colossus</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastMysticism</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastMysticismSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Necromany spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -1123,28 +1086,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Necromany spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -1163,28 +1123,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Necromany spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
 Pain Spike
 Corpse Skin
 Evil Omen
@@ -1203,28 +1160,25 @@ Vengeful Spirit
 Vampiric Embrace</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNecro</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNecroSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Ninjitsu spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
 Backstab
 Surprise Attack
 Mirror Image
@@ -1233,28 +1187,25 @@ Focus Attack
 Ki Attack</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Ninjitsu spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
 Backstab
 Surprise Attack
 Mirror Image
@@ -1263,28 +1214,25 @@ Focus Attack
 Ki Attack</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Ninjitsu spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
 Backstab
 Surprise Attack
 Mirror Image
@@ -1293,28 +1241,25 @@ Focus Attack
 Ki Attack</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastNinjitsu</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastNinjitsuSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Spellweaving spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
 Gift Of Renewal
 Immolating Weapon
 Attune Weapon
@@ -1332,28 +1277,25 @@ Gift Of Life
 Arcane Empowerment</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Spellweaving spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
 Gift Of Renewal
 Immolating Weapon
 Attune Weapon
@@ -1371,28 +1313,25 @@ Gift Of Life
 Arcane Empowerment</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringSystemUIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Cast a Spellweaving spell using the spell name.
 Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
 NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
 Gift Of Renewal
 Immolating Weapon
 Attune Weapon
@@ -1410,26 +1349,23 @@ Gift Of Life
 Arcane Empowerment</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemStringRazorEnhancedMobileSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">mobile</div><div class="redoc-variable-type">Mobile</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">CastSpellweaving</div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsCastSpellweavingSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div>)</div>
 
-<div class="method-parameters"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div>
-<div class="redoc-method-container"><div class="method-class-name">Spells</div>
-<div class="method-name">Interrupt</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
+<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedSpellsInterrupt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Spells</div>.<div class="method-name">Interrupt</div>
 <div class="method-signature">()</div>
 <div class="method-description">Interrupt the casting of a spell by performing an equip/unequip.</div>
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div></div></div>
+<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div></div></div></div></div></div>
 </body>
 </html>
