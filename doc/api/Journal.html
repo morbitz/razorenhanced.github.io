@@ -53,66 +53,66 @@
         </div>
 
 <div class="class-contructors">TODO: Journal Constructors</div>
-<div class="class-methods"><div class="redoc-method-box-title">Methods</div><div class="redoc-method-box"><div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalClear">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">Clear</div>
+<div class="class-methods"><div class="redoc-method-box-title">Methods</div><div class="redoc-method-box"><div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalClear" href="#MRazorEnhancedJournalClear">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">Clear</div>
 <div class="method-signature">()</div>
 <div class="method-description">Removes all entry from the Jorunal. This operation is Global for all Razor.</div>
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalFilterTextSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">FilterText</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Void</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalFilterTextSystemString" href="#MRazorEnhancedJournalFilterTextSystemString">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">FilterText</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>)</div>
 <div class="method-description">Store a string that if matched, will block journal message ( case insensitive )</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to block. case insensitive, and will match if the incoming message contains the text</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div><div class="redoc-method-return-desc">void</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetJournalEntrySystemDouble">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Void</div><div class="redoc-method-return-desc">void</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetJournalEntrySystemDouble" href="#MRazorEnhancedJournalGetJournalEntrySystemDouble">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">afterTimestap</div><div class="redoc-variable-type">Double</div></div>)</div>
 <div class="method-description">Get a copy of all Journal lines as JournalEntry. The list can be filtered to include *only* most recent events.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">afterTimestap</div><div class="redoc-variable-type">Double</div><div class="redoc-method-params-desc">Timestap as UnixTime, the number of seconds elapsed since 01-Jan-1970. (default: -1, no filter)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetJournalEntryRazorEnhancedJournalJournalEntry">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetJournalEntryRazorEnhancedJournalJournalEntry" href="#MRazorEnhancedJournalGetJournalEntryRazorEnhancedJournalJournalEntry">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">afterJournalEntry</div><div class="redoc-variable-type">Journal.JournalEntry</div></div>)</div>
 <div class="method-description">Get a copy of all Journal lines as JournalEntry. The list can be filtered to include *only* most recent events.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">afterJournalEntry</div><div class="redoc-variable-type">Journal.JournalEntry</div><div class="redoc-method-params-desc">A JournalEntry object (default: null, no filter)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetJournalEntrySystemDouble">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
-<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">afterTimestap</div><div class="redoc-variable-type">Double</div></div>)</div>
-<div class="method-description">Get a copy of all Journal lines as JournalEntry. The list can be filtered to include *only* most recent events.</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">afterTimestap</div><div class="redoc-variable-type">Double</div><div class="redoc-method-params-desc">Timestap as UnixTime, the number of seconds elapsed since 01-Jan-1970. (default: -1, no filter)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetJournalEntryRazorEnhancedJournalJournalEntry">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetJournalEntry</div>
-<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">afterJournalEntry</div><div class="redoc-variable-type">Journal.JournalEntry</div></div>)</div>
-<div class="method-description">Get a copy of all Journal lines as JournalEntry. The list can be filtered to include *only* most recent events.</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">afterJournalEntry</div><div class="redoc-variable-type">Journal.JournalEntry</div><div class="redoc-method-params-desc">A JournalEntry object (default: null, no filter)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetLineTextSystemStringSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetLineText</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[Journal.JournalEntry]</div><div class="redoc-method-return-desc">List of JournalEntry</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetLineTextSystemStringSystemBoolean" href="#MRazorEnhancedJournalGetLineTextSystemStringSystemBoolean">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetLineText</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Search and return the most recent line Journal containing the given text. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Prepend source name. (default: False)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Return the full line - Empty string if not found.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetSpeechName">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetSpeechName</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">String</div><div class="redoc-method-return-desc">Return the full line - Empty string if not found.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetSpeechName" href="#MRazorEnhancedJournalGetSpeechName">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetSpeechName</div>
 <div class="method-signature">()</div>
 <div class="method-description">Get list of speakers.</div>
 
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">List of speakers as text.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetTextByColorSystemIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetTextByColor</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">List of speakers as text.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetTextByColorSystemIntSystemBoolean" href="#MRazorEnhancedJournalGetTextByColorSystemIntSystemBoolean">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetTextByColor</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Returns all the lines present in the Journal for a given color.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the soruce.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Prepend source name. (default: False)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetTextByNameSystemStringSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetTextByName</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetTextByNameSystemStringSystemBoolean" href="#MRazorEnhancedJournalGetTextByNameSystemStringSystemBoolean">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetTextByName</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Returns all the lines present in the Journal for a given source name. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the soruce.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Prepend source name. (default: False)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetTextBySerialSystemIntSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetTextBySerial</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetTextBySerialSystemIntSystemBoolean" href="#MRazorEnhancedJournalGetTextBySerialSystemIntSystemBoolean">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetTextBySerial</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Returns all the lines present in the Journal for a given serial.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">serial</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Serial of the soruce.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Prepend source name. (default: False)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalGetTextByTypeSystemStringSystemBoolean">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">GetTextByType</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalGetTextByTypeSystemStringSystemBoolean" href="#MRazorEnhancedJournalGetTextByTypeSystemStringSystemBoolean">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">GetTextByType</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">type</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div></div>)</div>
 <div class="method-description">Returns all the lines present in the Journal for a given type. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">type</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Regular
@@ -129,30 +129,35 @@ Party
 Encoded
 Special</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">addname</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Prepend source name. (default: False)</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalRemoveFilterTextSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">RemoveFilterText</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">List[String]</div><div class="redoc-method-return-desc">A list of Journal as lines of text.</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalRemoveFilterTextSystemString" href="#MRazorEnhancedJournalRemoveFilterTextSystemString">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">RemoveFilterText</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>)</div>
 <div class="method-description">Remove a stored a string that if matched, would block journal message ( case insensitive )</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to no longer block. case insensitive</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Void</div><div class="redoc-method-return-desc">void</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalSearchSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">Search</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Void</div><div class="redoc-method-return-desc">void</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalSearchSystemString" href="#MRazorEnhancedJournalSearchSystemString">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">Search</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>)</div>
 <div class="method-description">Search in the Journal for the occurrence of text. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalSearchByColorSystemStringSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">SearchByColor</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalSearchByColorSystemStringSystemInt" href="#MRazorEnhancedJournalSearchByColorSystemStringSystemInt">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">SearchByColor</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div></div>)</div>
 <div class="method-description">Search in the Journal for the occurrence of text, for a given color. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">color</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Color of the message.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalSearchByNameSystemStringSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">SearchByName</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalSearchByNameSystemStringSystemString" href="#MRazorEnhancedJournalSearchByNameSystemStringSystemString">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">SearchByName</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div></div>)</div>
 <div class="method-description">Search in the Journal for the occurrence of text, for a given soruce. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the source.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalSearchByTypeSystemStringSystemString">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">SearchByType</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalSearchByTypeSystemStringSystemString" href="#MRazorEnhancedJournalSearchByTypeSystemStringSystemString">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">SearchByType</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">type</div><div class="redoc-variable-type">String</div></div>)</div>
 <div class="method-description">Search in the Journal for the occurrence of text, for a given type. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
@@ -169,36 +174,27 @@ Alliance
 Party
 Encoded
 Special</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalWaitByNameSystemStringSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">WaitByName</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalWaitByNameSystemStringSystemInt" href="#MRazorEnhancedJournalWaitByNameSystemStringSystemInt">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">WaitByName</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
 <div class="method-description">Pause script and wait for maximum amount of time, for a specific soruce to appear in Jorunal. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">name</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the soruce.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum pause in milliseconds.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalWaitJournalSystemStringSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalWaitJournalSystemStringSystemInt" href="#MRazorEnhancedJournalWaitJournalSystemStringSystemInt">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
 <div class="method-description">Pause script and wait for maximum amount of time, for a specific text to appear in Journal. (case sensitive)</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum pause in milliseconds.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalWaitJournalSystemCollectionsGenericListSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><div class="redoc-method-container"><a id="MRazorEnhancedJournalWaitJournalSystemCollectionsGenericListSystemInt" href="#MRazorEnhancedJournalWaitJournalSystemCollectionsGenericListSystemInt">&#x1F517</a>
+<div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
 <div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msgs</div><div class="redoc-variable-type">List[String]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
 
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">msgs</div><div class="redoc-variable-type">List[String]</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalWaitJournalSystemStringSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
-<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
-<div class="method-description">Pause script and wait for maximum amount of time, for a specific text to appear in Journal. (case sensitive)</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">text</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Text to search.</div></div>
-<div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum pause in milliseconds.</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: Text is found - False: otherwise</div></div></div></div></div>
-<div class="redoc-class-method-entry"><a class="redoc-permalink" href="#MRazorEnhancedJournalWaitJournalSystemCollectionsGenericListSystemInt">&#x1F517</a><div class="redoc-method-container"><div class="method-class-name">Journal</div>.<div class="method-name">WaitJournal</div>
-<div class="method-signature">(<div class="redoc-method-params-sign"><div class="redoc-variable-name">msgs</div><div class="redoc-variable-type">List[String]</div></div>, <div class="redoc-method-params-sign"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div>)</div>
-
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params"><div class="redoc-variable-name">msgs</div><div class="redoc-variable-type">List[String]</div></div>
-<div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div></div></div>
-<div class="method-returns"><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div></div></div></div></div></div>
+<div class="method-returns"><div class="redoc-method-return-box"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return"><div class="redoc-variable-type">String</div></div></div></div></div></div></div></div></div></div></div>
 </body>
 </html>

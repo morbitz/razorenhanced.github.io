@@ -51,24 +51,7 @@ import os
 import json
 import re
 
-
-heal = True
-if Player.GetSkillValue('Healing') > 0:
     
-    if '0/1 items' in Items.GetPropStringByIndex(firstaidbelt,5):
-        Player.HeadMessage(1100, 'No Bandage')
-        
-
-    if len(Items.FindBySerial(firstaidbelt).Contains) == 0:
-        Items.UseItem(firstaidbelt)
-        Misc.Pause(700)
-    
-    if heal: 
-        bandage = Items.FindByID(0x0E21,-1,firstaidbelt)
-        
-        if (Player.Hits < 110 or Player.Poisoned) and not Player.BuffsExist('Healing'):
-            Items.UseItem(bandage,Player.Serial)
-            Misc.Pause(250)        
 
 def main():
     ## SETTINGS
@@ -77,7 +60,7 @@ def main():
     # Write to your Script/Docs/ folder
     output_path = Misc.CurrentScriptDirectory() + "/Docs/"
     # or write to a specific folder:
-    # output_path = "C:/Users/Cesare/Projects/razorenhanced.github.io/doc/api/"
+    output_path = "C:/Users/Cesare/Projects/razorenhanced.github.io/doc/api/"
     
     
     ## RUN 
@@ -88,7 +71,7 @@ def main():
     
     # generates the main menu from the list of classes
     menu = adhtml.MainMenuHTML()
-    index_html = HTML.BasePage(version+menu,"RazorEnhanced API Documentation")
+    index_html = HTML.LeftRightPage(version+menu,"","RazorEnhanced API Documentation")
     adhtml.WriteToFile("index.html".format(), index_html)
     
     # generates doc page for the Player class ( usefull for testing ) 
@@ -126,9 +109,14 @@ class HTML():
         class_html = HTML.Div(class_content, cssId=cssId, cssClass=cssClass)
         return class_html
     
-    def PropertiesContainer():
-        # TODO
-        return ""
+    def PropertiesContainer(name, type, description, cssId=None,  cssClass=None ):
+        if cssClass is None: cssClass = 'redoc-class-property-box'
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = ' class="{}"'.format(cssClass)
+        name_html =  HTML.VariableName(name)
+        type_html =  HTML.VariableType(type)
+        desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-class-property-desc')
+        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html) 
         
     def ConstructorContainer():
         # TODO
@@ -138,7 +126,7 @@ class HTML():
 # content
     @staticmethod
     def MethodContainer(permalink, className, methodName, description, signature, parameters, returns, cssId=None, cssClass=None ):
-        permalink_html = HTML.Doc
+        permalink_html = HTML.DocPermalink(permalink)
         className_html = HTML.Div(className,cssClass="method-class-name")
         methodName_html = HTML.Div(methodName,cssClass="method-name")
         signature_html = HTML.Div(signature,cssClass="method-signature")
@@ -147,6 +135,7 @@ class HTML():
         returns_html = "" if len(returns) == 0 else HTML.Div(returns,cssClass="method-returns")
         
         method_content = "\n".join([
+            permalink_html,
             className_html+"."+methodName_html,
             signature_html,
             description_html,
@@ -170,7 +159,7 @@ class HTML():
         js_html = HTML.JS("./main.js")
         header_html = css_html +"\n"+ js_html
         body_html = HTML.Div(body,cssClass="redoc-page-container")
-        Player.AR
+        
         return HTML.EmptyPage(body_html, title, header_html)
         
         
@@ -243,11 +232,11 @@ class HTML():
         cssClass = ' class="{}"'.format(cssClass)
         return '<div{}{}><a href="./index.html">RE API v{}</a></div>'.format(cssId, cssClass, version)
         
-    def DocPermalink(url, content='&#x1F517', cssId=None,  cssClass=None):
-        url = '' if url is None else ' href="{}"'.format(url)
-        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+    def DocPermalink(url, content='&#x1F517', cssClass=None):
+        link = ' href="#{}"'.format(url)
+        cssId = ' id="{}"'.format(url)
         cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
-        return '<a{}{}{}>{}</a>'.format(cssId, cssClass, url, content)
+        return '<a{}{}{}>{}</a>'.format(cssId, cssClass, link, content)
         
         
 # base html elements
@@ -287,7 +276,7 @@ class AutoDocHTML:
         return re.sub("[^a-zA-Z]","",xmlkey)
         
     def PermalinkHTML(self,xmlkey):
-        anchor_slug = "#"+self.KeyToSlug(xmlkey)
+        anchor_slug = self.KeyToSlug(xmlkey)
         return HTML.DocPermalink(anchor_slug, cssClass='redoc-permalink' )
         
     def DocVersionHTML(self):
@@ -326,7 +315,7 @@ class AutoDocHTML:
         prop_html_list = []
         for property in propertyList:
             link = self.PermalinkHTML(property["xmlKey"])
-            prop_html = HTML.ParamForDescription(property['itemName'], property['propertyType'], property['itemDescription'])
+            prop_html = HTML.PropertiesContainer(property['itemName'], property['propertyType'], property['itemDescription'])
             prop_html = HTML.Div(link+prop_html, cssClass="redoc-class-property-entry")
             prop_html_list.append(prop_html)
         
@@ -343,9 +332,11 @@ class AutoDocHTML:
         
     def MethodsHTML(self, className):
         methodList = self.ad.GetMethods(className)
+        methodNames = set( [method['itemName'] for method in methodList] )
+        methodNames = list(sorted(methodNames));
         methods_html_list = []
-        for method in methodList:
-            methods_html_list.append( self.MethodDetailHTML(className, method["itemName"]) )
+        for methodName in methodNames:
+            methods_html_list.append( self.MethodDetailHTML(className, methodName) )
         #    
         methods_html = "\n".join(methods_html_list)
         methods_html = HTML.Div(methods_html, cssClass="redoc-method-box")
@@ -357,21 +348,35 @@ class AutoDocHTML:
         methodList = self.ad.GetMethods(className, methodName)
         methods_html_list = []
         for method in methodList:
-            link = self.PermalinkHTML(method["xmlKey"])
+            cssClass = 'redoc-method-container' 
+            link = self.KeyToSlug(method["xmlKey"])
             description = method["itemDescription"]
             paramList = method["paramList"]
+            
+            
             methodReturn = HTML.MethodReturn(method["returnType"], method["returnDesc"] )
+            return_label = HTML.Div("Return",cssClass="redoc-method-return-box-title") 
+            return_html = return_label+methodReturn
+            return_html = HTML.Div(return_html,cssClass="redoc-method-return-box") 
+            
+            
             paramSignature = [HTML.ParamForSignature(p['itemName'], p['itemType']) for p in paramList]
             paramDescription = [HTML.ParamForDescription(p['itemName'], p['itemType'], p['itemDescription']) for p in paramList]
-            cssClass = 'redoc-method-container' 
+            
             
             signature_html = "({})".format( ", ".join(paramSignature) )
             paramsDesc = "\n".join(paramDescription).strip()
             if paramsDesc != "":
                 paramsDesc = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") + paramsDesc
+            #
             
-            method_html = HTML.MethodContainer(className, methodName, description, signature_html, paramsDesc, methodReturn, cssClass=cssClass )
-            method_html = HTML.Div(link+method_html, cssClass="redoc-class-method-entry")
+            
+            #
+            
+            
+            
+            method_html = HTML.MethodContainer(link,className, methodName, description, signature_html, paramsDesc, return_html, cssClass=cssClass )
+            method_html = HTML.Div(method_html, cssClass="redoc-class-method-entry")
             methods_html_list.append(method_html)
             
         #    

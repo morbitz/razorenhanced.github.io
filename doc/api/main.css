@@ -2,6 +2,20 @@
     font-family: monospace;
     unicode-bidi: embed;
     text-align: justify;
+    color:rgb(75, 75, 75);
+}
+
+a{
+    text-decoration: none;
+    border: 1px solid #f0f0f0;
+    margin: 1px;
+    color: darkblue;
+}
+
+.redoc-doc-version *{
+    border: none;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .redoc-page-left, .redoc-page-right{
@@ -12,10 +26,10 @@
 
 .redoc-page-left
 {
-    width: 10em;
+    width: 12em;
 }
 .redoc-page-right{
-    width: calc(80%);
+    width: calc(80em);
 }
 
 
@@ -32,6 +46,7 @@
 #redoc-main-menu{
     display: inline-flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .redoc-main-menu-entry{
@@ -66,7 +81,7 @@
 }
 
 .redoc-method-container .redoc-variable-name{
-    color:rgb(57, 219, 70)  
+    color:rgb(46, 173, 56)  
 }
 
 .method-name, .method-class-name{
@@ -81,8 +96,12 @@
     color: lightskyblue;
 }
 
-.redoc-method-params-box-title{
+.redoc-method-params-box-title, .redoc-method-return-box-title{
     text-decoration: underline;
+}
+
+.redoc-method-return-box-title{
+    display: inline-block;
 }
 
 .redoc-variable-type{
@@ -90,12 +109,13 @@
 }
 
 
-.method-parameters{
+.method-parameters, .method-returns{
     margin-left: 20px;  
 }
 
 
-.redoc-method-params-desc, .class-description, .method-description {
+
+.redoc-method-params-desc, .class-description, .method-description, .redoc-class-property-desc {
     /*
     unicode-bidi: embed;
     font-family: monospace;
@@ -111,10 +131,22 @@
 }
 
 
-.redoc-property-box-title, .redoc-method-box-title{
+.redoc-class-property-entry{
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid rgb(75, 75, 75);
+    margin: 5px;
+}
+
+.redoc-property-box{
+    padding: 10px;
+}
+
+.redoc-property-box-title, .redoc-method-box-title, {
     font-size: 20px;    
     margin-bottom: 10px;
 }
+
 
 
 .redoc-permalink, .redoc-method-container{
