@@ -100,7 +100,7 @@ a{
     text-decoration: underline;
 }
 
-.redoc-method-return-box-title{
+.redoc-method-return-box-title, {
     display: inline-block;
 }
 
@@ -136,6 +136,7 @@ a{
     align-items: flex-start;
     border: 1px solid rgb(75, 75, 75);
     margin: 5px;
+    padding: 5px;
 }
 
 .redoc-property-box{

@@ -184,14 +184,24 @@ class HTML():
     
  
     @staticmethod
-    def ParamForSignature(name, paramType, cssId=None,  cssClass=None ):
+    def ParamForSignature(name, paramType=None, cssId=None,  cssClass=None ):
         if cssClass is None: cssClass = 'redoc-method-params-sign'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
         name_html =  HTML.VariableName(name)
         type_html = '' if paramType is None or paramType == "" else HTML.VariableType(paramType)
-        return '<div{}{}>{}{}</div>'.format(cssId, cssClass, name_html, type_html )
+        return '<span{}{}>{}{}</span>'.format(cssId, cssClass, name_html, type_html )
     
+        
+    @staticmethod
+    def ParamDescription(name, type_html, description, cssId=None,  cssClass=None ):
+        if cssClass is None: cssClass = 'redoc-method-params'
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = ' class="{}"'.format(cssClass)
+        name_html =  HTML.VariableName(name)
+        desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-params-desc')
+        return '<span{}{}>{}{}{}</span>'.format(cssId, cssClass, name_html, type_html, desc_html)
+        
     @staticmethod
     def ParamForDescription(name, type, description, cssId=None,  cssClass=None ):
         if cssClass is None: cssClass = 'redoc-method-params'
@@ -200,7 +210,9 @@ class HTML():
         name_html =  HTML.VariableName(name)
         type_html =  HTML.VariableType(type)
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-params-desc')
-        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html) 
+        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html)
+       
+     
     
     @staticmethod
     def VariableType(content, cssId=None,  cssClass=None):
@@ -217,13 +229,18 @@ class HTML():
         return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
         
     @staticmethod
-    def MethodReturn(type, description, cssId=None,  cssClass=None):
+    def MethodReturn(type_html, description, cssId=None,  cssClass=None):
         if cssClass is None: cssClass = 'redoc-method-return'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
-        type_html =  HTML.VariableType(type)
-        desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-return-desc')
-        return '<div{}{}>{}{}</div>'.format(cssId, cssClass, type_html, desc_html)
+
+        desc_html =  '<br/>' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-return-desc')
+        
+        
+        return_label = HTML.Div("Return",cssClass="redoc-method-return-box-title") 
+        return_html =  HTML.Div(return_label + type_html + desc_html, cssClass="redoc-method-return-box")
+        
+        return HTML.Div(return_html, cssId, cssClass)
     
     @staticmethod
     def DocVersion(version, cssId=None,  cssClass=None):
@@ -272,8 +289,10 @@ class AutoDocHTML:
         self.doc_path = Misc.ScriptDirectory() + "/Docs/" if output_path is None else output_path
         self.ad = AutoDoc()
         
-    def KeyToSlug(self, xmlkey):
-        return re.sub("[^a-zA-Z]","",xmlkey)
+    def KeyToSlug(self, xmlkey, overload=True, shortname=True):
+        if overload: xmlkey = re.sub("\(.*\)","",xmlkey)
+        if shortname: xmlkey = xmlkey.replace(":RazorEnhanced.",":") #TODO: remove all settings/basename
+        return re.sub("[^a-zA-Z]","-",xmlkey)
         
     def PermalinkHTML(self,xmlkey):
         anchor_slug = self.KeyToSlug(xmlkey)
@@ -336,7 +355,7 @@ class AutoDocHTML:
         methodNames = list(sorted(methodNames));
         methods_html_list = []
         for methodName in methodNames:
-            methods_html_list.append( self.MethodDetailHTML(className, methodName) )
+            methods_html_list.append( self.MethodOverloadHTML(className, methodName) )
         #    
         methods_html = "\n".join(methods_html_list)
         methods_html = HTML.Div(methods_html, cssClass="redoc-method-box")
@@ -344,6 +363,86 @@ class AutoDocHTML:
         return methods_html
         
         
+    def MethodOverloadHTML(self, className, methodName):
+        methodList = self.ad.GetMethods(className, methodName)
+        
+        # setup for aggregation: descriptions
+        lastMethod = methodList[-1]
+        firstMethod = methodList.pop(0)
+        firstMethod["itemDescription"] = [ firstMethod["itemDescription"] ]
+        firstMethod["returnDesc"] = [ firstMethod["returnDesc"] ]
+        firstMethod["returnType"] = [ firstMethod["returnType"] ]
+        
+        # setup for aggregation: default params instead of overloading ( python way )
+        min_p = len(lastMethod)
+        max_p = len(firstMethod)
+        for num_p in range(min_p,max_p): #TODO: check indexes
+            param = firstMethod["paramList"][num_p]
+            if not param['itemHasDefault']:
+                param['itemHasDefault'] = True
+                param['itemDefaultValue'] = "null"
+        firstMethod["paramList"] = [[param] for param in firstMethod["paramList"] ]
+        
+        # accumulate: descriptions and params
+        for method in methodList:
+            firstMethod["itemDescription"].append(method["itemDescription"])
+            firstMethod["returnDesc"].append(method["returnDesc"])
+            firstMethod["returnType"].append(method["returnType"])
+            
+            for p_num, param in enumerate(method["paramList"]):
+                firstMethod["paramList"][p_num].append(param)
+          
+          
+        # aggregate descriptions and returns      
+        description = "\n".join([desc.strip() for desc in firstMethod["itemDescription"]]).strip()
+        
+        # deduplicate returns ( likely the same ) 
+        firstMethod["returnType"] = list(set(firstMethod["returnType"]))
+        return_desc = "\n".join([desc.strip() for desc in firstMethod["returnDesc"]]).strip()
+        return_type_list = [ HTML.VariableType(ret_type) for ret_type in firstMethod["returnType"]]
+        return_type = "\n".join(return_type_list)
+        return_html = HTML.MethodReturn(return_type, return_desc )
+        
+        
+        # aggregate params
+        param_name_list = [] 
+        param_desc_html_list = []
+        for param_list in firstMethod["paramList"]:
+            param_name = param_list[0]["itemName"] #names from first method 
+            param_type_list = [param["itemType"] for param in param_list]
+            param_desc_list = [param["itemDescription"] for param in param_list]
+        
+            param_type_list = list(filter(lambda t: t is not None and t != "", set(param_type_list)))
+            param_desc_list = list(filter(lambda t: t is not None and t != "", set(param_desc_list)))
+            
+            param_type_html = "\n".join([HTML.VariableType(param_type) for param_type in param_type_list])
+            param_desc_html = "\n".join(param_desc_list)
+            
+            param_desc_html_list.append(HTML.ParamDescription(param_name, param_type_html, param_desc_html) )
+            param_name_list.append(param_name)
+        #
+        signature_list = [HTML.ParamForSignature(param_name) for param_name in param_name_list]
+        signature_html = "({})".format( ", ".join(signature_list) )
+        
+        param_desc_html = "\n".join(param_desc_html_list).strip()
+        if param_desc_html != "":
+            param_desc_html = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") + param_desc_html
+            
+            
+        cssClass = 'redoc-method-container' 
+        link = self.KeyToSlug(firstMethod["xmlKey"]) 
+           
+            
+        className=firstMethod["itemClass"]
+        methodName=firstMethod["itemName"]
+        method_html = HTML.MethodContainer(link,className, methodName, description, signature_html, param_desc_html, return_html, cssClass=cssClass )
+        method_html = HTML.Div(method_html, cssClass="redoc-class-method-entry")
+        
+        return method_html
+        
+        
+        
+    # old
     def MethodDetailHTML(self, className, methodName):
         methodList = self.ad.GetMethods(className, methodName)
         methods_html_list = []
