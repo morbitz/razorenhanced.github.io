@@ -129,14 +129,16 @@ class HTML():
         permalink_html = HTML.DocPermalink(permalink)
         className_html = HTML.Div(className,cssClass="method-class-name")
         methodName_html = HTML.Div(methodName,cssClass="method-name")
-        signature_html = HTML.Div(signature,cssClass="method-signature")
+        
+        signature_content = "{}.{}({})".format(className_html,methodName_html, signature)
+        signature_html = HTML.Div(signature_content,cssClass="method-signature")
+        
         description_html = "" if len(description) == 0 else HTML.Div(description,cssClass="method-description")
         parameters_html = "" if len(parameters) == 0 else HTML.Div(parameters,cssClass="method-parameters")
         returns_html = "" if len(returns) == 0 else HTML.Div(returns,cssClass="method-returns")
         
         method_content = "\n".join([
             permalink_html,
-            className_html+"."+methodName_html,
             signature_html,
             description_html,
             parameters_html,
@@ -200,7 +202,7 @@ class HTML():
         cssClass = ' class="{}"'.format(cssClass)
         name_html =  HTML.VariableName(name)
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-params-desc')
-        return '<span{}{}>{}{}{}</span>'.format(cssId, cssClass, name_html, type_html, desc_html)
+        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html)
         
     @staticmethod
     def ParamForDescription(name, type, description, cssId=None,  cssClass=None ):
@@ -232,13 +234,11 @@ class HTML():
     def MethodReturn(type_html, description, cssId=None,  cssClass=None):
         if cssClass is None: cssClass = 'redoc-method-return'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
-        cssClass = ' class="{}"'.format(cssClass)
 
         desc_html =  '<br/>' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-return-desc')
         
-        
         return_label = HTML.Div("Return",cssClass="redoc-method-return-box-title") 
-        return_html =  HTML.Div(return_label + type_html + desc_html, cssClass="redoc-method-return-box")
+        return_html =  return_label+HTML.Div(type_html + desc_html, cssClass="redoc-method-return-box")
         
         return HTML.Div(return_html, cssId, cssClass)
     
@@ -422,11 +422,12 @@ class AutoDocHTML:
             param_name_list.append(param_name)
         #
         signature_list = [HTML.ParamForSignature(param_name) for param_name in param_name_list]
-        signature_html = "({})".format( ", ".join(signature_list) )
+        signature_html = "{}".format( ", ".join(signature_list) )
         
-        param_desc_html = "\n".join(param_desc_html_list).strip()
-        if param_desc_html != "":
-            param_desc_html = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") + param_desc_html
+        param_html = "\n".join(param_desc_html_list).strip()
+        if param_html != "":
+            param_desc_label = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") 
+            param_html = param_desc_label+HTML.Div(param_html,cssClass="redoc-method-params-box") 
             
             
         cssClass = 'redoc-method-container' 
@@ -435,7 +436,7 @@ class AutoDocHTML:
             
         className=firstMethod["itemClass"]
         methodName=firstMethod["itemName"]
-        method_html = HTML.MethodContainer(link,className, methodName, description, signature_html, param_desc_html, return_html, cssClass=cssClass )
+        method_html = HTML.MethodContainer(link,className, methodName, description, signature_html, param_html, return_html, cssClass=cssClass )
         method_html = HTML.Div(method_html, cssClass="redoc-class-method-entry")
         
         return method_html
@@ -463,7 +464,7 @@ class AutoDocHTML:
             paramDescription = [HTML.ParamForDescription(p['itemName'], p['itemType'], p['itemDescription']) for p in paramList]
             
             
-            signature_html = "({})".format( ", ".join(paramSignature) )
+            signature_html = "{}".format( ", ".join(paramSignature) )
             paramsDesc = "\n".join(paramDescription).strip()
             if paramsDesc != "":
                 paramsDesc = HTML.Div("Parameters",cssClass="redoc-method-params-box-title") + paramsDesc
