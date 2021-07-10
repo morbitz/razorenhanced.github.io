@@ -21,17 +21,21 @@ a{
 }
 
 .redoc-page-left, .redoc-page-right{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     vertical-align: top;
     padding: 10px;
 }
 
 .redoc-page-left
 {
-    width: 12em;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+
 }
 .redoc-page-right{
-    width: calc(80em);
+    min-width: 800;
 }
 
 
@@ -41,9 +45,11 @@ a{
 
 
 .redoc-page-container{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
+    
 }
+
 
 #redoc-main-menu{
     display: inline-flex;
@@ -62,7 +68,7 @@ a{
     padding: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
 }
 
 .method-name, .method-signature, .redoc-variable-type, .redoc-variable-name, .method-class-name {
