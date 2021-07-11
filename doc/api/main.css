@@ -174,15 +174,24 @@ a:hover{
     margin-bottom: 10px;
 }
 
+.redoc-method-signature{
+    flex-grow: 1;
+    width: 100%
+}
 
-
-.redoc-permalink, .redoc-method-container{
+.redoc-method-container{
     display: flex;
     flex-direction: row;
     vertical-align: top;
+    
+    
 }
 
 .redoc-permalink{
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+
     text-decoration: none;
     color:rgb(175, 175, 175);
     margin-top: 10px;
