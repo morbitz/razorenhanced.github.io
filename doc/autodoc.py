@@ -86,10 +86,9 @@ def main():
         player_html = adhtml.ClassHTML(className)
         player_html = HTML.LeftRightPage(version+menu,player_html,"{} - RazorEnhanced API".format(className))
         adhtml.WriteToFile(filename, player_html, debug=debug)
-    
-    
-    
+     
 class HTML():
+    # content
     @staticmethod
     def ClassContainer(name, description, properties, contructors, methods, cssId=None, cssClass=None ):
         name_html = HTML.Div(name,cssClass="class-name")
@@ -108,22 +107,11 @@ class HTML():
         
         class_html = HTML.Div(class_content, cssId=cssId, cssClass=cssClass)
         return class_html
-    
-    def PropertiesContainer(name, type, description, cssId=None,  cssClass=None ):
-        if cssClass is None: cssClass = 'redoc-class-property-box'
-        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
-        cssClass = ' class="{}"'.format(cssClass)
-        name_html =  HTML.VariableName(name)
-        type_html =  HTML.VariableType(type)
-        desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-class-property-desc')
-        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html) 
         
     def ConstructorContainer():
         # TODO
         return ""
-        
-        
-# content
+
     @staticmethod
     def MethodContainer(permalink, className, methodName, description, signature, parameters, returns, cssId=None, cssClass=None ):
         permalink_html = HTML.DocPermalink(permalink)
@@ -148,8 +136,42 @@ class HTML():
         class_html = HTML.Div(method_content, cssId=cssId, cssClass=cssClass)
         return class_html
         
+    
+    def PropertiesContainer(className, propName, type, description, cssId=None,  cssClass=None ):
+        if cssClass is None: cssClass = '' # 'redoc-class-property-box'
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        
+        className_html = HTML.Div(className,cssClass="redoc-class-name")
+        propName_html = HTML.PropertyName(propName)
+        
+        name_html = "{}.{}".format(className_html,propName_html)
+        type_html =  HTML.VariableType(type)
+        
+        prop_title_html = HTML.Div(name_html+type_html,cssClass="redoc-property-title")
         
         
+        desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-class-property-desc')
+        
+        box_closed = prop_title_html
+        box_open   = prop_title_html+desc_html
+        
+        return HTML.CollapsableContainer(box_open, box_closed, cssId=cssId, cssClass=cssClass)
+        
+    
+    
+# UI elements  
+    def CollapsableContainer(open_html, closed_html, cssId=None,  cssClass=None ):
+        if cssClass is None: cssClass = ''
+        cssClass += ' redoc-collapsable-container closed-container'
+        #cssClass = ' class="{}"'.format(cssClass)
+        
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        
+        
+        box_closed = HTML.Div(closed_html, cssClass="redoc-collapsable-container-closed")
+        box_open = HTML.Div(open_html, cssClass="redoc-collapsable-container-open")
+        box_html = HTML.Div(box_closed+box_open, cssClass=cssClass)
+        return box_html
         
     
 # pages
@@ -226,6 +248,13 @@ class HTML():
     @staticmethod
     def VariableName(content, cssId=None,  cssClass=None):
         if cssClass is None: cssClass = 'redoc-variable-name'
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = ' class="{}"'.format(cssClass)
+        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
+        
+    @staticmethod
+    def PropertyName(content, cssId=None,  cssClass=None):
+        if cssClass is None: cssClass = 'redoc-property-name'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
         return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
@@ -334,7 +363,7 @@ class AutoDocHTML:
         prop_html_list = []
         for property in propertyList:
             link = self.PermalinkHTML(property["xmlKey"])
-            prop_html = HTML.PropertiesContainer(property['itemName'], property['propertyType'], property['itemDescription'])
+            prop_html = HTML.PropertiesContainer(className,property['itemName'], property['propertyType'], property['itemDescription'])
             prop_html = HTML.Div(link+prop_html, cssClass="redoc-class-property-entry")
             prop_html_list.append(prop_html)
         

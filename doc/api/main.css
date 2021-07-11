@@ -3,6 +3,7 @@
     unicode-bidi: embed;
     text-align: justify;
     color:rgb(75, 75, 75);
+    
 }
 
 a{
@@ -82,26 +83,35 @@ a{
     padding-inline: 2px;
 }
 
-.redoc-variable-name{
-    font-family: 'Courier New', Courier, monospace;
-    color: orange;
+.method-name, .method-class-name, .redoc-class-name, .redoc-property-name, .redoc-property-type, .redoc-variable-name{
+    font-size: 15px;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    vertical-align: baseline;
+}
+
+.redoc-property-name{
+    
+    color: orange;
 }
 
 .redoc-method-container .redoc-variable-name{
     color:rgb(46, 173, 56)  
 }
 
-.method-name, .method-class-name{
-    font-size: 15px;
-}
-
-.method-class-name{
+.method-class-name, .redoc-class-name {
     color: red;
 }
 
 .method-name{
     color: lightskyblue;
+}
+
+.redoc-property-title
+{
+    display: flex;
+    flex-direction: row;    
+    margin-top: 3px;
 }
 
 .redoc-method-params-box-title, .redoc-method-return-box-title{
@@ -161,8 +171,30 @@ a{
     display: inline-block;
     vertical-align: top;
 }
-
+redoc-property-title
 .redoc-permalink{
     text-decoration: none;
     color:rgb(175, 175, 175)
+}
+
+/*open close via css*/
+
+.redoc-property-title{
+    cursor: pointer;
+}
+
+.redoc-collapsable-container.open-container .redoc-collapsable-container-open,
+.redoc-collapsable-container.closed-container .redoc-collapsable-container-closed
+{
+    display: inherit;
+}
+.redoc-collapsable-container.open-container .redoc-collapsable-container-closed,
+.redoc-collapsable-container.closed-container .redoc-collapsable-container-open{
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+
+.redoc-class-property-entry:has( .closed-container ){
+    border: 0px;
 }

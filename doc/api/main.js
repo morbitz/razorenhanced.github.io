@@ -22,10 +22,29 @@ function scrollToAnchor(){
 }
 
 function bindActions(){
-    
+    var titles = document.getElementsByClassName("redoc-property-title");
+    for (let title_num in titles){
+        title = titles[title_num];
+        title.onclick = toggleOpenClose;
+    }
 }
 
-
+function toggleOpenClose(sender){
+    var parent = sender.currentTarget.parentNode;
+    while (parent != null && !parent.classList.contains("redoc-collapsable-container") ) {
+        parent = parent.parentNode;
+    }
+    if (!parent){ return false; }
+    
+    if (parent.classList.contains("open-container")){
+        parent.classList.remove("open-container");
+        parent.classList.add("closed-container");
+    }else if (parent.classList.contains("closed-container")){
+        parent.classList.remove("closed-container");
+        parent.classList.add("open-container");
+    }
+    return true;
+}
 
 
 
