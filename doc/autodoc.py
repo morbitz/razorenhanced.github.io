@@ -88,20 +88,22 @@ def main():
         adhtml.WriteToFile(filename, player_html, debug=debug)
      
 class HTML():
-    # content
+    
+    
+# content
     @staticmethod
     def ClassContainer(name, description, properties, contructors, methods, cssId=None, cssClass=None ):
         name_html = HTML.Div(name,cssClass="class-name")
         description_html = HTML.Div(description,cssClass="class-description")
-        properties_html = "" if len(properties) == 0 else HTML.Div(properties,cssClass="class-properties")
         contructors_html = "" if len(contructors) == 0 else HTML.Div(contructors,cssClass="class-contructors")
+        properties_html = "" if len(properties) == 0 else HTML.Div(properties,cssClass="class-properties")
         methods_html = "" if len(methods) == 0 else HTML.Div(methods,cssClass="class-methods")
         
         class_content = "\n".join([
             name_html,
             description_html,
-            properties_html,
             contructors_html,
+            properties_html,
             methods_html
         ])
         
@@ -119,26 +121,38 @@ class HTML():
         methodName_html = HTML.Div(methodName,cssClass="method-name")
         
         signature_content = "{}.{}({})".format(className_html,methodName_html, signature)
-        signature_html = HTML.Div(signature_content,cssClass="method-signature")
+        signature_html = HTML.Div(signature_content,cssClass="redoc-method-signature")
         
         description_html = "" if len(description) == 0 else HTML.Div(description,cssClass="method-description")
         parameters_html = "" if len(parameters) == 0 else HTML.Div(parameters,cssClass="method-parameters")
         returns_html = "" if len(returns) == 0 else HTML.Div(returns,cssClass="method-returns")
         
-        method_content = "\n".join([
-            permalink_html,
-            signature_html,
+        icon_open_html = HTML.IconExpand()
+        icon_close_html = HTML.IconCollapse()
+        
+        signature_content = "{}.{}({})".format(className_html,methodName_html, signature)
+        signature_closed_html = HTML.Div(icon_open_html+signature_content,cssClass="redoc-method-signature")
+        signature_open_html = HTML.Div(icon_close_html+signature_content, cssClass="redoc-property-title")
+        
+        method_content_open = "\n".join([
+            signature_open_html,
             description_html,
             parameters_html,
             returns_html
         ])
+     
         
-        class_html = HTML.Div(method_content, cssId=cssId, cssClass=cssClass)
-        return class_html
+        box_closed = signature_closed_html
+        box_open   = method_content_open
+        
+        method_content = HTML.CollapsableContainer(box_open, box_closed)
+        
+        method_html = HTML.Div(method_content, cssId=cssId, cssClass=cssClass)
+        return permalink_html+method_html
         
     
     def PropertiesContainer(className, propName, type, description, cssId=None,  cssClass=None ):
-        if cssClass is None: cssClass = '' # 'redoc-class-property-box'
+        if cssClass is None: cssClass = 'redoc-property-container'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         
         className_html = HTML.Div(className,cssClass="redoc-class-name")
@@ -147,17 +161,24 @@ class HTML():
         name_html = "{}.{}".format(className_html,propName_html)
         type_html =  HTML.VariableType(type)
         
-        prop_title_html = HTML.Div(name_html+type_html,cssClass="redoc-property-title")
+        icon_open_html = HTML.IconExpand()
+        prop_title_closed_content = icon_open_html+name_html+type_html
+        prop_title_closed_html = HTML.Div(prop_title_closed_content, cssClass="redoc-property-title")
+        
+        icon_close_html = HTML.IconCollapse()
+        prop_title_open_content = icon_close_html+name_html+type_html
+        prop_title_open_html = HTML.Div(prop_title_open_content, cssClass="redoc-property-title")
         
         
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-class-property-desc')
         
-        box_closed = prop_title_html
-        box_open   = prop_title_html+desc_html
+        box_closed = prop_title_closed_html
+        box_open   = prop_title_open_html+desc_html
         
-        return HTML.CollapsableContainer(box_open, box_closed, cssId=cssId, cssClass=cssClass)
+        property_content = HTML.CollapsableContainer(box_open, box_closed)
         
-    
+        return HTML.Div(property_content, cssId=cssId, cssClass=cssClass)
+        
     
 # UI elements  
     def CollapsableContainer(open_html, closed_html, cssId=None,  cssClass=None ):
@@ -179,9 +200,10 @@ class HTML():
     
     @staticmethod
     def BasePage(body, title=""):
+        css_html_fa = HTML.CSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css")
         css_html = HTML.CSS("./main.css")
         js_html = HTML.JS("./main.js")
-        header_html = css_html +"\n"+ js_html
+        header_html = css_html_fa +"\n"+ css_html +"\n"+ js_html
         body_html = HTML.Div(body,cssClass="redoc-page-container")
         
         return HTML.EmptyPage(body_html, title, header_html)
@@ -190,11 +212,10 @@ class HTML():
     @staticmethod
     def EmptyPage(body,title="",header=""):
         title_html = "" if len(title)==0 else "\n<title>{}</title>\n".format(title)
-        header_html = "" if (len(header)==0 and len(title_html)==0) else "\n<header>{}\n{}\n</header>\n".format(title_html,header)
+        header_html = "" if (len(header)==0 and len(title_html)==0) else "\n<head>{}\n{}\n</head>\n".format(title_html,header)
         body_html = "" if len(body)==0 else "\n<body>\n{}\n</body>\n".format(body)
         return '<!Doctype html>{}{}</html>'.format(header_html, body_html)
     
-# LAYOUT
     @staticmethod
     def LeftRightPage(left_content, right_content, title=""):
         left_html = HTML.Div(left_content,cssClass="redoc-page-left")
@@ -202,7 +223,7 @@ class HTML():
         body = left_html + right_html
         
         return HTML.BasePage(body, title)
-    
+
         
 # sub-elements
     
@@ -278,12 +299,26 @@ class HTML():
         cssClass = ' class="{}"'.format(cssClass)
         return '<div{}{}><a href="./index.html">RE API v{}</a></div>'.format(cssId, cssClass, version)
         
-    def DocPermalink(url, content='&#x1F517', cssClass=None):
+    @staticmethod
+    def DocPermalink(url, content=None, cssClass=None):
+        content = HTML.IconLink() if content is None else content
         link = ' href="#{}"'.format(url)
         cssId = ' id="{}"'.format(url)
-        cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
+        if cssClass is None: cssClass = 'redoc-permalink' 
+        cssClass =  '' if cssClass is '' else ' class="{}"'.format(cssClass)
         return '<a{}{}{}>{}</a>'.format(cssId, cssClass, link, content)
         
+    @staticmethod
+    def IconLink():
+        return '<i class="redoc-icon-link fas fa-link "></i>'
+        
+    @staticmethod    
+    def IconExpand():
+        return '<i class="redoc-icon-expand fas fa-angle-down "></i>'
+        
+    @staticmethod
+    def IconCollapse():
+        return '<i class="redoc-icon-collapse fas fa-angle-up"></i>'     
         
 # base html elements
     @staticmethod

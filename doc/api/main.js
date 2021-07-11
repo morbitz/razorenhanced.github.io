@@ -27,6 +27,12 @@ function bindActions(){
         title = titles[title_num];
         title.onclick = toggleOpenClose;
     }
+    
+    var titles = document.getElementsByClassName("redoc-method-signature");
+    for (let title_num in titles){
+        title = titles[title_num];
+        title.onclick = toggleOpenClose;
+    }
 }
 
 function toggleOpenClose(sender){

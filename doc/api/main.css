@@ -2,15 +2,21 @@
     font-family: monospace;
     unicode-bidi: embed;
     text-align: justify;
-    color:rgb(75, 75, 75);
-    
+    color: white;
+    background-color:rgb(35, 35, 35);
 }
+
+/* #f0f0f0; */
 
 a{
     text-decoration: none;
-    border: 1px solid #f0f0f0;
+    border: 2px solid rgb(50, 50, 50);
     margin: 1px;
-    color: darkblue;
+    color: white;
+}
+
+a:hover{
+    color: red;
 }
 
 
@@ -22,7 +28,7 @@ a{
 }
 
 .redoc-page-left, .redoc-page-right{
-    display: flex;
+    display: flexbox;
     flex-direction: row;
     vertical-align: top;
     padding: 10px;
@@ -36,7 +42,8 @@ a{
 
 }
 .redoc-page-right{
-    min-width: 800;
+    max-width: 1200px;
+    flex-grow: 1;
 }
 
 
@@ -49,6 +56,7 @@ a{
     display: flex;
     flex-direction: row;
     
+
 }
 
 
@@ -63,20 +71,37 @@ a{
     display: list-item;
 }
 
-
-.redoc-method-container{
-    border: 1px solid rgb(75, 75, 75);
-    padding: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    width: 100%;
+.redoc-class-property-entry, .redoc-class-method-entry{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%
 }
 
-.method-name, .method-signature, .redoc-variable-type, .redoc-variable-name, .method-class-name {
+.redoc-method-container, .redoc-property-container{
+    display: flex;
+    align-items: flex-start;
+    margin: 2px;
+    width: 100%; 
+    
+} 
+.redoc-collapsable-container{
+    border: 1px solid transparent;
+    width: 100%;
+    padding: 5px;
+}
+
+.redoc-collapsable-container:hover{
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.method-name, .redoc-method-signature, .redoc-variable-type, .redoc-variable-name, .method-class-name {
     display: inline-flex;
     vertical-align: baseline;
     padding: 0px;
+    padding-top: 2px;
 }
+
 
 .redoc-variable-name, .redoc-variable-type{
     display: inline-block;
@@ -143,22 +168,6 @@ a{
     margin-left: 20px;
 }
 
-.redoc-method-params{
-    margin: 5px;
-}
-
-.redoc-class-property-entry{
-    display: flex;
-    align-items: flex-start;
-    border: 1px solid rgb(75, 75, 75);
-    margin: 5px;
-    padding: 5px;
-}
-
-.redoc-property-box{
-    padding: 10px;
-}
-
 
 .redoc-property-box-title, .redoc-method-box-title {
     font-size: 20px;    
@@ -168,18 +177,21 @@ a{
 
 
 .redoc-permalink, .redoc-method-container{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     vertical-align: top;
 }
-redoc-property-title
+
 .redoc-permalink{
     text-decoration: none;
-    color:rgb(175, 175, 175)
+    color:rgb(175, 175, 175);
+    margin-top: 10px;
+    border: none;
 }
 
 /*open close via css*/
 
-.redoc-property-title{
+.redoc-property-title, .redoc-method-signature{
     cursor: pointer;
 }
 
@@ -195,6 +207,17 @@ redoc-property-title
     height: 0px;
 }
 
-.redoc-class-property-entry:has( .closed-container ){
-    border: 0px;
+
+.redoc-collapsable-container.open-container{
+    border: 1px solid rgb(75, 75, 75);
+}
+
+
+
+/*Icons*/
+
+.redoc-icon-link, .redoc-icon-expand, .redoc-icon-collapse{
+    width: 20px;
+    height: 20px;
+    color: white;
 }
