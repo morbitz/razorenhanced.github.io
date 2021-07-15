@@ -1,4 +1,4 @@
-Steps to Setup using Visual Studio Code (VSC) as the Editor for Enhanced Razor (ER) scripts.
+# RE Autocomplete for Visual Studio Code Setup
 This info comes from entries in Discord, and links to sites mentioned in Discord
 1. INSTALL VISUAL STUDIO CODE.   You can download the software here.   
     https://code.visualstudio.com/  Or any other location you find.
