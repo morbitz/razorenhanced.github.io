@@ -1,4 +1,7 @@
 # RE Autocomplete for Visual Studio Code Setup
+
+Author: HeelYes#0441
+
 This info comes from entries in Discord, and links to sites mentioned in Discord
 1. INSTALL VISUAL STUDIO CODE.   You can download the software here.   
     https://code.visualstudio.com/  Or any other location you find.
@@ -55,3 +58,4 @@ from AutoComplete import *
 ```
 
 13. I was able to add the …\RazorEnh\Scripts folder to the VSC Explorer by using File>Open Folder.
+
