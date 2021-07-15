@@ -1,6 +1,6 @@
 # RE Autocomplete for Visual Studio Code Setup
 
-Author: HeelYes#0441
+**Author: HeelYes#0441**
 
 This info comes from entries in Discord, and links to sites mentioned in Discord
 1. INSTALL VISUAL STUDIO CODE.   You can download the software here.   
