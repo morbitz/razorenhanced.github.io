@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <item>
-  <version>0.8.0.58</version>
+  <version>0.8.0.59</version>
   <url>
-    https://github.com/RazorEnhanced/RazorEnhanced/releases/download/v0.8.0.58/RazorEnhanced-0.8.0.58.zip    
+    https://github.com/RazorEnhanced/RazorEnhanced/releases/download/v0.8.0.59/RazorEnhanced-0.8.0.59.zip    
   </url>
   <changelog>https://raw.githubusercontent.com/RazorEnhanced/razorenhanced.github.io/main/changelog.html</changelog>
   <mandatory>false</mandatory>
