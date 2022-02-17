@@ -57,11 +57,9 @@ def main():
     ## SETTINGS
     
     debug=True
-    # Write to your Script/Docs/ folder
-    output_path = Misc.CurrentScriptDirectory() + "/Docs/"
-    # or write to a specific folder:
-    output_path = "C:/Users/Cesare/Projects/razorenhanced.github.io/doc/api/"
     
+    # Write to your Script/Docs/ folder
+    output_path = Misc.ScriptDirectory() + "/doc/api/"
     
     ## RUN 
     
