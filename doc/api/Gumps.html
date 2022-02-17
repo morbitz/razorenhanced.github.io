@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.38</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.89</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -40,6 +40,7 @@
 <a class="redoc-main-menu-entry" href="./Restock.html">Restock</a>
 <a class="redoc-main-menu-entry" href="./Scavenger.html">Scavenger</a>
 <a class="redoc-main-menu-entry" href="./SellAgent.html">SellAgent</a>
+<a class="redoc-main-menu-entry" href="./Sound.html">Sound</a>
 <a class="redoc-main-menu-entry" href="./Spells.html">Spells</a>
 <a class="redoc-main-menu-entry" href="./Statics.html">Statics</a>
 <a class="redoc-main-menu-entry" href="./Statics.TileInfo.html">Statics.TileInfo</a>
@@ -254,6 +255,10 @@ For this purpose, can be particularly usefull to use *Inspect Gumps* and *Record
 <div class="method-description">Get status if have a gump open or not.</div>
 
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: There is a Gump open - False: otherwise.</div></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Gumps-IsValid" class="redoc-permalink" href="#M-Gumps-IsValid"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Gumps</div>.<div class="method-name">IsValid</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">gumpId</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Gumps</div>.<div class="method-name">IsValid</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">gumpId</div></span>)</div>
+<div class="method-description">Validates if the gumpid provided exists in the gump file</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">gumpId</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">The id of the gump to check for in the gumps.mul file</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Boolean</div><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Gumps-LastGumpGetLine" class="redoc-permalink" href="#M-Gumps-LastGumpGetLine"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Gumps</div>.<div class="method-name">LastGumpGetLine</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">line_num</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Gumps</div>.<div class="method-name">LastGumpGetLine</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">line_num</div></span>)</div>
 <div class="method-description">Get a specific line from the most recent and still open Gump. Filter by line number.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">line_num</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Number of the line.</div></div></div></div>
@@ -315,6 +320,6 @@ For this purpose, can be particularly usefull to use *Inspect Gumps* and *Record
 <div class="method-description">Waits for a specific Gump to appear, for a maximum amount of time. If gumpid is 0 it will match any Gump.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">gumpid</div><div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">ID of the gump. (0: any)</div></div>
 <div class="redoc-method-params"><div class="redoc-variable-name">delay</div><div class="redoc-variable-type">Int32</div><div class="redoc-method-params-desc">Maximum wait, in milliseconds.</div></div></div></div>
-<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div></div></div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Boolean</div><div class="redoc-method-return-desc">True: wait found the gump - False: otherwise.</div></div></div></div></div></div></div></div></div></div></div></div></div>
 </body>
 </html>
