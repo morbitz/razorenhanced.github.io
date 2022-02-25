@@ -7,8 +7,9 @@ This info comes from entries in Discord, and links to sites mentioned in Discord
     https://code.visualstudio.com/  Or any other location you find.
         1.1 Took defaults on Select Additional Task
         1.2 Install.  Installed into …\VSCode\
-        1.3 Launch VSC
-
+        1.3 Laun.
+         ch  VSC
+  
 2. INSTALL THE PYTHON PACKAGE FOR VS CODE you can download it here
     https://marketplace.visualstudio.com/items?itemName=ms-python.python
     a. This includes Python Language, Pylance and Jupyter
