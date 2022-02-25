@@ -48,10 +48,10 @@ Try to comment/uncomment the line of code of the "import", you should see the co
 
 ## 9. In the Scripting Tab of ER, Add the file you created in the ER Script folder    
 
-## 10 .In the …\RazorEnh\Lib directory, create a file named AutoComplete.py, and paste:     
-    - Empty shell to allow from AutoComplete import * to work.    
-    - Save the file.    
-    - This allows ER to find an empty AutoComplete.py file and not kick out an error, while still allowing VSC to find the AutoComplete.py file in the ER Config folder.    
+## 10. In the …\RazorEnhanced\Lib directory
+- create a empty file named AutoComplete.py
+- Save the file.    
+This allows RE to find an empty AutoComplete.py file and not trigger an error, while still allowing VSC to find the AutoComplete.py file in the RE Config folder.    
 
 ## 11. Test the execution of the test file that was created in VSC, and make sure it runs successfully in ER.    
     
