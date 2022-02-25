@@ -42,8 +42,8 @@ Misc.SendMessage("Test MSC. AutoComplete working!", 33)
 ```
 
 ## 7. Verify that Intellisense is working
-Check for some of the RE API, like Player or like Misc.SendMessage.     
-Try to comment/uncomment the line of code of the "import", you should see the colors change on the Misc.SendMessage line, as the Intellisense is applied and removed.    
+- Check for some of the RE API, like Player or like Misc.SendMessage.     
+- Try to comment/uncomment the line of code of the "import", you should see the colors change on the Misc.SendMessage line, as the Intellisense is applied and removed.    
 
 ## 8. Save the file into your ER Script folder.    
 
@@ -52,7 +52,7 @@ Try to comment/uncomment the line of code of the "import", you should see the co
 ## 10. In the …\RazorEnhanced\Lib directory
 - create a empty file named AutoComplete.py
 - Save the file.    
-This allows RE to find an empty AutoComplete.py file and not trigger an error, while still allowing VSC to find the AutoComplete.py file in the RE Config folder.    
+- This allows RE to find an empty AutoComplete.py file and not trigger an error, while still allowing VSC to find the AutoComplete.py file in the RE Config folder.    
 
 ## 11. Test the execution of the test file that was created in VSC, and make sure it runs successfully in ER.    
     
@@ -61,5 +61,5 @@ This allows RE to find an empty AutoComplete.py file and not trigger an error, w
 from AutoComplete import *    
 ```    
 
-## 13. I was able to add the …\RazorEnh\Scripts folder to the VSC Explorer by using File>Open Folder.
+## 13. I was able to add the …\RazorEnhanced\Scripts folder to the VSC Explorer by using File>Open Folder.
 
