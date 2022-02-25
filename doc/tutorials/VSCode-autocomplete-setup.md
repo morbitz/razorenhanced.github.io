@@ -12,27 +12,27 @@ This info comes from entries in Discord, and links to sites mentioned in Discord
   
 2. INSTALL THE PYTHON PACKAGE FOR VS CODE you can download it here
     https://marketplace.visualstudio.com/items?itemName=ms-python.python
-    a. This includes Python Language, Pylance and Jupyter
+    - This includes Python Language, Pylance and Jupyter
 
 3. DOWNLOAD THE IRONPYTHON STUBS FROM @Gui_Talarico github.  
-    1. Unziped the files into …\VSCode\ironpython-stubs-master
+    - Unziped the files into …\VSCode\ironpython-stubs-master
 
 4. Restart VSC (Alt-F4 to close)
 
-5. CONFIGURE JSON SETTINGS IN VSC
-    a. In VSC  file > Preferences > Settings (or Ctrl+comma if you’re on windows 10).    
-    b. Under the Settings tab, enter “python.autoComplete.extraPaths” into the Search Settings box (no quotes).    
-        i.    Click on the “Edit in settings.json” link/button.    
-        ii.    Add the following into the line provided:  "…\\VSCode\\ironpython-stubs-master".    
-        iii.    Use the full path for your environment, include the quotes and double slashes.    
-        iv.    Hit CTRL-S to save the changes.    
-        v.    Close the “settings.json” editor.    
-    c.    Click on the “Clear Setting Search Input” icon that is on the far right of the Search Box.    
-    d.    Under the Settings tab, enter “python.analysis.extraPaths” into the Search Settings box (no quotes).    
-        1. In the String Item area, add the following: ...\RazorEnh\Config     
-        2. Use the full path for your environment, no quotes, no double \    
-        3. Click the OK button.    
-    e. Hit CTRL+S to save the changes, then ALT+F4 to exit VSC, then restart VSC.    
+5. CONFIGURE JSON SETTINGS IN VSC      
+    5.1 In VSC  file > Preferences > Settings (or Ctrl+comma if you’re on windows 10).    
+    5.2 Under the Settings tab, enter “python.autoComplete.extraPaths” into the Search Settings box (no quotes).    
+        - Click on the “Edit in settings.json” link/button.    
+        - Add the following into the line provided:  "…\\VSCode\\ironpython-stubs-master".    
+        - Use the full path for your environment, include the quotes and double slashes.    
+        - Hit CTRL-S to save the changes.    
+        - Close the “settings.json” editor.    
+    5.3 Click on the “Clear Setting Search Input” icon that is on the far right of the Search Box.    
+    5.4 Under the Settings tab, enter “python.analysis.extraPaths” into the Search Settings box (no quotes).    
+        - In the String Item area, add the following: ...\RazorEnh\Config     
+        - Use the full path for your environment, no quotes, no double \    
+        - Click the OK button.    
+    5.5 Hit CTRL+S to save the changes, then ALT+F4 to exit VSC, then restart VSC.    
 
 6. Open a new file and add the following code (Test File to verify from)    
 ```py
