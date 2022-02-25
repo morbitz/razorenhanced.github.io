@@ -3,18 +3,19 @@
 **Author: HeelYes#0441**
 
 This info comes from entries in Discord, and links to sites mentioned in Discord
-## 1. INSTALL VISUAL STUDIO CODE (VSC).   You can download the software here.   
-    https://code.visualstudio.com/  Or any other location you find.
-        1.1 Took defaults on Select Additional Task
-        1.2 Install. (ex: Instal path c:\program files\VSCode\ )
-        1.3 Launch VSC
+## 1. INSTALL VISUAL STUDIO CODE (VSC).   
+- Download the software here: https://code.visualstudio.com/ 
+- Took defaults on Select Additional Task
+- Install. (ex: Install path C:/program files/VSCode/ )
+- Launch VSC
   
-## 2. INSTALL THE PYTHON PACKAGE FOR VS CODE you can download it here
-    https://marketplace.visualstudio.com/items?itemName=ms-python.python
-    - This includes Python Language, Pylance and Jupyter
+## 2. INSTALL THE PYTHON PACKAGE FOR VS CODE 
+- Download the add-one: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- This includes Python Language, Pylance and Jupyter
 
-## 3. DOWNLOAD THE IRONPYTHON STUBS FROM @Gui_Talarico github.  
-    - Unziped the files into …\VSCode\ironpython-stubs-master
+## 3. ADD ITONPYTHON TYPEINGS
+- Download the IronPython stubs from @Gui_Talarico github: https://github.com/gtalarico/ironpython-stubs 
+- Unziped the files into /VSCode/ironpython-stubs-master
 
 ## 4. Restart VSC (Alt-F4 to close)
 
