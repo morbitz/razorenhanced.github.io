@@ -2,24 +2,25 @@
 
 **Author: HeelYes#0441**
 
-This info comes from entries in Discord, and links to sites mentioned in Discord
-## 1. INSTALL VISUAL STUDIO CODE (VSC).   
+This info comes from entries in Discord, and links to sites mentioned in Discord    
+
+## 1. Install Visual Studio Code (VSC).   
 - Download the software here: https://code.visualstudio.com/ 
 - Took defaults on Select Additional Task
 - Install. (ex: Install path C:/program files/VSCode/ )
 - Launch VSC
   
-## 2. INSTALL THE PYTHON PACKAGE FOR VS CODE 
+## 2. Install the Python Package for VSC
 - Download the add-one: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 - This includes Python Language, Pylance and Jupyter
 
-## 3. ADD ITONPYTHON TYPEINGS
+## 3. Add IronPython Typings
 - Download the IronPython stubs from @Gui_Talarico github: https://github.com/gtalarico/ironpython-stubs 
 - Unziped the files into /VSCode/ironpython-stubs-master
 
 ## 4. Restart VSC (Alt-F4 to close)
 
-## 5. CONFIGURE JSON SETTINGS IN VSC      
+## 5. Configure json settings in VSC      
 - In VSC  file > Preferences > Settings (or Ctrl+comma if you’re on windows 10).    
 - Under the Settings tab, enter “python.autoComplete.extraPaths” into the Search Settings box (no quotes).    
   - Click on the “Edit in settings.json” link/button.    
