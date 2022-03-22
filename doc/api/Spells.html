@@ -1,0 +1,375 @@
+<!Doctype html>
+<head>
+<title>Spells - RazorEnhanced API</title>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="./main.css">
+<script src="./main.js"></script>
+</head>
+
+<body>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.0.89</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
+<a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
+<a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
+<a class="redoc-main-menu-entry" href="./DPSMeter.html">DPSMeter</a>
+<a class="redoc-main-menu-entry" href="./Dress.html">Dress</a>
+<a class="redoc-main-menu-entry" href="./Friend.html">Friend</a>
+<a class="redoc-main-menu-entry" href="./Gumps.html">Gumps</a>
+<a class="redoc-main-menu-entry" href="./Gumps.GumpData.html">Gumps.GumpData</a>
+<a class="redoc-main-menu-entry" href="./HotKeyEvent.html">HotKeyEvent</a>
+<a class="redoc-main-menu-entry" href="./Item.html">Item</a>
+<a class="redoc-main-menu-entry" href="./Items.html">Items</a>
+<a class="redoc-main-menu-entry" href="./Items.Filter.html">Items.Filter</a>
+<a class="redoc-main-menu-entry" href="./Journal.html">Journal</a>
+<a class="redoc-main-menu-entry" href="./Journal.JournalEntry.html">Journal.JournalEntry</a>
+<a class="redoc-main-menu-entry" href="./Misc.html">Misc</a>
+<a class="redoc-main-menu-entry" href="./Misc.Context.html">Misc.Context</a>
+<a class="redoc-main-menu-entry" href="./Misc.MapInfo.html">Misc.MapInfo</a>
+<a class="redoc-main-menu-entry" href="./Mobile.html">Mobile</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.html">Mobiles</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.Filter.html">Mobiles.Filter</a>
+<a class="redoc-main-menu-entry" href="./Mobiles.TrackingInfo.html">Mobiles.TrackingInfo</a>
+<a class="redoc-main-menu-entry" href="./Organizer.html">Organizer</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.html">PathFinding</a>
+<a class="redoc-main-menu-entry" href="./PathFinding.Route.html">PathFinding.Route</a>
+<a class="redoc-main-menu-entry" href="./Player.html">Player</a>
+<a class="redoc-main-menu-entry" href="./Point2D.html">Point2D</a>
+<a class="redoc-main-menu-entry" href="./Point3D.html">Point3D</a>
+<a class="redoc-main-menu-entry" href="./Property.html">Property</a>
+<a class="redoc-main-menu-entry" href="./Restock.html">Restock</a>
+<a class="redoc-main-menu-entry" href="./Scavenger.html">Scavenger</a>
+<a class="redoc-main-menu-entry" href="./SellAgent.html">SellAgent</a>
+<a class="redoc-main-menu-entry" href="./Sound.html">Sound</a>
+<a class="redoc-main-menu-entry" href="./Spells.html">Spells</a>
+<a class="redoc-main-menu-entry" href="./Statics.html">Statics</a>
+<a class="redoc-main-menu-entry" href="./Statics.TileInfo.html">Statics.TileInfo</a>
+<a class="redoc-main-menu-entry" href="./Target.html">Target</a>
+<a class="redoc-main-menu-entry" href="./Tile.html">Tile</a>
+<a class="redoc-main-menu-entry" href="./Timer.html">Timer</a>
+<a class="redoc-main-menu-entry" href="./Vendor.html">Vendor</a>
+<a class="redoc-main-menu-entry" href="./Vendor.BuyItem.html">Vendor.BuyItem</a></div></div><div class="redoc-page-right"><div id="redoc-class-" class="redoc-class"><div class="class-name">Spells</div>
+<div class="class-description">The Spells class allow you to cast any spell and use abilities, via scripting.</div>
+<div class="class-contructors">TODO: Spells Constructors</div>
+
+<div class="class-methods"><div class="redoc-method-box-title">Methods</div><div class="redoc-method-box"><div class="redoc-class-method-entry"><a id="M-Spells-Cast" class="redoc-permalink" href="#M-Spells-Cast"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">Cast</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast spell using the spell name. See the skill-specific functions to get the full list of spell names.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Name of the spell to cast.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastBushido" class="redoc-permalink" href="#M-Spells-CastBushido"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastBushido</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastBushido</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Bushido spell using the spell name.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Honorable Execution
+Confidence
+Counter Attack
+Lightning Strike
+Evasion
+Momentum Strike</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastChivalry" class="redoc-permalink" href="#M-Spells-CastChivalry"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastChivalry</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Chivalry spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+Pain Spike
+Corpse Skin
+Evil Omen
+Blood Oath
+Wraith Form
+Mind Rot
+Summon Familiar
+Horrific Beast
+Animate Dead
+Poison Strike
+Wither
+Strangle
+Lich Form
+Exorcism
+Vengeful Spirit
+Vampiric Embrace</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastCleric" class="redoc-permalink" href="#M-Spells-CastCleric"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastCleric</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Cleric spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Bark Skin : Turns the druid's skin to bark, increasing physical, poison and energy resistence while reducing fire resistence.
+Circle Of Thorns : Creates a ring of thorns preventing an enemy from moving.
+Deadly Spores : The enemy is afflicted by poisonous spores.
+Enchanted Grove : Causes a grove of magical trees to grow, hiding the player for a short time.
+Firefly : Summons a tiny firefly to light the Druid's path. The Firefly is a weak creature with little or no combat skills.
+Forest Kin : Summons from a list of woodland spirits that will fight for the druid and assist him in different ways.
+Grasping Roots : Summons roots from the ground to entangle a single target.
+Hibernate : Causes the target to go to sleep.
+Hollow Reed : Increases both the strength and the intelligence of the Druid.
+Hurricane : Calls forth a violent hurricane that damages any enemies within range.
+Lure Stone : Creates a magical stone that calls all nearby animals to it.
+Mana Spring : Creates a magical spring that restores mana to the druid and any party members within range.
+Mushroom Gateway : A magical circle of mushrooms opens, allowing the Druid to step through it to another location.
+Pack Of Beasts : Summons a pack of beasts to fight for the Druid. Spell length increases with skill.
+Restorative Soil : Saturates a patch of land with power, causing healing mud to seep through . The mud can restore the dead to life.
+Shield Of Earth : A quick-growing wall of foliage springs up at the bidding of the Druid.
+Spring Of Life : Creates a magical spring that heals the Druid and their party.
+Swarm Of Insects : Summons a swarm of insects that bite and sting the Druid's enemies.
+Treefellow : Summons a powerful woodland spirit to fight for the Druid.
+Volcanic Eruption : A blast of molten lava bursts from the ground, hitting every enemy nearby.</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastDruid" class="redoc-permalink" href="#M-Spells-CastDruid"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastDruid</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Druid spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Angelic Faith : Turns you into an angel, boosting your stats. At 100 Spirit Speak you get +20 Str/Dex/Int. Every 5 points of SS = +1 point to each stat, at a max of +24. Will also boost your Anatomy, Mace Fighting and Healing, following the same formula.
+Banish Evil : Banishes Undead targets. Auto kills rotting corpses, lich lords, etc. Works well at Doom Champ. Does not produce a corpse however
+Dampen Spirit : Drains the stamina of your target, according to the description
+Divine Focus : Heal for more, but may be broken.
+Hammer of Faith : Summons a War Hammer with Undead Slayer on it for you
+Purge : Cleanses Poison. Better than Cure
+Restoration : Resurrection. Brings the target back with 100% HP/Mana
+Sacred Boon : A HoT, heal over time spell, that heals 10-15 every few seconds
+Sacrifice : Heals your party members when you take damage. Sort of like thorns, but it heals instead of hurts
+Smite : Causes energy damage
+Touch of Life : Heals even if Mortal Strike or poison are active on the target
+Trial by Fire : Attackers receive damage when they strike you, sort of like a temporary RPD buff</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">target to use the druid spell on</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastLastSpell" class="redoc-permalink" href="#M-Spells-CastLastSpell"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpell</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast again the last casted spell, on last target.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">Boolean</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastLastSpellLastTarget" class="redoc-permalink" href="#M-Spells-CastLastSpellLastTarget"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpellLastTarget</div>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastLastSpellLastTarget</div>()</div>
+<div class="method-description">Cast again the last casted spell, on last target.</div>
+
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastMagery" class="redoc-permalink" href="#M-Spells-CastMagery"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMagery</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Magery spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Clumsy
+Create Food
+Feeblemind
+Heal
+Magic Arrow
+Night Sight
+Reactive Armor
+Weaken
+Agility
+Cunning
+Cure
+Harm
+Magic Trap
+Magic Untrap
+Protection
+Strength
+Bless
+Fireball
+Magic Lock
+Poison
+Telekinesis
+Teleport
+Unlock
+Wall of Stone
+Arch Cure
+Arch Protection
+Curse
+Fire Field
+Greater Heal
+Lightning
+Mana Drain
+Recall
+Blade Spirits
+Dispel Field
+Incognito
+Magic Reflection
+Mind Blast
+Paralyze
+Poison Field
+Summon Creature
+Dispel
+Energy Bolt
+Explosion
+Invisibility
+Mark
+Mass Curse
+Paralyze Field
+Reveal
+Chain Lightning
+Energy Field
+Flamestrike
+Gate Travel
+Mana Vampire
+Mass Dispel
+Meteor Swarm
+Polymorph
+Earthquake
+Energy Vortex
+Resurrection
+Summon Air Elemental
+Summon Daemon
+Summon Earth Elemental
+Summon Fire Elemental
+Summon Water Elemental</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastMastery" class="redoc-permalink" href="#M-Spells-CastMastery"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMastery</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Mastery spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Inspire
+Invigorate
+Resilience
+Perseverance
+Tribulation
+Despair
+Death Ray
+Ethereal Blast
+Nether Blast
+Mystic Weapon
+Command Undead
+Conduit
+Mana Shield
+Summon Reaper
+Enchanted Summoning
+Anticipate Hit
+Warcry
+Intuition
+Rejuvenate
+Holy Fist
+Shadow
+White Tiger Form
+Flaming Shot
+Playing The Odds
+Thrust
+Pierce
+Stagger
+Toughness
+Onslaught
+Focused Eye
+Elemental Fury
+Called Shot
+Saving Throw
+Shield Bash
+Bodyguard
+Heighten Senses
+Tolerance
+Injected Strike
+Potency
+Rampage
+Fists Of Fury
+Knockout
+Whispering
+Combat Training
+Boarding</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastMysticism" class="redoc-permalink" href="#M-Spells-CastMysticism"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastMysticism</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Mysticism spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animated Weapon
+Healing Stone
+Purge
+Enchant
+Sleep
+Eagle Strike
+Stone Form
+SpellTrigger
+Mass Sleep
+Cleansing Winds
+Bombard
+Spell Plague
+Hail Storm
+Nether Cyclone
+Rising Colossus</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastNecro" class="redoc-permalink" href="#M-Spells-CastNecro"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastNecro</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Necromany spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Curse Weapon
+Pain Spike
+Corpse Skin
+Evil Omen
+Blood Oath
+Wraith Form
+Mind Rot
+Summon Familiar
+Horrific Beast
+Animate Dead
+Poison Strike
+Wither
+Strangle
+Lich Form
+Exorcism
+Vengeful Spirit
+Vampiric Embrace</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastNinjitsu" class="redoc-permalink" href="#M-Spells-CastNinjitsu"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastNinjitsu</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Ninjitsu spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Animal Form
+Backstab
+Surprise Attack
+Mirror Image
+Shadow jump
+Focus Attack
+Ki Attack</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-CastSpellweaving" class="redoc-permalink" href="#M-Spells-CastSpellweaving"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">CastSpellweaving</div>(<span class="redoc-method-params-sign"><div class="redoc-variable-name">SpellName</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">target</div></span>, <span class="redoc-method-params-sign"><div class="redoc-variable-name">wait</div></span>)</div>
+<div class="method-description">Cast a Spellweaving spell using the spell name.
+Optionally is possible to specify the Mobile or a Serial as target of the spell. Upon successful casting, the target will be executed automatiaclly by the server.
+NOTE: The "automatic" target is not supported by all shards, but you can restort to the Target class to handle it manually.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><div class="redoc-method-params"><div class="redoc-variable-name">SpellName</div><div class="redoc-variable-type">String</div><div class="redoc-method-params-desc">Arcane Circle
+Gift Of Renewal
+Immolating Weapon
+Attune Weapon
+Thunderstorm
+Natures Fury
+Summon Fey
+Summoniend
+Reaper Form
+Wildfire
+Essence Of Wind
+Dryad Allure
+Ethereal Voyage
+Word Of Death
+Gift Of Life
+Arcane Empowerment</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">target</div><div class="redoc-variable-type">Mobile</div>
+<div class="redoc-variable-type">UInt32</div><div class="redoc-method-params-desc">Optional: Serial or Mobile to target (default: null)</div></div>
+<div class="redoc-method-params"><div class="redoc-variable-name">wait</div><div class="redoc-variable-type">Boolean</div><div class="redoc-method-params-desc">Optional: Wait server to confirm. (default: True)</div></div></div></div>
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div>
+<div class="redoc-class-method-entry"><a id="M-Spells-Interrupt" class="redoc-permalink" href="#M-Spells-Interrupt"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><div class="method-class-name">Spells</div>.<div class="method-name">Interrupt</div>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><div class="method-class-name">Spells</div>.<div class="method-name">Interrupt</div>()</div>
+<div class="method-description">Interrupt the casting of a spell by performing an equip/unequip.</div>
+
+<div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><div class="redoc-variable-type">Void</div><br/></div></div></div></div></div></div></div></div></div></div></div></div>
+</body>
+</html>

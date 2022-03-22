@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <title>Razor Enhanced Project - Utima Online Assistant</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <style>
+    .btn {
+    background-color: DarkRed;
+    border: none;
+    color: white;
+    padding: 2px 3px;
+    cursor: pointer;
+    font-size: 15px;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+    background-color: Gray;
+    }
+    .btn-gray {
+    background-color: Gray;
+    border: none;
+    color: white;
+    padding: 2px 3px;
+    cursor: pointer;
+    font-size: 15px;
+    }
+
+    .navbar-header, .navbar-right{
+      border-left: 1px solid rgb(233, 233, 233);
+      padding: 0px;
+    }
+    
+    .navbar-link{
+      width: 180px;
+      display: inline-block;
+      height: 50px;
+      border-right: 1px solid rgb(233, 233, 233);
+      text-align: center;
+      vertical-align: center;
+      padding: 10px;
+      margin: 0px;
+      font-weight: bold;
+    }
+
+    </style>
+  <!link href="css/bootstrap.css" rel="stylesheet" media="screen"-->
+  <link href="css/stili-custom.css" rel="stylesheet" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,900' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-link" href="https://razorenhanced.net/doc/api/">
+          API <small>(beta)</small>
+        </a>
+        <a class="navbar-link" href="https://razorenhanced.net/dokuwiki/">
+          Wiki
+        </a>
+
+            
+      </div>
+      <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
+          
+            <a class="navbar-link" href="https://razorenhanced.net/">
+              RazorEnhanced
+            </a>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row text-center splash"><img src="img/razor-enhanced-splash.png" alt="Razor Enanched Splash"></div>
+    <div class="row">
+        <div class="jumbotron">
+            <h2><b>Welcome to razorenhanced.net!</b></h2><br>
+            <h3><b>Razor Enhanced</b></h3><br>
+            This site houses the Razor Enhanced project, a new advanced version derived dall'assistant 2D .NET Razor for <b>Ultima Online</b> ( https://github.com/msturgill/razor ). warmly thank all the authors of <b>Razor</b> and the developer community <b>RunUO</b> for letting us with their work to make this small but important experiment.<br>
+            <br>
+            Currently the project is in phase <b>Beta</b> , that is to say that, though the development is already in an advanced state, the many new features that have been added require intensive before the final release test. How it differs from the original project Enhanced Razor Razor? In short, we note among others the following features<br>
+            <br>
+            <ol>
+                <li>It is based on .NET 4.5 and has therefore a lot of improvements available in this framework (higher speed, stability, etc.)</li>
+                <li>A wide range of specialized Agent (Autoloot, Scavenger, Organizer, Vendor Buy, Sell Vendor, Dress, Restock, Bandage, etc.)</li>
+                <li>A new targeting system and Filtering evolved that allows you to select more accurately the targets PVP and PVM</li>
+                <li>A built-in scripting engine based entirely on IronPython .NET that lets you use all the native features of the Python language with ability to run multiple scripts simultaneously</li>
+                <li>A built-in scripting engine that mimics UOSteam command and syntax</li>
+            </ol><br>
+            <div>
+                <div style="border: thin solid black">
+                    <b>Latest Build:</b>
+                    <br>
+                    <a href="//github.com/RazorEnhanced/RazorEnhanced/releases/download/v0.8.1.5/RazorEnhanced-0.8.1.5.zip" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Razor</a>
+                    Razor Enhanced supports OSI clients on Windows and Linux/Wine + CUO Windows Only
+                    Python 3.4 version
+                    <br>		    
+                    <br>
+                    <b>Free Server Updater:</b>
+                    <br>
+                    <a href="https://github.com/credzba/uo_update/blob/main/UpdateUO.zip" class="btn"><i class="glyphicon glyphicon-download-alt"></i> UO Updater</a>
+		    <br>
+                    This UO updater works with the format specified by Orion for downloading UO updates.
+		    <br>
+                    It should be placed in the UO folder, as it just downloads to the immediate folder it is in.
+                    <br>		    
+                    <br>		    
+                    <b> 7.X system. Deprecated and not receiving updates:</b>
+                    <br>
+                    <a href="//github.com/RazorEnhanced/RazorEnhanced/releases/download/v0.7.7.29/RazorEnhanced-0.7.7.29.zip" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Razor</a>
+                    <br>
+                    <br>
+                    <a href="https://github.com/dust765/ClassicUO/releases/latest" class="btn"><i class="glyphicon glyphicon-download-alt"></i> DustyCUO from RE</a>
+                    Razor Enhanced is building dust765's version of CUO that has some extra features<br />
+                    https://github.com/dust765
+                    <br>
+                    <br>
+                </div>
+                <div style="border: thin solid black">
+                    <b> MAPS </b>
+                    <br>
+                    <a href="//razorenhanced.net/download/UOAMv9_Install.exe" class="btn"><i class="glyphicon glyphicon-download-alt"></i>UOAM</a>
+                    Download UO Auto-Map v9.0.0 Beta
+                    <br>
+                    <br>
+                    <a href="//www.ultimamapper.com/" class="btn"><i class="glyphicon glyphicon-download-alt"></i>UO Mapper</a></center>
+                    Download Ultima Mapper
+                    <br>
+                    <br>
+                </div>
+                <div style="border: thin solid black">
+                    <b>Unsupported Builds</b><br>
+                    <a href="//razorenhanced.net/download/Razor-Enhanced-0.6.68.zip" class="btn"><i class="glyphicon glyphicon-download-alt"></i> Razor</a>
+                    Older Microsoft Binary file format build v0.6.68
+                    <br>
+                    <br>
+                    <a href="//razorenhanced.net/download/Razor-Enhanced-AlexDan.zip" class="btn"><i class="glyphicon glyphicon-download-alt" style="color:Gray;"></i> Razor</a>
+                    Download last AlexDan v0.6.62
+                    <br>
+                    <br>
+                </div><br>
+                <hr>
+                <br>
+                <div class="text-center">
+                    <b>For questions or information you have available the following tools:</b><br>
+                    <br>
+                    <a href="//razorenhanced.net/dokuwiki/" class="btn">Wiki <i class="glyphicon glyphicon-arrow-right"></i></a>
+                    <a href="https://discord.gg/ukQUK7cSPd" class="btn">Discord <i class="glyphicon glyphicon-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+  </div>
+  <footer class="text-left">
+    <noscript>
+    <h6></h6></noscript>
+    <div class="container">
+      &copy;2019-2022 Razor Enhanced Project. -- credzba <a href="https://github.com/ultimarazorenhanced/RazorEnhanced" class="btn-gray">src</a>
+      <br>
+      &copy;2016 Razor Enhanced Project. -- AlexDan <a href="https://bitbucket.org/RazorFork/razor-enhanced/" class="btn-gray">src</a>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery.js"></script> 
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
