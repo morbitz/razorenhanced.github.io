@@ -19,4 +19,3 @@
   - Use this button to import a profile from file.
   - Use this button to export a profile to files.
   - Use this selector to chose opacity of razor window.
-  - TEST
