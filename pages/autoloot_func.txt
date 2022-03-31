@@ -7,11 +7,11 @@ Here can find some information about Enhanced Scripting function to control auto
 |style="font-size:150%;  padding: 2px" colspan="2" | **Get AutoLoot List Contents**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
-|style="width: 90%" | AutoLoot.GetList( string LootListName )
+|style="width: 90%" | AutoLoot.GetList( string LootListName, getMinusOneItems=False )
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" |Get a list of autoloot items, Graphics of -1 are not returned
+|colspan="2" |Get a list of autoloot items, Graphics of -1 are only returned if getMinusOneItems is set to True
 |- style="background-color:#f0f0f0;"
 |**Returns**
 |List < AutoLootItem >
