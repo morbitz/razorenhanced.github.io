@@ -69,6 +69,10 @@ Here can find some infomation about Enhanced Scripting function and data misc!
 
 ===== File =====
 
+The file operations are limited, because I am paranoid of bad actors.
+The file to be written to MUST be in the RE directory tree, or if your running CUO it can be in the CUO directory tree. Further, the file suffix has to be one of {data, xml, map, csv}. The file suffixes list could be extended, but the main thing I didn't want someone to do damage to files needed for execution. 
+
+
 {|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **Append a line to a file**
 |- style="background-color:#f0f0f0;"
@@ -113,11 +117,32 @@ result = Misc.AppendNotDupToFile("C:/CUO/Data/Client/TreasureMaps.csv", "1111, 2
 |Misc
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
-|string FileName
-|string LineToInsert
+|string FileName, string LineToInsert
 
 
 |}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Remove a line from a file**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Misc.DeleteFile(string FileName)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Deletes a file
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|bool True - success False - Fail
+|-
+|**In Object:**
+|Misc
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|string FileName
+
+|}
+
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **Remove a line from a file**
