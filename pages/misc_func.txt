@@ -73,14 +73,14 @@ Here can find some infomation about Enhanced Scripting function and data misc!
 |style="font-size:150%;  padding: 2px" colspan="2" | **Append a line to a file**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
-|style="width: 90%" | Misc.AppendToFile( )
+|style="width: 90%" | Misc.AppendToFile(string FileName, string LineToAppend)
 |-
 |colspan="2" |**Description:**
 |-
 |colspan="2" |Appends a single line to a file.
 |- style="background-color:#f0f0f0;"
 |**Returns**
-|bool True - asuccess False - Fail
+|bool True - success False - Fail
 |-
 |**In Object:**
 |Misc
@@ -90,6 +90,55 @@ Here can find some infomation about Enhanced Scripting function and data misc!
 
 |}
 
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Append a line to a file IF it doesn't already exist**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Misc.AppendNotDupToFile(string FileName, string LineToAppend)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Appends a single line to a file if that line does not already exist in the file.
+use in your code like:
+<code>
+#
+result = Misc.AppendNotDupToFile("C:/CUO/Data/Client/TreasureMaps.csv", "1111, 2222, map,desc,I forget")
+#
+</code>
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|bool
+|-
+|**In Object:**
+|Misc
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|string FileName
+|string LineToInsert
+
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Remove a line from a file**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Misc.RemoveLineInFile(string FileName, string LineToAppend)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Removes a single line from a file if it exists
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|bool True - success False - Fail
+|-
+|**In Object:**
+|Misc
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|string FileName, string LineToInsert
+
+|}
 
 ===== System =====
 
