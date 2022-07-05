@@ -49,7 +49,7 @@
   *[[ item_struct | Item type structure]]
   *[[ item_func | Items data and function]]
   *[[ misc_func | Misc data and function]]
-  *[[ CUO_funcs | ClassicUO specific functionsn]]
+  *[[ CUO_funcs | ClassicUO specific functions]]
   *[[target_func | Target data and function]]
   *[[gump_funcs | Gumps data and function]]
   *[[journal_func | Journal data and function]]
