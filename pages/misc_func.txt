@@ -66,6 +66,31 @@ Here can find some infomation about Enhanced Scripting function and data misc!
 |string to send to client window
 
 |}
+
+===== File =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Append a line to a file**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Misc.AppendToFile( )
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Appends a single line to a file.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|bool True - asuccess False - Fail
+|-
+|**In Object:**
+|Misc
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|string FileName, string LineToInsert
+
+|}
+
+
 ===== System =====
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
