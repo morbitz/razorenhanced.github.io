@@ -1,5 +1,7 @@
 # RazerEnhanced AutoComplete for Visual Studio Code
 
+[[<<<]](../index.md)
+
 **Author: HeelYes#0441**
 
 This info comes from entries in Discord, and links to sites mentioned in Discord
