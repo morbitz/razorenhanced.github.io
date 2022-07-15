@@ -842,32 +842,29 @@ Misc.MouseMove(p.X+10, p.Y+20)
 
 ===== Maps =====
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Distance between 2 places using UO algorithm**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Co-Ordinates of a Decoded Map**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
-|style="width: 90%" | Misc.Distance(X1, Y1, X2, Y2)
+|style="width: 90%" | Misc.GetMapInfo(serial)
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" | Compute the distance between 2 places using UO algorithm for distance
-use in your code like:
+|colspan="2" | Retrieve the co-ordinates of a decoded t-map. Your code would look like:
 <code>
 #
-d = Misc.Distance(10, 10, 20, 20)
+mapInfo = Misc.GetMapInfo(0x4094EB6B)
+Misc.SendMessage("Origin ({}, {}), pin at ({}, {})".format(mapInfo.MapOrigin.X, mapInfo.MapOrigin.Y, mapInfo.PinPosition.X, mapInfo.PinPosition.Y))
 #
 </code>
 |- style="background-color:#f0f0f0;"
 |**Returns**
-|int
+|MapInfo{ PinPosition, MapOrigin, MapEnd }
 |-
 |**In Object:**
 |Misc
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
-|X1 - x origin
-|Y1 - y origin
-|X2 - x dest
-|Y2 - y dest
+|serial - Serial of the t-map
 
 |}
 
