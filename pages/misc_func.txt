@@ -856,6 +856,11 @@ mapInfo = Misc.GetMapInfo(0x4094EB6B)
 Misc.SendMessage("Origin ({}, {}), pin at ({}, {})".format(mapInfo.MapOrigin.X, mapInfo.MapOrigin.Y, mapInfo.PinPosition.X, mapInfo.PinPosition.Y))
 #
 </code>
+
+|- style="background-color:#f0f0f0;"
+|**Note:**
+|The pin position is an offset from the origin, so you have to add them to get absolute location
+
 |- style="background-color:#f0f0f0;"
 |**Returns**
 |MapInfo{ PinPosition, MapOrigin, MapEnd }
