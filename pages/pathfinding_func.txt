@@ -69,6 +69,25 @@ Here can find some information about Enhanced Scripting function about Pathfindi
 
 |}
 
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Run **
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | 
+|-
+|colspan="2" |**Description:** 
+|- 
+|colspan="2" | True - character runs, False - character walks.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|
+|-
+|**In Object:**
+|Pathfinding
+|- style="background-color:#f0f0f0;" 
+|**Parameters:**
+| Boolean, default = True
+|}
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **DebugMessage **

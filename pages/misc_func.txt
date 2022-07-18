@@ -852,8 +852,10 @@ Misc.MouseMove(p.X+10, p.Y+20)
 |colspan="2" | Retrieve the co-ordinates of a decoded t-map. Your code would look like:
 <code>
 #
-mapInfo = Misc.GetMapInfo(0x4094EB6B)
-Misc.SendMessage("Origin ({}, {}), pin at ({}, {})".format(mapInfo.MapOrigin.X, mapInfo.MapOrigin.Y, mapInfo.PinPosition.X, mapInfo.PinPosition.Y))
+mapInfo = Misc.GetMapInfo(0x400BFD6C)
+print("Treasure at ({}, {}), Origin ({}, {}), pin at ({}, {})"
+    .format(mapInfo.MapOrigin.X+mapInfo.PinPosition.X, mapInfo.MapOrigin.Y+mapInfo.PinPosition.Y,
+            mapInfo.MapOrigin.X, mapInfo.MapOrigin.Y, mapInfo.PinPosition.X, mapInfo.PinPosition.Y))
 #
 </code>
 
