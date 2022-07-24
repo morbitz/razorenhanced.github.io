@@ -264,7 +264,7 @@ Appears to only work on OSI servers
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" |Returns:	float
+|colspan="2" | Looks up the property by name on left side of ':' parses the numeric value on the right side of the : into a float number and returns the number
 |- style="background-color:#f0f0f0;"
 |**Returns**
 |float
@@ -274,6 +274,27 @@ Appears to only work on OSI servers
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
 |Int serialtoinspect or Item itemtoinspect, Int PropIndex
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Get Item Proprerties**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Items.GetPropValueString(int serial, string propname)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" | Looks up the property with the name provided on the left side of a : and returns the string on the right side or the :. Note: partial property name matchs work e.g. "loc" will match to "location", but "ocation" will not match "location"
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|string
+|-
+|**In Object:**
+|Items
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|Int serialtoinspect or Item itemtoinspect, string PropName
 
 |}
 
