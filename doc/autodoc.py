@@ -115,8 +115,8 @@ class HTML():
     @staticmethod
     def MethodContainer(permalink, className, methodName, description, signature, parameters, returns, cssId=None, cssClass=None ):
         permalink_html = HTML.DocPermalink(permalink)
-        className_html = HTML.Div(className,cssClass="method-class-name")
-        methodName_html = HTML.Div(methodName,cssClass="method-name")
+        className_html = HTML.Span(className,cssClass="method-class-name")
+        methodName_html = HTML.Span(methodName,cssClass="method-name")
         
         signature_content = "{}.{}({})".format(className_html,methodName_html, signature)
         signature_html = HTML.Div(signature_content,cssClass="redoc-method-signature")
@@ -153,7 +153,7 @@ class HTML():
         if cssClass is None: cssClass = 'redoc-property-container'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         
-        className_html = HTML.Div(className,cssClass="redoc-class-name")
+        className_html = HTML.Span(className,cssClass="redoc-class-name")
         propName_html = HTML.PropertyName(propName)
         
         name_html = "{}.{}".format(className_html,propName_html)
@@ -243,7 +243,7 @@ class HTML():
         cssClass = ' class="{}"'.format(cssClass)
         name_html =  HTML.VariableName(name)
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-params-desc')
-        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html)
+        return '<span{}{}>{}{}{}</span>'.format(cssId, cssClass, name_html, type_html, desc_html)
         
     @staticmethod
     def ParamForDescription(name, type, description, cssId=None,  cssClass=None ):
@@ -253,7 +253,7 @@ class HTML():
         name_html =  HTML.VariableName(name)
         type_html =  HTML.VariableType(type)
         desc_html =  '' if description is None or description == "" else HTML.Div(description, cssClass='redoc-method-params-desc')
-        return '<div{}{}>{}{}{}</div>'.format(cssId, cssClass, name_html, type_html, desc_html)
+        return '<span{}{}>{}{}{}</span>'.format(cssId, cssClass, name_html, type_html, desc_html)
        
      
     
@@ -262,21 +262,21 @@ class HTML():
         if cssClass is None: cssClass = 'redoc-variable-type'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
-        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
+        return '<span{}{}>{}</span>'.format(cssId, cssClass, content)
         
     @staticmethod
     def VariableName(content, cssId=None,  cssClass=None):
         if cssClass is None: cssClass = 'redoc-variable-name'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
-        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
+        return '<span{}{}>{}</span>'.format(cssId, cssClass, content)
         
     @staticmethod
     def PropertyName(content, cssId=None,  cssClass=None):
         if cssClass is None: cssClass = 'redoc-property-name'
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = ' class="{}"'.format(cssClass)
-        return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
+        return '<span{}{}>{}</span>'.format(cssId, cssClass, content)
         
     @staticmethod
     def MethodReturn(type_html, description, cssId=None,  cssClass=None):
@@ -344,6 +344,12 @@ class HTML():
         cssId = '' if cssId is None else ' id="{}"'.format(cssId)
         cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
         return '<div{}{}>{}</div>'.format(cssId, cssClass, content)
+    
+    @staticmethod
+    def Span(content, cssId=None,  cssClass=None ):
+        cssId = '' if cssId is None else ' id="{}"'.format(cssId)
+        cssClass = '' if cssClass is None else ' class="{}"'.format(cssClass)
+        return '<span{}{}>{}</span>'.format(cssId, cssClass, content)
         
     
 class AutoDocHTML:
