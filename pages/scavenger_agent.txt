@@ -1,6 +1,6 @@
 ====== Assistant - Scavenger ======
 
-Here can find some infomation about new Enhanced Scavenger! This agent allow user to get item from ground around player whit specific item list and drag delay.
+Here can find some infomation about new Enhanced Scavenger! This agent allow user to get item from ground around player whit specific item list and drag delay
 
 ===== Main Window =====
   - With this selectbox can switch item list.
