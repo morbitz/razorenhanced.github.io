@@ -1,5 +1,5 @@
 ====== Scripting - Item type structure ======
-Here can find some information about Enhanced Scripting about Item type structure
+Here can find some information about Enhanced Scripting about Item type structure.
 
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
