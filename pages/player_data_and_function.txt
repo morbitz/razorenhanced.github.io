@@ -1,6 +1,6 @@
 ====== Scripting - Player data and function ======
 
-Here can find some information about Enhanced Scripting function about player self data and related function!
+Here can find some information about Enhanced Scripting function about player self data and related function
 
 ===== Stats =====
 {|style="font-size:85%; border:solid 2px; width: 50%;"
