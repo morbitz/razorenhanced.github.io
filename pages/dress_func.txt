@@ -1,5 +1,5 @@
 ======Scripting - Dress / Undress control function======
-Here can find some information about Enhanced Scripting function to control Dress / Undress by script!
+Here can find some information about Enhanced Scripting function to control Dress / Undress by script
 
 =====Check Status=====
 
