@@ -41,10 +41,6 @@ Main:
         adio.MakeDocumentation()
         
 
-
-Updates:
-    29-Jun-2021: Dalamar
-        At the time of writing, the main() function is messy because is used to test everything else.
 """
 
 import os
