@@ -1,0 +1,50 @@
+====== Scripting - ClassicUO functions ======
+ClassicUO loads RE as a plugin, and as such RE does not have access to all the functionality in CUO, in fact RazorEnhanced treats CUO the same as the OSI client in terms of packet modification or generation. 
+
+There are cases when cheating on this situation is desirable, and that is what will go in this component.
+
+Needless to say CUO function will do nothing on an OSI client. 
+
+===== Message =====
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Player Sysmessage**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.LoadMarkers()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Executes the function used by the CUO ui to reload all the map markers.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|void
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Player Sysmessage**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.GoToMarker(x, y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Executes the function used by the CUO ui to set a temporary GoTo marker on its map
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|void
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}

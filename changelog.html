@@ -1,4 +1,278 @@
 <p>
+  <strong>Version 0.8.2.25 [9/13/2022]</strong>
+  Serialize UOS scripts. That is, you can start more than 1, but they will only run 1 at a time. 
+  If 1 is an endless loop, none of the others will get to run.
+  This is because the internal script engine is not re-entrant, so until I fix that this is all I can do.
+</p>
+<p>
+  <strong>Version 0.8.2.24 [9/11/2022]</strong>
+  Add CUO.GetSettings
+  Correct error in CUO password filling
+</p>
+<p>
+  <strong>Version 0.8.2.23 [9/10/2022]</strong>
+  add 2 new gump functions, GetLine and GetLineList that take a gump id so you can avoid gump overlay
+</p>
+<p>
+  <strong>Version 0.8.2.22 [9/10/2022]</strong>
+  Handle an index error in SpellGrid that was causing CUO to close
+</p>
+<p>
+  <strong>Version 0.8.2.21 [9/9/2022]</strong>
+  Add Gumps.HasGump(gumpid) and Gumps.AllGumpIDs()
+</p>
+<p>
+  <strong>Version 0.8.2.20 [9/9/2022]</strong>
+  Add an update reminder every 7 days
+</p>
+<p>
+  <strong>Version 0.8.2.19 [9/8/2022]</strong>
+  Kill zombie scripts running after a change of characters
+</p>
+<p>
+  <strong>Version 0.8.2.18 [9/6/2022]</strong>
+  Bug fix for OLD servers that dont have new castles
+</p>
+<p>
+  <strong>Version 0.8.2.17 [9/5/2022]</strong>
+  New Castles are stored in MultiCollection.uop and need to be parsed seperate from regular multis
+</p>
+<p>
+  <strong>Version 0.8.2.16 [9/2/2022]</strong>
+  if a script is loading, and its not at its old location, but it is at the current RE script then change it to point to the local one.
+</p>
+<p>
+  <strong>Version 0.8.2.15 [8/31/2022]</strong>
+  figured out the multi definitions so I can bypass houses effectively
+</p>
+<p>
+  <strong>Version 0.8.2.14 [8/30/2022]</strong>
+  Some fixes to pathfinding that I hope repair scripts that quit working
+</p>
+<p>
+  <strong>Version 0.8.2.13 [8/28/2022]</strong>
+  Small change to Autoloot that should help at champ spawns If a corpse is empty, it will only be checked once
+</p>
+<p>
+  <strong>Version 0.8.2.12 [8/27/2022]</strong>
+  Performance changes
+  Change item.filter to select more quickly
+  Optimized ToString for Items
+  Changed Name for Items to return prop[0] for name if its available
+</p>
+<p>
+  <strong>Version 0.8.2.11 [8/26/2022]</strong>
+  Change pathfinding so it will avoid some objects
+  Add Grapes of Wrath buff
+</p>
+<p>
+  <strong>Version 0.8.2.10 [8/23/2022]</strong>
+  Speed up the a* calculation by setting cost to 1.
+  Honestly I don't know why the higher cost make the algorithm work harder, but ..
+</p>
+<p>
+  <strong>Version 0.8.2.9 [8/22/2022]</strong>
+  Small change to avoid some twigs that were blocking, and allow movement in 8 directions during pathfinding
+</p>
+<p>
+  <strong>Version 0.8.2.8 [8/21/2022]</strong>
+  Performance improvments for PathFinding (the route one)
+</p>
+<p>
+  <strong>Version 0.8.2.7 [8/19/2022]</strong>
+  Change hard coded CUO name to dynamic
+  add 10 ms sleep in a wait loop
+</p>
+<p>
+  <strong>Version 0.8.2.6 [8/18/2022]</strong>
+  Failed to update loop variable when set/unset
+</p>
+<p>
+  <strong>Version 0.8.2.5 [8/18/2022]</strong>
+  Dramoor noticed CUO modifies some of the itemstatic ids based on what map and season your using.
+  This may be why pathfinding was getting stuck on some items, so now we have the CUO static map hack.
+  I think the only major change is on the desolate maps like felucca.
+</p>
+<p>
+  <strong>Version 0.8.2.4 [8/17/2022]</strong>
+  Ooops.. another bug fix.
+  This one was replicating Data, so I am sorry. The only fix is to go manually delete the extra script entries (or edit the RazorEnhanced.settings.SCRIPTING file manually (danger make a backup copy before you start)
+  Apologies for trouble.
+</p>
+<p>
+  <strong>Version 0.8.2.3 [8/16/2022]</strong>
+  Ooops.. bug fix.
+  UI only problem, that is restarting UO will correct the UI, but each remove or add script was making the UI show all the scripts replicated.  
+</p>
+<p>
+  <strong>Version 0.8.2.2 [8/16/2022]</strong>
+  Initial record macro working for UOS scripts
+  Not tested very well, but at least sort of works
+</p>
+<p>
+  <strong>Version 0.8.2.1 [8/16/2022]</strong>
+  Edit tab now has sub-tabs by type.
+  This looks nicer, but more important (for me) is it gives more information about new files.
+</p>
+<p>
+  <strong>Version 0.8.1.36 [8/14/2022]</strong>
+  UOS was missing graphic expression. added
+</p>
+<p>
+  <strong>Version 0.8.1.35 [8/14/2022]</strong>
+  UOS had a few problems:
+  1) stop didn't stop looped scripts
+  2) empty while loops ran too fast
+  3) after use item or move needed a small delay to finish the work
+  4) some of the error messages were not very informative
+</p>
+<p>
+  <strong>Version 0.8.1.34 [8/12/2022]</strong>
+  Add new CUO functions to set the Profile options in CUO.
+  ProfilePropertySet(string propertyName, bool enable)
+  I'll need to add a full list of property names to the documentation, but EnableDragSelect and DragSelectHumanoidsOnly were tested.
+</p>
+<p>
+  <strong>Version 0.8.1.32-33 [8/7/2022]</strong>
+  Nothing special just some initial UOS editor documentation hints
+</p>
+<P>
+  <strong>Version 0.8.1.31 [8/1/2022]</strong>
+  Add Player.TrackingArrow
+</p>
+<p>
+  <strong>Version 0.8.1.30 [7/30/2022]</strong>
+  UOSteam editor indents and highlights for UOS, but ONLY if its loaded with a suffix of uos
+  Opening a new edit window and adding //UOS will not change highlighting
+</p>
+<p>
+  <strong>Version 0.8.1.29 [7/26/2022]</strong>
+  UOSteam change to allow cast and useskill to specify the target on same line as the action
+</p>
+<p>
+  <strong>Version 0.8.1.28 [7/24/2022]</strong>
+  Rotate was still using Run, thus pulling focus even on walk routes when he turned.
+</p>
+<p>
+  <strong>Version 0.8.1.27 [7/24/2022]</strong>
+  Revert a Walk change I accidently committed that caused windows activation in walk pathfinding
+</p>
+<p>
+  <strong>Version 0.8.1.26 [7/23/2022]</strong>
+  Add new Items.GetPropValueString(serial, "propName") function
+  I got tired of writing a loop to find the property I wanted
+</p>
+<p>
+  <strong>Version 0.8.1.25 [7/22/2022]</strong>
+  Add new CUO.GoToMarker() function
+</p>
+<p>
+  <strong>Version 0.8.1.23/24 [7/18/2022]</strong>
+  Improve the speed of pathfinding run
+</p>
+<p>
+  <strong>Version 0.8.1.22 [7/17/2022]</strong>
+  Changed the way Pathfinding.Run and .Walk work.
+</p>
+<p>
+  <strong>Version 0.8.1.21 [7/16/2022]</strong>
+  OSI uses 0x14EB for maps and free servers use 0x14EC
+</p>
+<p>
+  <strong>Version 0.8.1.20 [7/16/2022]</strong>
+  A weird case where object deletes for maps were showing up and shouldn't.
+</p>
+<p>
+  <strong>Version 0.8.1.19 [7/15/2022]</strong>
+  Add logging to see why I am loosing data
+</p>
+<p>
+  <strong>Version 0.8.1.18 [7/15/2022]</strong>
+  Rewrite the way map co-ordinates are stored so that they survive beyond the objects lifetime
+</p>
+<p>
+  <strong>Version 0.8.1.16 [7/14/2022]</strong>
+  <strong>Version 0.8.1.17 [7/14/2022]</strong>
+  <strong>Version 0.8.1.18 [7/15/2022]</strong>
+  Added a property to decoded maps that shows the map co-ordinates
+</p>
+<p>
+  <strong>Version 0.8.1.15 [7/4/2022]</strong>
+  Created new script section named CUO which will have function that use reflection to call into CUO dynamically
+  Added CUO.LoadMarkers() - reloads all the CUO map markers from python script
+  Added Misc.AppendNotDupToFile which works like Misc.AppendToFile, except it will look to see if there is an identical line already in the file, and not add the duplicate if it exists.
+</p>
+<p>
+  <strong>Version 0.8.1.14 [7/4/2022]</strong>
+  Small fix for Gumps.RawData
+</p>
+<p>
+  <strong>Version 0.8.1.13 [6/30/2022]</strong>
+  Added Misc.AppendToFile and Misc.DeleteFile
+  File must be a subdirectory of RE or CUO (if your running CUO) and must end in .data .xml or .map 
+</p>
+<p>
+  <strong>Version 0.8.1.12 [6/19/2022]</strong>
+  Changed Nearest and Farthest to use UO distance calculation
+  Added Misc.Distance(x1, y1, x2, y2) that computes distance using uo distance algorithm
+</p>
+<p>
+  <strong>Version 0.8.1.11 [5/17/2022]</strong>
+  merged in c# scripting roslyn changes
+</p>
+<p>
+  <strong>Version 0.8.1.10 [5/16/2022]</strong>
+  <br /> Remove Hotkey from autogen docs
+  <br /> Add Misc.IsItem and Misc.IsMobile
+</p>
+<p>
+  <strong>Version 0.8.1.9 [4/7/2022]</strong>
+  <br /> python print will output to debug window in editor or journal in execute
+</p>
+<p>
+  <strong>Version 0.8.1.8 [3/31/2022]</strong>
+  <br /> Add an option to return -1 graphics for AutoLoot.GetList
+</p>
+<p>
+  <strong>Version 0.8.1.7 [3/30/2022]</strong>
+  <br /> When adding a new column to the data, if the stored data is an empty list, duplicate column names are generated.
+  <br /> Fixed.
+</p>
+<p>
+  <strong>Version 0.8.1.6 [3/26/2022]</strong>
+  <br /> Color the running scripts so they are easier to see
+</p>
+<p>
+  <strong>Version 0.8.1.5 [3/20/2022]</strong>
+  <br /> Fix autoloot where it will loot containers if in the list
+  <br /> Move the UseUO3D dress settings to be at the dress level instead of global
+</p>
+<p>
+  <strong>Version 0.8.1.4 [3/13/2022]</strong>
+  <br /> add update button to help panel, and only check update when you push button on launcher
+</p>
+
+<p>
+  <strong>Version 0.8.1.2 & 3 [3/11/2022]</strong>
+  <br /> add complete amount to the vendor buy options
+</p>
+<p>
+  <strong>Version 0.8.1.1 [3/6/2022]</strong>
+  <br /> Improve way Always on Top works, and make it work with CUO
+</p>
+<p>
+  <strong>Version 0.8.1.0 [2/26/2022]</strong>
+  <br /> Changed the name filter to allow spaces in profile names etc. This limitation was a left over from pre-json files, and no longer required.
+</p>
+<p>
+  <strong>Version 0.8.0.91 [2/19/2022]</strong>
+  <br /> a little proof of concept change. auto open doors in CUO just sets the option inside CUO
+</p>
+<p>
+  <strong>Version 0.8.0.90 [2/19/2022]</strong>
+  <br /> added removeFriend function
+</p>
+<p>
   <strong>Version 0.8.0.89 [2/14/2022]</strong>
   <br /> Fix a bug causing the weapons special icon to update too much and causing lag
 </p>
