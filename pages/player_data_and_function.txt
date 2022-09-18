@@ -391,7 +391,7 @@ Here can find some information about Enhanced Scripting function about player se
   * Dragon Slasher Fear
   * Enchant
   * Enemy Of One
-  * Enemy Of One (new)
+  * Enemy Of One (Debuf)
   * Essence Of Wind
   * Ethereal Voyage
   * Evasion
