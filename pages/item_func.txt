@@ -52,6 +52,53 @@ Here can find some information about Enhanced Scripting function and data about 
 
 |}
 
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Find all items by ItemID**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Items.FindAllByID(int, int, int [, int=0])
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Find item serial by specific item ID, color and Container (optional container depth). Can use -1 on color for no chose color, can use -1 on container for search in all item in memory. The depth defaults to only the top but can search for # of sub containers.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|python list of Items
+|-
+|**In Object:**
+|Items
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|Int itemid, int color, int serialcontainer
+|-
+|**Exception:**
+|If item not found function return empty list
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Find all items by ItemID**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Items.FindAllByID(list of int, int, int [, int=0])
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Find items that are any of the item ID specified in the list, color and Container (optional container depth). Can use -1 on color for no chose color, can use -1 on container for search in all item in memory. The depth defaults to only the top but can search for # of sub containers.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|python list of Items
+|-
+|**In Object:**
+|Items
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|Int itemid, int color, int serialcontainer
+|-
+|**Exception:**
+|If item not found function return empty list
+
+|}
 ===== Move =====
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
