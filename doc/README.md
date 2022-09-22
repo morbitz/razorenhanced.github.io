@@ -1,6 +1,6 @@
 # Razor Enhanced: Documentation     
 
-First version of the Documentation API, genereted by autodoc.py     
+First version of the Documentation API, genereted by [autodoc.py]()    
 https://razorenhanced.net/doc/api/     
 or     
 https://razorenhanced.github.io/doc/api/     
