@@ -14,7 +14,7 @@ Can be run on any RE and will produce the html doc in your Scripts/Doc/ folder, 
 A lot can be done just by tuning the main.css which is the only manually generated file in the api folder.     
 
 - [wiki_dump.py](./wiki_dump.py) ([edit]( https://github.com/RazorEnhanced/razorenhanced.github.io/edit/main/doc/wiki_dump.py))     
-A first attempt to turn the official wiki from DokuWiki (https://razorenhanced.net/dokuwiki/) to a static markdown (+jekill?), requires some love to translate the format.
+A first attempt to turn the [official wiki](https://razorenhanced.net/dokuwiki/) from DokuWiki  to a static markdown (+jekill?), requires some love to translate the format.
 
 # Examples
 
