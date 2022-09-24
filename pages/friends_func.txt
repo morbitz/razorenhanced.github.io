@@ -30,11 +30,11 @@ Here can find some information about Enhanced Scripting function to control frie
 |style="font-size:150%;  padding: 2px" colspan="2" | **Add a Player to a friend list**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
-|style="width: 90%" | Friend.RemovePlayer(string FriendListName, int PlayerSerial)
+|style="width: 90%" | Friend.RemoveFriend(string FriendListName, int Serial)
 |-
 |colspan="2" |**Description:**
 |-
-|colspan="2" |Remove the player specified from the Friend list named in FriendListName parameter
+|colspan="2" |Remove the friend specified from the Friend list named in FriendListName parameter
 |- style="background-color:#f0f0f0;"
 |**Returns**
 |bool - True success, False fail to remove
@@ -43,7 +43,7 @@ Here can find some information about Enhanced Scripting function to control frie
 |Friend
 |- style="background-color:#f0f0f0;"
 |**Parameters:**
-|FriendListName, PlayerSerial  
+|FriendListName, Serial  
 
 |}
 
