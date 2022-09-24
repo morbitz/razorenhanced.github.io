@@ -1,4 +1,77 @@
 <p>
+  <strong>Version 0.8.2.33 [9/23/2022]</strong>
+  Add Inspect buttons to script panel
+  (Cray) Fix method optional arguments and class properties in the AutoComplete.py generator
+</p>
+<p>
+  <strong>Version 0.8.2.32 [9/21/2022]</strong>
+  Added 2 new FindByID functions:
+  FindAllByID(id, ...)
+  and
+  FindAllByID([id id], ...)
+  both return a list of all the items found matching the criteria
+</p>
+<p>
+  <strong>Version 0.8.2.31 [9/20/2022]</strong>
+  Item.Amount was returning wrong value when it was in a vendor for sale.
+</p>
+<p>
+  <strong>Version 0.8.2.30 [9/20/2022]</strong>
+  Vendor.Buy was not handling the vendor resale list properly, and as a result was failing on OSI
+</p>
+<p>
+  <strong>Version 0.8.2.29 [9/19/2022]</strong>
+  revert (partially) some 8.2.24 pw changes that seemed to cause an exception
+</p>
+<p>
+  <strong>Version 0.8.2.27/28 [9/18/2022]</strong>
+  Enabled Vendor.Buy script api, and added a max price parameter that defaults to -1
+</p>
+<p>
+  <strong>Version 0.8.2.26 [9/17/2022]</strong>
+  The bandaid based on buf indicator was not considering vet, only heal.
+  As a result, the buf timing for pets was not functioning properly.
+</p>
+<p>
+  <strong>Version 0.8.2.25 [9/13/2022]</strong>
+  Serialize UOS scripts. That is, you can start more than 1, but they will only run 1 at a time. 
+  If 1 is an endless loop, none of the others will get to run.
+  This is because the internal script engine is not re-entrant, so until I fix that this is all I can do.
+</p>
+<p>
+  <strong>Version 0.8.2.24 [9/11/2022]</strong>
+  Add CUO.GetSettings
+  Correct error in CUO password filling
+</p>
+<p>
+  <strong>Version 0.8.2.23 [9/10/2022]</strong>
+  add 2 new gump functions, GetLine and GetLineList that take a gump id so you can avoid gump overlay
+</p>
+<p>
+  <strong>Version 0.8.2.22 [9/10/2022]</strong>
+  Handle an index error in SpellGrid that was causing CUO to close
+</p>
+<p>
+  <strong>Version 0.8.2.21 [9/9/2022]</strong>
+  Add Gumps.HasGump(gumpid) and Gumps.AllGumpIDs()
+</p>
+<p>
+  <strong>Version 0.8.2.20 [9/9/2022]</strong>
+  Add an update reminder every 7 days
+</p>
+<p>
+  <strong>Version 0.8.2.19 [9/8/2022]</strong>
+  Kill zombie scripts running after a change of characters
+</p>
+<p>
+  <strong>Version 0.8.2.18 [9/6/2022]</strong>
+  Bug fix for OLD servers that dont have new castles
+</p>
+<p>
+  <strong>Version 0.8.2.17 [9/5/2022]</strong>
+  New Castles are stored in MultiCollection.uop and need to be parsed seperate from regular multis
+</p>
+<p>
   <strong>Version 0.8.2.16 [9/2/2022]</strong>
   if a script is loading, and its not at its old location, but it is at the current RE script then change it to point to the local one.
 </p>

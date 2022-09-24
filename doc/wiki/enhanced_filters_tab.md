@@ -1,0 +1,40 @@
+
+====== Tabs - Enhanced Filters ======
+
+  - Enable or disable this checkbox for highlight current target.
+
+  - Enable or disable this checkbox for show flags over mobiles around.
+
+  - Enable or disable this checkbox for disable animation of all type of fields.
+
+  - Enable or disable this checkbox for block or allow trade request.
+
+  - Enable or disable this checkbox for block or allow party request.
+
+  - Enable or disable this checkbox for start or stop AutoRemount Engine.
+
+  - Use this button for select mount mobile or etheral mount item.
+
+  - This textbox if for delay in remount try for normal mount.
+
+  - This textbox if for delay in remount try for etheral mount.
+
+  - Enable or disable this checkbox for start or stop Graphics Change engine.
+
+  - Use this button to add a graphics filter.
+
+  - Use this button to delete a graphics filter.
+
+  - In this column show if filter in line is enabled or not.
+
+  - In this column show old graphics ID.
+
+  - In this column show new graphics ID.
+
+  - Enable or disable this checkbox for start or stop AutoCarver engine.
+
+  - Use this button to set blade to use to carve corpse.
+
+  - Enable or disable this checkbox for start or stop BoneCutter engine (Doom).
+
+  - Use this button to set blade to use to cut bones.

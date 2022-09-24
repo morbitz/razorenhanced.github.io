@@ -1,0 +1,24 @@
+
+[[player_provided|Player Provided Scripts]]
+
+
+
+<WRAP group>
+
+<WRAP 90% column>
+
+
+
+[[http://razorenhanced.net/download/scripts/credzba/mining.py|mining]] - Credzba - Simple mining script will mine a single spot till empty
+
+
+
+[[http://razorenhanced.net/download/scripts/credzba/lumberjacking.py| lumberjacking]] - Credzba - Tree Chopping auto walks an area
+
+
+
+[[http://razorenhanced.net/download/scripts/fateswhim/automine.py| mining]] - Fate's Whim - Mines with a Fire Beetle and follows list of locations
+
+
+
+</WRAP>

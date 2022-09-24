@@ -1,0 +1,30 @@
+
+====== Assistant - Vendor Buy ======
+
+Here can find some infomation about new Enhanced Vendor Buy! This agent allow user to buy automatically some item from vendor whit specific filter.
+
+====== Main Window ======
+
+  - Whit this selectbox can switch item Buy list.
+  - Use this button for add new Buy item list
+  - Use this button for remove current Buy item list
+  - Use this button for import a existing Buy item list from file.
+  - Use this button for export current Buy item list to file.
+  - Use this button to open a item insert window to add manual a item to list whit specific: Name, Graphics, Color and Amount.
+  - Use this button to add item to list from game target (automatic read all information),
+  - Use this button to open a windows to edit current selected item (blue line on itemlist).
+  - Use this button to remove selected item from list.
+  - This area is a logbox for status and operation about buy filter.
+  - Enable or disable this checkbox for start or stop buy filter.
+  - This column of checkbox is for enable or not singolar item in buy list, can change in realtime durin buy filter enabled.
+  - This column is Name of item in list.
+  - This column is Graphics of item in list.
+  - This column is Amount of item in list.
+  - This column is Color of item in list (if show all filter not check color but only Graphics and Amount).
+====== Add Item Window ======
+  - This textbox is used for insert Item name.
+  - This textbox is used for insert item graphics.
+  - This textbox is used for insert item amount.
+  - This textbox is used for insert item color. This can be also -1 for All color.
+  - Use this button to save and add item to list.
+  - Use this button for close window whitout any insert.
