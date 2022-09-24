@@ -27,7 +27,7 @@ Here can find some information about Enhanced Scripting function to control frie
 =====RemoveFriend====
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Add a Player to a friend list**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Remove a serial from a friend list**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
 |style="width: 90%" | Friend.RemoveFriend(string FriendListName, int Serial)
