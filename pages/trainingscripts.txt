@@ -3,73 +3,73 @@
 <WRAP group>
 <WRAP 90% column>
 
-[[http://razorenhanced.net/download/scripts/mourn/TrainNinjaHidingStealth.py| TrainNinjaHidingStealth.py]] - Mourn - Trains multiple skills at same time
+[[https://razorenhanced.net/download/scripts/mourn/TrainNinjaHidingStealth.py| TrainNinjaHidingStealth.py]] - Mourn - Trains multiple skills at same time
 
-[[http://razorenhanced.net/download/scripts/mourn/trainninja.py | trainninja.py ]] - Mourn - shadowjump ninja trainer
+[[https://razorenhanced.net/download/scripts/mourn/trainninja.py | trainninja.py ]] - Mourn - shadowjump ninja trainer
 
-[[http://razorenhanced.net/download/scripts/mourn/TrainSkillbySkillLevelExample.py | TrainSkillbySkillLevelExample.py ]] - Mourn - Example train skills based of skill level
+[[https://razorenhanced.net/download/scripts/mourn/TrainSkillbySkillLevelExample.py | TrainSkillbySkillLevelExample.py ]] - Mourn - Example train skills based of skill level
 
-[[http://razorenhanced.net/download/scripts/frank/Poisoning_Trainer.py | Poisoning_Trainer.py ]] - Frank - Train Poisoning
+[[https://razorenhanced.net/download/scripts/frank/Poisoning_Trainer.py | Poisoning_Trainer.py ]] - Frank - Train Poisoning
 
-[[http://razorenhanced.net/download/scripts/mourn/trainDiscordMastery.py | trainDiscordMastery.py ]] - Mourn - Train Discord Mastery
+[[https://razorenhanced.net/download/scripts/mourn/trainDiscordMastery.py | trainDiscordMastery.py ]] - Mourn - Train Discord Mastery
 
 
-[[http://razorenhanced.net/download/scripts/frank/Imbuing_Trainer.py | Imbuing_Trainer.py ]] - Frank - Will get you to 120 on a non gargoyle. Needs tested for gargoyle.  Skill levels may need changed for gargoyle
+[[https://razorenhanced.net/download/scripts/frank/Imbuing_Trainer.py | Imbuing_Trainer.py ]] - Frank - Will get you to 120 on a non gargoyle. Needs tested for gargoyle.  Skill levels may need changed for gargoyle
 
-[[http://razorenhanced.net/download/scripts/mikey_mike/myst-trainer-10.py | myst-trainer-10.py ]] - Mikey_Mike - Mysticism 40-120
+[[https://razorenhanced.net/download/scripts/mikey_mike/myst-trainer-10.py | myst-trainer-10.py ]] - Mikey_Mike - Mysticism 40-120
 
-[[http://razorenhanced.net/download/scripts/noddie/skill_AnimalTaming.py | skill_AnimalTaming.py ]] - noddie - skill_AnimalTaming.py
+[[https://razorenhanced.net/download/scripts/noddie/skill_AnimalTaming.py | skill_AnimalTaming.py ]] - noddie - skill_AnimalTaming.py
 
-[[http://razorenhanced.net/download/scripts/noddie/skill_Fishing.py | skill_Fishing.py ]] - noddie - skill_Fishing.py
+[[https://razorenhanced.net/download/scripts/noddie/skill_Fishing.py | skill_Fishing.py ]] - noddie - skill_Fishing.py
 
-[[http://razorenhanced.net/download/scripts/noddie/skill_Lockpicking.py | skill_Lockpicking.py ]] - noddie - skill_Lockpicking.py
+[[https://razorenhanced.net/download/scripts/noddie/skill_Lockpicking.py | skill_Lockpicking.py ]] - noddie - skill_Lockpicking.py
 
-[[http://razorenhanced.net/download/scripts/noddie/skill_Mining.py | skill_Mining.py ]] - noddie - skill_Mining.py
+[[https://razorenhanced.net/download/scripts/noddie/skill_Mining.py | skill_Mining.py ]] - noddie - skill_Mining.py
 
-[[http://razorenhanced.net/download/scripts/noddie/skill_Snooping.py | skill_Snooping.py ]] - noddie - skill_Snooping.py
+[[https://razorenhanced.net/download/scripts/noddie/skill_Snooping.py | skill_Snooping.py ]] - noddie - skill_Snooping.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Anatomy.py | train_Anatomy.py ]] - noddie - train_Anatomy.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Anatomy.py | train_Anatomy.py ]] - noddie - train_Anatomy.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_AnimalLore.py | train_AnimalLore.py ]] - noddie - train_AnimalLore.py
+[[https://razorenhanced.net/download/scripts/noddie/train_AnimalLore.py | train_AnimalLore.py ]] - noddie - train_AnimalLore.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_AnimalTaming.py | train_AnimalTaming.py ]] - noddie - train_AnimalTaming.py
+[[https://razorenhanced.net/download/scripts/noddie/train_AnimalTaming.py | train_AnimalTaming.py ]] - noddie - train_AnimalTaming.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_ArmsLore.py | train_ArmsLore.py ]] - noddie - train_ArmsLore.py
+[[https://razorenhanced.net/download/scripts/noddie/train_ArmsLore.py | train_ArmsLore.py ]] - noddie - train_ArmsLore.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Blacksmithy.py | train_Blacksmithy.py ]] - noddie - train_Blacksmithy.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Blacksmithy.py | train_Blacksmithy.py ]] - noddie - train_Blacksmithy.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Carpentry.py | train_Carpentry.py ]] - noddie - train_Carpentry.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Carpentry.py | train_Carpentry.py ]] - noddie - train_Carpentry.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Cartography.py | train_Cartography.py ]] - noddie - train_Cartography.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Cartography.py | train_Cartography.py ]] - noddie - train_Cartography.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Fishing.py | train_Fishing.py ]] - noddie - 
+[[https://razorenhanced.net/download/scripts/noddie/train_Fishing.py | train_Fishing.py ]] - noddie - 
 train_Fishing.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Healing.py | train_Healing.py ]] - noddie - train_Healing.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Healing.py | train_Healing.py ]] - noddie - train_Healing.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Hiding.py | train_Hiding.py ]] - noddie - train_Hiding.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Hiding.py | train_Hiding.py ]] - noddie - train_Hiding.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_ItemIdentification.py | train_ItemIdentification.py ]] - noddie - train_ItemIdentification.py
+[[https://razorenhanced.net/download/scripts/noddie/train_ItemIdentification.py | train_ItemIdentification.py ]] - noddie - train_ItemIdentification.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Lockpicking.py | train_Lockpicking.py ]] - noddie - train_Lockpicking.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Lockpicking.py | train_Lockpicking.py ]] - noddie - train_Lockpicking.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Magery.py | train_Magery.py ]] - noddie - train_Magery.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Magery.py | train_Magery.py ]] - noddie - train_Magery.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Musicianship.py | train_Musicianship.py ]] - noddie - train_Musicianship.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Musicianship.py | train_Musicianship.py ]] - noddie - train_Musicianship.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Peacemaking.py | train_Peacemaking.py ]] - noddie - train_Peacemaking.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Peacemaking.py | train_Peacemaking.py ]] - noddie - train_Peacemaking.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Provocation.py | train_Provocation.py ]] - noddie - train_Provocation.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Provocation.py | train_Provocation.py ]] - noddie - train_Provocation.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Snooping.py | train_Snooping.py ]] - noddie - train_Snooping.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Snooping.py | train_Snooping.py ]] - noddie - train_Snooping.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_SpiritSpeak.py | train_SpiritSpeak.py ]] - noddie - train_SpiritSpeak.py
+[[https://razorenhanced.net/download/scripts/noddie/train_SpiritSpeak.py | train_SpiritSpeak.py ]] - noddie - train_SpiritSpeak.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Stealth.py | train_Stealth.py ]] - noddie - train_Stealth.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Stealth.py | train_Stealth.py ]] - noddie - train_Stealth.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Tracking.py | train_Tracking.py ]] - noddie - train_Tracking.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Tracking.py | train_Tracking.py ]] - noddie - train_Tracking.py
 
-[[http://razorenhanced.net/download/scripts/noddie/train_Veterinary.py | train_Veterinary.py ]] - noddie - train_Veterinary.py
+[[https://razorenhanced.net/download/scripts/noddie/train_Veterinary.py | train_Veterinary.py ]] - noddie - train_Veterinary.py
 
 
 </WRAP>
