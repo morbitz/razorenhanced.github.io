@@ -3,35 +3,35 @@
 <WRAP group>
 <WRAP 90% column>
 
-[[http://razorenhanced.net/download/scripts/credzba/common.py| common.py]] - Credzba - Some common functions that some of my scripts use
+[[https://razorenhanced.net/download/scripts/credzba/common.py| common.py]] - Credzba - Some common functions that some of my scripts use
 
-[[http://razorenhanced.net/download/scripts/credzba/HideItem.py| HideItem.py]] - Credzba - Prompts for a target then hides it from client
+[[https://razorenhanced.net/download/scripts/credzba/HideItem.py| HideItem.py]] - Credzba - Prompts for a target then hides it from client
 
-[[http://razorenhanced.net/download/scripts/mourn/RailExample.py| RailExample.py]] - Mourn - Example of Rail code
+[[https://razorenhanced.net/download/scripts/mourn/RailExample.py| RailExample.py]] - Mourn - Example of Rail code
 
-[[http://razorenhanced.net/download/scripts/mourn/RailRecorder.py| RailRecorder.py]] - Mourn - makes list in docs of your rail
+[[https://razorenhanced.net/download/scripts/mourn/RailRecorder.py| RailRecorder.py]] - Mourn - makes list in docs of your rail
 
-[[http://razorenhanced.net/download/scripts/mourn/SendMessagetoDiscordWebhook.py| SendMessagetoDiscordWebhook.py]] - Mourn - Send message to discord
+[[https://razorenhanced.net/download/scripts/mourn/SendMessagetoDiscordWebhook.py| SendMessagetoDiscordWebhook.py]] - Mourn - Send message to discord
 
-[[http://razorenhanced.net/download/scripts/mourn/ConstantMonitorPlayerStatusExample.py| ConstantMonitorPlayerStatusExample.py]] - Mourn - Example code to monitor player state
+[[https://razorenhanced.net/download/scripts/mourn/ConstantMonitorPlayerStatusExample.py| ConstantMonitorPlayerStatusExample.py]] - Mourn - Example code to monitor player state
 
-[[http://razorenhanced.net/download/scripts/mourn/GetRandonIntegerFromRange.py| GetRandonIntegerFromRange.py]] - Mourn - get a random number in a range
+[[https://razorenhanced.net/download/scripts/mourn/GetRandonIntegerFromRange.py| GetRandonIntegerFromRange.py]] - Mourn - get a random number in a range
 
-[[http://razorenhanced.net/download/scripts/frank/all_item_names_and_ids_in_container.py| all_item_names_and_ids_in_container.py]] - Frank - Target a container and it will give you names and IDs of everything within that container in a text file in your documents
+[[https://razorenhanced.net/download/scripts/frank/all_item_names_and_ids_in_container.py| all_item_names_and_ids_in_container.py]] - Frank - Target a container and it will give you names and IDs of everything within that container in a text file in your documents
 
-[[http://razorenhanced.net/download/scripts/mourn/Autoskin2.py | Autoskin2.py]] - Mourn - Auto skin corpses
+[[https://razorenhanced.net/download/scripts/mourn/Autoskin2.py | Autoskin2.py]] - Mourn - Auto skin corpses
 
-[[http://razorenhanced.net/download/scripts/mourn/AutoLooterV1.5.py | AutoLooterV1.5.py ]] - Mourn - Auto loot corpses
+[[https://razorenhanced.net/download/scripts/mourn/AutoLooterV1.5.py | AutoLooterV1.5.py ]] - Mourn - Auto loot corpses
 
-[[http://razorenhanced.net/download/scripts/mourn/pinkBdump.py | pinkBdump.py ]] - Mourn - remove scrolls from pink book
+[[https://razorenhanced.net/download/scripts/mourn/pinkBdump.py | pinkBdump.py ]] - Mourn - remove scrolls from pink book
 
-[[http://razorenhanced.net/download/scripts/mourn/Drag.py | Drag.py ]] - Mourn - dragger for heavy stackables
+[[https://razorenhanced.net/download/scripts/mourn/Drag.py | Drag.py ]] - Mourn - dragger for heavy stackables
 
-[[http://razorenhanced.net/download/scripts/abigor/MoveSpecificItems3.py | MoveSpecificItems3.py ]] - abigor - specific loot mover.  I use it to move specific items from one pack to another for sorting.  Some text is lower case (like cursed), other is first upper case (like Legendary).  Try both ways to move items.
+[[https://razorenhanced.net/download/scripts/abigor/MoveSpecificItems3.py | MoveSpecificItems3.py ]] - abigor - specific loot mover.  I use it to move specific items from one pack to another for sorting.  Some text is lower case (like cursed), other is first upper case (like Legendary).  Try both ways to move items.
 
-[[http://razorenhanced.net/download/scripts/abigor/MoveAllItems2.py | MoveAllItems2.py ]] - abigor - Works well with the MoveSpecificItems to help organize.  Between the two of them, sorting a house is easy.
+[[https://razorenhanced.net/download/scripts/abigor/MoveAllItems2.py | MoveAllItems2.py ]] - abigor - Works well with the MoveSpecificItems to help organize.  Between the two of them, sorting a house is easy.
 
-[[http://razorenhanced.net/download/scripts/abigor/MultiRuneMarker.py | MultiRuneMarker.py ]] - abigor - Marks all runes in a selected pouch and labels them based off of Line 15.  Based off of Frank's Atlas Copier.
+[[https://razorenhanced.net/download/scripts/abigor/MultiRuneMarker.py | MultiRuneMarker.py ]] - abigor - Marks all runes in a selected pouch and labels them based off of Line 15.  Based off of Frank's Atlas Copier.
 
 
 </WRAP>
