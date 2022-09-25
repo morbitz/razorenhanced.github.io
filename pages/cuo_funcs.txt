@@ -29,7 +29,7 @@ Needless to say CUO function will do nothing on an OSI client.
 |}
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Set the GOTO WorldMapMarker**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Set the GoTo WorldMapMarker**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
 |style="width: 90%" | CUO.GoToMarker(x, y)
@@ -40,6 +40,69 @@ Needless to say CUO function will do nothing on an OSI client.
 |- style="background-color:#f0f0f0;"
 |**Returns**
 |void
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Set the FreeView in WorldMap**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.FreeView(bool)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Executes the function used by the CUO ui to set a FreeView on its world map on/off
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|void
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Close T-Map gumps**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.CloseTMap()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Closes the T-Map gumps in CUO. If none are closed it returns False
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|True - closed a t-map gump, False - no gumps could be closed 
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Profile Property Set**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.ProfilePropertySet(profileName, bool/int/string)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Sets a profile property in CUO profile
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|True - closed a t-map gump, False - no gumps could be closed 
 |-
 |**In Object:**
 |CUO
