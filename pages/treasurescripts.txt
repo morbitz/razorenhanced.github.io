@@ -3,9 +3,9 @@
 <WRAP group>
 <WRAP 90% column>
 
-[[http://razorenhanced.net/download/scripts/credzba/Map_location_generator.py| UOAM t-map location generator]] - Credzba - Processes a container of maps, extracts their location, and populates onto UOAM
+[[https://razorenhanced.net/download/scripts/credzba/Map_location_generator.py| UOAM t-map location generator]] - Credzba - Processes a container of maps, extracts their location, and populates onto UOAM
 
-[[http://razorenhanced.net/download/scripts/credzba/MIB_Location_generator.py| UOAM mib location generator]] - Credzba - Processes a container of mibs, extracts their location, and populates onto UOAM
+[[https://razorenhanced.net/download/scripts/credzba/MIB_Location_generator.py| UOAM mib location generator]] - Credzba - Processes a container of mibs, extracts their location, and populates onto UOAM
 
 
 
