@@ -3,8 +3,8 @@
 <WRAP group>
 <WRAP 50% column>
 
-[[http://razorenhanced.net/download/scripts/dartis_creagh/Attack.py | Attack.py ]] - Dartis Creagh - Does Consecrate Weapon, Discords nearest, and then Attacks nearest....put it in a loop.
+[[https://razorenhanced.net/download/scripts/dartis_creagh/Attack.py | Attack.py ]] - Dartis Creagh - Does Consecrate Weapon, Discords nearest, and then Attacks nearest....put it in a loop.
 
-[[http://razorenhanced.net/download/scripts/abigor/Drop_Larm_Chug_ReArm.py | Drop_Larm_Chug_ReArm.py ]] - Abigor - Example Script (probably way overcomplicated) that will chug with both hands full.  Can be used as an example of how to build your own Drop-Chug-Pickup.
+[[https://razorenhanced.net/download/scripts/abigor/Drop_Larm_Chug_ReArm.py | Drop_Larm_Chug_ReArm.py ]] - Abigor - Example Script (probably way overcomplicated) that will chug with both hands full.  Can be used as an example of how to build your own Drop-Chug-Pickup.
 
 </WRAP>
