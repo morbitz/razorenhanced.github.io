@@ -92,6 +92,48 @@ Needless to say CUO function will do nothing on an OSI client.
 |}
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Open Container at location**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.OpenContainerAt(serial, X, Y)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Opens a container at a specific location on screen
+|- style="background-color:#f0f0f0;"
+|**Returns**
+| void
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| bag serial, X, Y
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **GetSetting**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | CUO.GetSetting(string)
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Gets the current value of any CUO setting
+|- style="background-color:#f0f0f0;"
+|**Returns**
+| The value of the requested setting as a string 
+|-
+|**In Object:**
+|CUO
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+| setting name
+
+|}
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
 |style="font-size:150%;  padding: 2px" colspan="2" | **Profile Property Set**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
@@ -107,7 +149,214 @@ Needless to say CUO function will do nothing on an OSI client.
 |**In Object:**
 |CUO
 |- style="background-color:#f0f0f0;"
-|**Parameters:**
-|None
+|**Profile Names:**
+|
+   * string ServerName
+  * string CharacterName
+  * bool EnableSound
+  * int SoundVolume
+  * bool EnableMusic
+  * int MusicVolume
+  * bool EnableFootstepsSound
+  * bool EnableCombatMusic
+  * bool ReproduceSoundsInBackground
+  * byte ChatFont
+  * int SpeechDelay
+  * bool ScaleSpeechDelay
+  * bool SaveJournalToFile
+  * bool ForceUnicodeJournal
+  * bool IgnoreAllianceMessages
+  * bool IgnoreGuildMessages
+  * ushort SpeechHue
+  * ushort WhisperHue
+  * ushort EmoteHue
+  * ushort YellHue
+  * ushort PartyMessageHue
+  * ushort GuildMessageHue
+  * ushort AllyMessageHue
+  * ushort ChatMessageHue
+  * ushort InnocentHue
+  * ushort PartyAuraHue
+  * ushort FriendHue
+  * ushort CriminalHue
+  * ushort CanAttackHue
+  * ushort EnemyHue
+  * ushort MurdererHue
+  * ushort BeneficHue
+  * ushort HarmfulHue
+  * ushort NeutralHue
+  * bool EnabledSpellHue
+  * bool EnabledSpellFormat
+  * string SpellDisplayFormat
+  * ushort PoisonHue
+  * ushort ParalyzedHue
+  * ushort InvulnerableHue
+  * bool EnabledCriminalActionQuery
+  * bool EnabledBeneficialCriminalActionQuery
+  * bool EnableStatReport
+  * bool EnableSkillReport
+  * bool UseOldStatusGump
+  * int BackpackStyle
+  * bool HighlightGameObjects
+  * bool HighlightMobilesByParalize
+  * bool HighlightMobilesByPoisoned
+  * bool HighlightMobilesByInvul
+  * bool ShowMobilesHP
+  * int MobileHPType
+  * int MobileHPShowWhen
+  * bool DrawRoofs
+  * bool TreeToStumps
+  * bool EnableCaveBorder
+  * bool HideVegetation
+  * int FieldsType
+  * bool NoColorObjectsOutOfRange
+  * bool UseCircleOfTransparency
+  * int CircleOfTransparencyRadius
+  * int CircleOfTransparencyType
+  * int VendorGumpHeight
+  * float DefaultScale
+  * bool EnableMousewheelScaleZoom
+  * bool SaveScaleAfterClose
+  * bool RestoreScaleAfterUnpressCtrl
+  * bool BandageSelfOld
+  * bool EnableDeathScreen
+  * bool EnableBlackWhiteEffect
+  * bool UseTooltip
+  * ushort TooltipTextHue
+  * int TooltipDelayBeforeDisplay
+  * int TooltipDisplayZoom
+  * int TooltipBackgroundOpacity
+  * byte TooltipFont
+  * bool EnablePathfind
+  * bool UseShiftToPathfind
+  * bool AlwaysRun
+  * bool AlwaysRunUnlessHidden
+  * bool SmoothMovements
+  * bool HoldDownKeyTab
+  * bool HoldShiftForContext
+  * bool HoldShiftToSplitStack
+  * Point WindowClientBounds
+  * Point ContainerDefaultPosition
+  * Point GameWindowPosition
+  * bool GameWindowLock
+  * bool GameWindowFullSize
+  * bool WindowBorderless
+  * Point GameWindowSize
+  * Point TopbarGumpPosition
+  * bool TopbarGumpIsMinimized
+  * bool TopbarGumpIsDisabled
+  * bool UseAlternativeLights
+  * bool UseCustomLightLevel
+  * byte LightLevel
+  * bool UseColoredLights
+  * bool UseDarkNights
+  * int CloseHealthBarType
+  * bool ActivateChatAfterEnter
+  * bool ActivateChatAdditionalButtons
+  * bool ActivateChatShiftEnterSupport
+  * bool UseObjectsFading
+  * bool HoldDownKeyAltToCloseAnchored
+  * bool CloseAllAnchoredGumpsInGroupWithRightClick
+  * bool HoldAltToMoveGumps
+  * bool HideScreenshotStoredInMessage
+  * bool CastSpellsByOneClick
+  * bool BuffBarTime
+  * bool FastSpellsAssign
+  * bool AutoOpenDoors
+  * bool SmoothDoors
+  * bool AutoOpenCorpses
+  * int AutoOpenCorpseRange
+  * int CorpseOpenOptions
+  * bool SkipEmptyCorpse
+  * bool DisableDefaultHotkeys
+  * bool DisableArrowBtn
+  * bool DisableTabBtn
+  * bool DisableCtrlQWBtn
+  * bool DisableAutoMove
+  * bool EnableDragSelect
+  * int DragSelectModifierKey
+  * bool OverrideContainerLocation
+  * int OverrideContainerLocationSetting
+  * Point OverrideContainerLocationPosition
+  * bool DragSelectHumanoidsOnly
+  * int DragSelectStartX
+  * int DragSelectStartY
+  * bool DragSelectAsAnchor
+  * NameOverheadTypeAllowed NameOverheadTypeAllowed
+  * bool NameOverheadToggled
+  * bool ShowTargetRangeIndicator
+  * bool PartyInviteGump
+  * bool CustomBarsToggled
+  * bool CBBlackBGToggled
+  * bool ShowInfoBar
+  * int InfoBarHighlightType
+  * InfoBarItem[] InfoBarItems
+  * Macro[] Macros
+  * bool CounterBarEnabled
+  * bool CounterBarHighlightOnUse
+  * bool CounterBarHighlightOnAmount
+  * bool CounterBarDisplayAbbreviatedAmount
+  * int CounterBarAbbreviatedAmount
+  * int CounterBarHighlightAmount
+  * int CounterBarCellSize
+  * int CounterBarRows
+  * int CounterBarColumns
+  * bool ShowSkillsChangedMessage
+  * int ShowSkillsChangedDeltaValue
+  * bool ShowStatsChangedMessage
+  * bool ShadowsEnabled
+  * bool ShadowsStatics
+  * int TerrainShadowsLevel
+  * int AuraUnderFeetType
+  * bool AuraOnMouse
+  * bool PartyAura
+  * bool UseXBR
+  * bool HideChatGradient
+  * bool StandardSkillsGump
+  * bool ShowNewMobileNameIncoming
+  * bool ShowNewCorpseNameIncoming
+  * uint GrabBagSerial
+  * int GridLootType
+  * bool ReduceFPSWhenInactive
+  * bool OverrideAllFonts
+  * bool OverrideAllFontsIsUnicode
+  * bool SallosEasyGrab
+  * bool JournalDarkMode
+  * byte ContainersScale
+  * bool ScaleItemsInsideContainers
+  * bool DoubleClickToLootInsideContainers
+  * bool UseLargeContainerGumps
+  * bool RelativeDragAndDropItems
+  * bool HighlightContainerWhenSelected
+  * bool ShowHouseContent
+  * bool SaveHealthbars
+  * bool TextFading
+  * bool UseSmoothBoatMovement
+  * bool IgnoreStaminaCheck
+  * bool ShowJournalClient
+  * bool ShowJournalObjects
+  * bool ShowJournalSystem
+  * bool ShowJournalGuildAlly
+  * int WorldMapWidth
+  * int WorldMapHeight
+  * int WorldMapFont
+  * bool WorldMapFlipMap
+  * bool WorldMapTopMost
+  * bool WorldMapFreeView
+  * bool WorldMapShowParty
+  * int WorldMapZoomIndex
+  * bool WorldMapShowCoordinates
+  * bool WorldMapShowMouseCoordinates
+  * bool WorldMapShowMobiles
+  * bool WorldMapShowPlayerName
+  * bool WorldMapShowPlayerBar
+  * bool WorldMapShowGroupName
+  * bool WorldMapShowGroupBar
+  * bool WorldMapShowMarkers
+  * bool WorldMapShowMarkersNames
+  * bool WorldMapShowMultis
+  * string WorldMapHiddenMarkerFiles
+  * string WorldMapHiddenZoneFiles
+  * bool WorldMapShowGridIfZoomed
 
 |}
