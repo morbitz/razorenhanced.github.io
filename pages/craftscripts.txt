@@ -4,29 +4,29 @@
 <WRAP 50% column>
 
 
-[[http://razorenhanced.net/download/scripts/mourn/AlchemistCrafts.py | AlchemistCrafts.py ]] - mourn - Alchemy Crafter
+[[https://razorenhanced.net/download/scripts/mourn/AlchemistCrafts.py | AlchemistCrafts.py ]] - mourn - Alchemy Crafter
 
-[[http://razorenhanced.net/download/scripts/frank/Necromancy_Spellbook_Crafter.py | Necromancy_Spellbook_Crafter.py ]] - Frank - Makes Necromancy Spellbook from storage or scratch
+[[https://razorenhanced.net/download/scripts/frank/Necromancy_Spellbook_Crafter.py | Necromancy_Spellbook_Crafter.py ]] - Frank - Makes Necromancy Spellbook from storage or scratch
 
-[[http://razorenhanced.net/download/scripts/frank/Runic_Atlas_Crafter.py | Runic_Atlas_Crafter.py ]] - Frank - makes full runic atlas from scratch
+[[https://razorenhanced.net/download/scripts/frank/Runic_Atlas_Crafter.py | Runic_Atlas_Crafter.py ]] - Frank - makes full runic atlas from scratch
 
-[[http://razorenhanced.net/download/scripts/frank/Mysticism_Spellbook_Crafter.py | Mysticism_Spellbook_Crafter.py ]] - Frank - Makes full mysticism spellbook from scratch
+[[https://razorenhanced.net/download/scripts/frank/Mysticism_Spellbook_Crafter.py | Mysticism_Spellbook_Crafter.py ]] - Frank - Makes full mysticism spellbook from scratch
 
-[[http://razorenhanced.net/download/scripts/frank/spellbook_crafter.py | spellbook_crafter.py ]] - Frank - Makes full spellbook from scratch
+[[https://razorenhanced.net/download/scripts/frank/spellbook_crafter.py | spellbook_crafter.py ]] - Frank - Makes full spellbook from scratch
 
-[[http://razorenhanced.net/download/scripts/frank/spellbook_crafter.py | spellbook_crafter.py ]] - Frank - Makes full spellbook from scratch
+[[https://razorenhanced.net/download/scripts/frank/spellbook_crafter.py | spellbook_crafter.py ]] - Frank - Makes full spellbook from scratch
 
-[[http://razorenhanced.net/download/scripts/frank/Blacksmith_BoD_ID_database.py | Blacksmith_BoD_ID_database.py ]] - Frank - crafting gump buttons
+[[https://razorenhanced.net/download/scripts/frank/Blacksmith_BoD_ID_database.py | Blacksmith_BoD_ID_database.py ]] - Frank - crafting gump buttons
 
-[[http://razorenhanced.net/download/scripts/frank/Carpentry_BoD_ID_database.py | Carpentry_BoD_ID_database.py ]] - Frank -  crafting gump buttons
+[[https://razorenhanced.net/download/scripts/frank/Carpentry_BoD_ID_database.py | Carpentry_BoD_ID_database.py ]] - Frank -  crafting gump buttons
 
-[[http://razorenhanced.net/download/scripts/frank/Tailoring_BoD_ID_database.py | Tailoring_BoD_ID_database.py ]] - Frank -  crafting gump buttons
+[[https://razorenhanced.net/download/scripts/frank/Tailoring_BoD_ID_database.py | Tailoring_BoD_ID_database.py ]] - Frank -  crafting gump buttons
 
-[[http://razorenhanced.net/download/scripts/frank/Tinkering_BoD_ID_database.py | Tinkering_BoD_ID_database.py ]] - Frank -  crafting gump buttons
+[[https://razorenhanced.net/download/scripts/frank/Tinkering_BoD_ID_database.py | Tinkering_BoD_ID_database.py ]] - Frank -  crafting gump buttons
 
-[[http://razorenhanced.net/download/scripts/frank/Copy_Runebooks.py | Copy_Runebooks.py ]] - Frank -  copy runebooks
+[[https://razorenhanced.net/download/scripts/frank/Copy_Runebooks.py | Copy_Runebooks.py ]] - Frank -  copy runebooks
 
 
-[[http://razorenhanced.net/download/scripts/credzba/BOD_collect_2.py | BOD_collect_2.py ]] - credzba -  collect bods from vendors
+[[https://razorenhanced.net/download/scripts/credzba/BOD_collect_2.py | BOD_collect_2.py ]] - credzba -  collect bods from vendors
 
 </WRAP>
