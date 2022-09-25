@@ -8,7 +8,7 @@ Needless to say CUO function will do nothing on an OSI client.
 ===== Message =====
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Player Sysmessage**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Load World Map Markers**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
 |style="width: 90%" | CUO.LoadMarkers()
@@ -29,7 +29,7 @@ Needless to say CUO function will do nothing on an OSI client.
 |}
 
 {|style="font-size:85%; border:solid 2px; width: 50%;"
-|style="font-size:150%;  padding: 2px" colspan="2" | **Player Sysmessage**
+|style="font-size:150%;  padding: 2px" colspan="2" | **Set the GOTO WorldMapMarker**
 |- style="background-color:#f0f0f0;"
 |**Syntax**
 |style="width: 90%" | CUO.GoToMarker(x, y)
