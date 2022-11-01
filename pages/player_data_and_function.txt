@@ -3022,3 +3022,50 @@ Misc.SendMessage("Current Lower Reagent Cost is {}".format(lrc))
 |None
 
 |}
+
+
+===== Corpse Tracking =====
+
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Clear Corpse list**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Player.ClearCorpseList()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Empties all the tracked corpses from the corpse list.
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|void
+|-
+|**In Object:**
+|Player
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
+
+
+{|style="font-size:85%; border:solid 2px; width: 50%;"
+|style="font-size:150%;  padding: 2px" colspan="2" | **Track Corpses**
+|- style="background-color:#f0f0f0;"
+|**Syntax**
+|style="width: 90%" | Player.Corpses()
+|-
+|colspan="2" |**Description:**
+|-
+|colspan="2" |Each time you die, the corpse information is copied here
+|- style="background-color:#f0f0f0;"
+|**Returns**
+|void
+|-
+|**In Object:**
+|Player
+|- style="background-color:#f0f0f0;"
+|**Parameters:**
+|None
+
+|}
