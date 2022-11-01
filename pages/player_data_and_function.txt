@@ -3060,7 +3060,7 @@ Misc.SendMessage("Current Lower Reagent Cost is {}".format(lrc))
 |colspan="2" |Each time you die, the corpse information is copied here
 |- style="background-color:#f0f0f0;"
 |**Returns**
-|void
+|List of corpse items containing serial and position
 |-
 |**In Object:**
 |Player
