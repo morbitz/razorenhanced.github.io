@@ -55,12 +55,13 @@ def main():
     debug=True
     
     # Write to your Script/Docs/ folder
-    output_path = Misc.ScriptDirectory() + "/doc/api/"
+    output_path = "./doc/api/"
+    api_path = "./Config/AutoComplete.json"
     
     ## RUN 
     
     # setup AutoDocHTML to a test path
-    adhtml=AutoDocHTML(output_path)
+    adhtml=AutoDocHTML(output_path, api_path)
     version = adhtml.DocVersionHTML()
     
     # generates the main menu from the list of classes
@@ -349,9 +350,9 @@ class HTML():
         
     
 class AutoDocHTML:
-    def __init__(self, output_path=None):
-        self.doc_path = Misc.ScriptDirectory() + "/Docs/" if output_path is None else output_path
-        self.ad = AutoDoc()
+    def __init__(self, output_path=None, api_path=None):
+        self.doc_path = "./doc/api/" if output_path is None else output_path
+        self.ad = AutoDoc(api_path)
         
     def KeyToSlug(self, xmlkey, overload=True, shortname=True):
         if overload: xmlkey = re.sub("\(.*\)","",xmlkey)
@@ -550,10 +551,10 @@ class AutoDocHTML:
         
     def WriteToFile(self, path, content, debug=False):
         fullpath = self.doc_path + path
-        Misc.SendMessage(fullpath,178)
+        print(fullpath)
         dirpath  = os.path.dirname(fullpath)
         if not os.path.exists(dirpath):
-            Misc.SendMessage("Make Dir: "+dirpath,148)
+            print("Make Dir: "+dirpath)
             os.makedirs(dirpath)
         #
         file = open(fullpath,'w+')
@@ -568,9 +569,9 @@ class AutoDocHTML:
 class AutoDoc:
     # Load data from AutoComplete.json and provides several convenience methods to query the content.
     
-    def __init__(self, path=None):
+    def __init__(self, api_path=None):
         self.api_data = None
-        self.api_path = Misc.ConfigDirectory() + "/AutoComplete.json" if path is None else path
+        self.api_path = "./Config/AutoComplete.json" if api_path is None else api_path
         
     def GetSettings(self):
         api = self.GetPythonAPI()
@@ -624,12 +625,12 @@ class AutoDoc:
     def GetPythonAPI(self):
         if self.api_data is not None: return self.api_data
         
-        Misc.SendMessage("Loading from Path:\n{}".format(self.api_path))
+        print("Loading from Path:\n{}".format(self.api_path))
         
         api_file = open(self.api_path,'r+')
         api_json = api_file.read()
         api_file.close()
-        Misc.SendMessage("File Size: {}".format(len(api_json)) )
+        print("File Size: {}".format(len(api_json)) )
         self.api_data = json.loads(api_json)
         
         return self.api_data
