@@ -1,0 +1,80 @@
+# This is a basic workflow that is manually triggered
+
+name: AutoDoc API
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  
+  rebuild_docs:
+    runs-on: windows-latest
+    
+    steps:
+    #Download
+    - uses: robinraju/release-downloader@v1.6
+      name: Download Latest RE
+      with:
+        repository: "RazorEnhanced/RazorEnhanced"
+        latest: true
+        fileName: "RazorEnhanced-*.zip"
+    - name: Display downloaded files
+      run: dir
+      
+    #Unzip
+    - name: Extract some files
+      run: 7z x RazorEnhanced-*.zip
+    - name: Display unzipped files
+      run: dir
+  
+    #Run 
+    - name: Run RE to trigger the creation of AutoComplete.json
+      run: $proc = start ./RazorEnhanced.exe -Passthru; $proc | Wait-Process -Timeout 60 -ErrorAction SilentlyContinue; kill $proc; echo done;
+    - name: Display directories
+      run: dir Config/
+      
+    #Download AutoDoc.py
+    - name: Download AutoDoc.py
+      run: Invoke-WebRequest -OutFile "autodoc.py" -Uri https://raw.githubusercontent.com/RazorEnhanced/razorenhanced.github.io/main/doc/autodoc.py
+    - name: Display directories
+      run: dir
+    - name: Display autodoc.py content
+      run: Get-Content "autodoc.py"
+    
+    #Build Docs
+    - name: Display autodoc.py content
+      run: python autodoc.py
+      
+    #Checkout current website
+    - name: Checkout website repo
+      uses: actions/checkout@v3
+      with:
+        repository: cesare-montresor/razorenhanced.github.io
+        path: website_repo
+    
+    #Build Docs
+    - name: Update local repo doc
+      run: Copy-Item  -Path .\doc\* -Destination .\website_repo\doc\ -Recurse -force -Verbose
+    
+    - name: Display directories
+      run: dir -S
+      
+    # Add, commit & push
+    - name: Add, Commit & push
+      uses: EndBug/add-and-commit@v9
+      with:
+        message: "GitHub Actions build_docs"
+        github_token: "${{ secrets.GITHUB_TOKEN }}"
+        # The arguments for the `git add` command (see the paragraph below for more info)
+        # Default: '.'
+        # add: 'src'
+        cwd: './website_repo'
+        pathspec_error_handling: exitImmediately
+        
+        # Arguments for the git pull command. By default, the action does not pull.
+        #pull: ''
+        push: true
+
