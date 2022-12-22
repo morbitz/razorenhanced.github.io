@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.61</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.66</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -404,8 +404,8 @@ Wraith Form</div></span></div></div>
 
 Send message in game using 1153 for color.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">color</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Message to send.
-Color of the text</div></span>
+<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Color of the text
+Message to send.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">msg</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Message to send.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
@@ -793,14 +793,17 @@ Intelligence</div></span></div></div>
 <span class="redoc-method-params"><span class="redoc-variable-name">range</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Maximum distance in tiles.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Boolean</span><div class="redoc-method-return-desc">True: Mobile is in range - False: otherwise.</div></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Player-InvokeVirtue" class="redoc-permalink" href="#M-Player-InvokeVirtue"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Player</span>.<span class="method-name">InvokeVirtue</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">virtue</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Player</span>.<span class="method-name">InvokeVirtue</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">virtue</span></span>)</div>
-<div class="method-description">Invoke a virtue by name.</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">virtue</span><span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Honor
+<div class="method-description">Invoke a virtue by name.
+Invoke a virtue by name.</div>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">virtue</span><span class="redoc-variable-type">Int32</span>
+<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Honor
 Sacrifice
 Valor
 Compassion
 Honesty
 Humility
-Justice</div></span></div></div>
+Justice
+Spirituality</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Player-KickMember" class="redoc-permalink" href="#M-Player-KickMember"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Player</span>.<span class="method-name">KickMember</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Player</span>.<span class="method-name">KickMember</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>)</div>
 <div class="method-description">Kick a member from party by serial. Only for party leader</div>
@@ -1045,8 +1048,8 @@ Ninjitsu
 Spell Weaving
 Imbuing</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">target</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">Boolean</span>
 <span class="redoc-variable-type">Mobile</span>
+<span class="redoc-variable-type">Boolean</span>
 <span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Optional: Serial, Mobile or Item to target. (default: null)</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">wait</span><span class="redoc-variable-type">Boolean</span><div class="redoc-method-params-desc">Optional: True: wait for confirmation from the server (default: False)</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>

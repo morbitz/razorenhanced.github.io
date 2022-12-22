@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.61</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.66</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -141,19 +141,19 @@
 <div class="method-description">Execute target on specific serial, item, mobile, X Y Z point.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">x</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">X coordinate.
-Mobile object to Target.
-Serial of the Target
-Item object to Target.</div></span>
+<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Mobile object to Target.
+Item object to Target.
+X coordinate.
+Serial of the Target</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">y</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Y coordinate.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">z</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Z coordinate.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">StaticID</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">ID of Land/Tile</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Target-TargetExecuteRelative" class="redoc-permalink" href="#M-Target-TargetExecuteRelative"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Target</span>.<span class="method-name">TargetExecuteRelative</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">mobile</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">offset</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Target</span>.<span class="method-name">TargetExecuteRelative</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">mobile</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">offset</span></span>)</div>
 <div class="method-description">Execute target on specific land point with offset distance from Mobile. Distance is calculated by target Mobile.Direction.</div>
-<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">mobile</span><span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Serial of the mobile
-Mobile object to target.</div></span>
+<div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">mobile</span><span class="redoc-variable-type">Int32</span>
+<span class="redoc-variable-type">Mobile</span><div class="redoc-method-params-desc">Mobile object to target.
+Serial of the mobile</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">offset</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Distance from the target.
 +- distance to offset from the mobile identified with serial</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
@@ -162,14 +162,14 @@ Mobile object to target.</div></span>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">item_serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Item object to use.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">resource_number</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">name of the resource to be targeted. ore, sand, wood, graves, red mushroom
-Resource as standard name or custom number
+<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Resource as standard name or custom number
                0: ore
                1: sand
                2: wood
                3: graves
                4: red_mushrooms
-               n: custom</div></span></div></div>
+               n: custom
+name of the resource to be targeted. ore, sand, wood, graves, red mushroom</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Target-WaitForTarget" class="redoc-permalink" href="#M-Target-WaitForTarget"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Target</span>.<span class="method-name">WaitForTarget</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">noshow</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Target</span>.<span class="method-name">WaitForTarget</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">noshow</span></span>)</div>
 <div class="method-description">Wait for the cursor to show the target, pause the script for a maximum amount of time. and optional flag True or False. True Not show cursor, false show it</div>
