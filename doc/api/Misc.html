@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.67</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
+<div class="redoc-page-container"><div class="redoc-page-left"><div class="redoc-doc-version"><a href="./index.html">RE API v0.8.2.69</a></div><div id="redoc-main-menu"><a class="redoc-main-menu-entry" href="./AutoLoot.html">AutoLoot</a>
 <a class="redoc-main-menu-entry" href="./AutoLoot.AutoLootItem.html">AutoLoot.AutoLootItem</a>
 <a class="redoc-main-menu-entry" href="./BandageHeal.html">BandageHeal</a>
 <a class="redoc-main-menu-entry" href="./BuyAgent.html">BuyAgent</a>
@@ -90,9 +90,9 @@ The filename MUST end in a limited file suffix list</div>
 <div class="method-description">Check object from ignore list, return true if present. Can check Serial, Items or Mobiles</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Serial to check.
-Mobile to check
-Item to check</div></span></div></div>
+<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Mobile to check
+Item to check
+Serial to check.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Boolean</span><div class="redoc-method-return-desc">True: Object is ignored - False: otherwise.</div></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-CheckSharedValue" class="redoc-permalink" href="#M-Misc-CheckSharedValue"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">CheckSharedValue</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">name</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">CheckSharedValue</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">name</span></span>)</div>
 <div class="method-description">Check if a shared value exixts.</div>
@@ -122,12 +122,12 @@ Item to check</div></span></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-ContextReply" class="redoc-permalink" href="#M-Misc-ContextReply"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">ContextReply</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">respone_num</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">ContextReply</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">respone_num</span></span>)</div>
 <div class="method-description">Respond to a context menu on mobile or item. Menu ID is base zero, or can use string of menu text.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Serial of the Entity
+<span class="redoc-variable-type">Item</span>
+<span class="redoc-variable-type">Mobile</span><div class="redoc-method-params-desc">Serial of the Entity
 serial number of the item to get a context menu from</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">respone_num</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Name of the Entry as wirtten in-game.
-Poition of the option in the menu. Starts from 0.</div></span></div></div>
+<span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">Poition of the option in the menu. Starts from 0.
+Name of the Entry as wirtten in-game.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-DataDirectory" class="redoc-permalink" href="#M-Misc-DataDirectory"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">DataDirectory</span>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">DataDirectory</span>()</div>
 <div class="method-description">Get the full path to the Config Directory.</div>
@@ -209,9 +209,9 @@ See also: https://docs.microsoft.com/dotnet/api/system.drawing.rectangle</div>
 <div class="method-description">Add an entiry to the ignore list. Can ignore Serial, Items or Mobiles.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Serial to ignore.
-Item to ignore
-Mobile to ignore</div></span></div></div>
+<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Item to ignore
+Mobile to ignore
+Serial to ignore.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-Inspect" class="redoc-permalink" href="#M-Misc-Inspect"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">Inspect</span>()</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">Inspect</span>()</div>
 <div class="method-description">Prompt the user with a Target. Open the inspector for the selected target.</div>
@@ -285,8 +285,8 @@ Is possible to use abolute Screen Coordinates by setting clientCoords=False.</di
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Mobile</span><div class="redoc-method-params-desc">Mobile object representing the pet.
 Serial of the pet.</div></span>
-<span class="redoc-method-params"><span class="redoc-variable-name">name</span><span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">New name to set.
-name to assign to the pet</div></span></div></div>
+<span class="redoc-method-params"><span class="redoc-variable-name">name</span><span class="redoc-variable-type">String</span><div class="redoc-method-params-desc">name to assign to the pet
+New name to set.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-QueryStringResponse" class="redoc-permalink" href="#M-Misc-QueryStringResponse"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">QueryStringResponse</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">okcancel</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">response</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">QueryStringResponse</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">okcancel</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">response</span></span>)</div>
 <div class="method-description">Perform a query string response by ok or cancel button and specific response string.</div>
@@ -357,12 +357,12 @@ Checks to see if an identical line is in the file, and if it exists, it is remov
 <div class="redoc-class-method-entry"><a id="M-Misc-SendMessage" class="redoc-permalink" href="#M-Misc-SendMessage"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">SendMessage</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">msg</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">color</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">wait</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">SendMessage</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">msg</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">color</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">wait</span></span>)</div>
 <div class="method-description">Send a message to the client.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">msg</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">Double</span>
-<span class="redoc-variable-type">UInt32</span>
-<span class="redoc-variable-type">Boolean</span>
 <span class="redoc-variable-type">Object</span>
+<span class="redoc-variable-type">Double</span>
+<span class="redoc-variable-type">Single</span>
+<span class="redoc-variable-type">UInt32</span>
 <span class="redoc-variable-type">String</span>
-<span class="redoc-variable-type">Single</span><div class="redoc-method-params-desc">The object to print.</div></span>
+<span class="redoc-variable-type">Boolean</span><div class="redoc-method-params-desc">The object to print.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">color</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Boolean</span><div class="redoc-method-params-desc">Color of the message.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">wait</span><span class="redoc-variable-type">Boolean</span><div class="redoc-method-params-desc">True: Wait for confimation. - False: Returns instatnly.</div></span></div></div>
@@ -388,9 +388,9 @@ Shared values are accessible by every script.</div>
 <div class="method-description">Remove object from ignore list. Can remove serial, items or mobiles</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
 <span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Item to unignore.
+<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Item to unignore
 Serial to unignore.
-Item to unignore</div></span></div></div>
+Item to unignore.</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">Void</span><br/></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-UseContextMenu" class="redoc-permalink" href="#M-Misc-UseContextMenu"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">UseContextMenu</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">choice</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">UseContextMenu</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">serial</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">choice</span></span>, <span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>)</div>
 <div class="method-description">Open and click the option of Context menu, given the serial of Mobile or Item, via packets.</div>
@@ -402,11 +402,11 @@ Item to unignore</div></span></div></div>
 <div class="method-description">Return the List entry of a Context menu, of Mobile or Item objects.
 The function will ask the server for the List and wait for a maximum amount of time.</div>
 <div class="method-parameters"><div class="redoc-method-params-box-title">Parameters</div><div class="redoc-method-params-box"><span class="redoc-method-params"><span class="redoc-variable-name">serial</span><span class="redoc-variable-type">Int32</span>
-<span class="redoc-variable-type">Mobile</span>
-<span class="redoc-variable-type">Item</span><div class="redoc-method-params-desc">Serial of the entity.
+<span class="redoc-variable-type">Item</span>
+<span class="redoc-variable-type">Mobile</span><div class="redoc-method-params-desc">Serial of the entity.
 Entity as Item object.</div></span>
-<span class="redoc-method-params"><span class="redoc-variable-name">delay</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">Maximum wait.
-max time to wait for context</div></span>
+<span class="redoc-method-params"><span class="redoc-variable-name">delay</span><span class="redoc-variable-type">Int32</span><div class="redoc-method-params-desc">max time to wait for context
+Maximum wait.</div></span>
 <span class="redoc-method-params"><span class="redoc-variable-name">showContext</span><span class="redoc-variable-type">Boolean</span><div class="redoc-method-params-desc">Show context menu in-game. (default: True)</div></span></div></div>
 <div class="method-returns"><div id="" class="redoc-method-return"><div class="redoc-method-return-box-title">Return</div><div class="redoc-method-return-box"><span class="redoc-variable-type">List[Misc.Context]</span><div class="redoc-method-return-desc">A List of Context objects.</div></div></div></div></div></div></div></div>
 <div class="redoc-class-method-entry"><a id="M-Misc-WaitForMenu" class="redoc-permalink" href="#M-Misc-WaitForMenu"><i class="redoc-icon-link fas fa-link "></i></a><div class="redoc-method-container"><div class=" redoc-collapsable-container closed-container"><div class="redoc-collapsable-container-closed"><div class="redoc-method-signature"><i class="redoc-icon-expand fas fa-angle-down "></i><span class="method-class-name">Misc</span>.<span class="method-name">WaitForMenu</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>)</div></div><div class="redoc-collapsable-container-open"><div class="redoc-property-title"><i class="redoc-icon-collapse fas fa-angle-up"></i><span class="method-class-name">Misc</span>.<span class="method-name">WaitForMenu</span>(<span class="redoc-method-params-sign"><span class="redoc-variable-name">delay</span></span>)</div>
