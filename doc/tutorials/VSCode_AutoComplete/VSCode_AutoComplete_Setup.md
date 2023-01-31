@@ -47,21 +47,21 @@
 ## 8. Create a new .py file and add the following code
 ```py
 if True == False: from AutoComplete import *
-Misc.SendMessage("Test MSC. AutoComplete working!", 33)
+Misc.SendMessage("Test Misc. AutoComplete working!", 33)
 ```
 
-## 7. Verify that Intellisense is working
-- Commnet/Uncomment the import line in the test code above.
+## 9. Verify that Intellisense is working
+- Comment/Uncomment the import line in the test code above.
     - You should see the colors change on the Misc.SendMessage line as the Intellisense is applied and removed.
 - Test with some other RE API's like Player or Items
 
-## 8. Save the file in your RazorEnhanced Script folder.
+## 10. Save the file in your RazorEnhanced Script folder.
 
-## 9. In the Scripting Tab of RazorEnhanced, Add the file you just saved.
+## 11. In the Scripting Tab of RazorEnhanced, Add the file you just saved.
 
-## 10. Test the script in RazorEnhanced to make sure it runs without errors.
+## 12. Test the script in RazorEnhanced to make sure it runs without errors.
 
-## 11. In each of your scripts you want to edit in VSCode, add the import:
+## 13. In each of your scripts you want to edit in VSCode, add the import:
 ```py
 if True == False: from AutoComplete import *
 ```
