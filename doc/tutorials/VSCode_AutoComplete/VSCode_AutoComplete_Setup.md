@@ -34,7 +34,6 @@
 - Under the Settings tab, enter “python.analysis.extraPaths” into the Search Settings box (no quotes).
   - In the String Item area, add the following: ".../RazorEnhanced/Config"
     - Use the full path for your environment, include the quotes and forward slashes or double backs slashes.
-  - Click the OK button.
   - Hit CTRL+S to save the changes.
 
 ## 6. Restart VSCode
