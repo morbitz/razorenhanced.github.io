@@ -1,4 +1,4 @@
-# AutoComplete/Intellisense for RazorEnhanced in Visual Studio Code
+# AutoComplete/IntelliSense for RazorEnhanced in Visual Studio Code
 
 [[<<<]](../index.md)
 
