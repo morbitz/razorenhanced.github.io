@@ -16,7 +16,7 @@
 
 ## 3. Add IronPython Typings
 - Download the IronPython Stubs from: https://github.com/gtalarico/ironpython-stubs
-- Unziped the files into an empty folder.  For example: "C:/VSCode/ironpython-stubs-master"
+- Unziped the files into an empty folder.  For example: "C:/VSCode/ironpython-stubs"
 
 ## 4. Configure Settings.JSON in VSCode
 - In VSCode
@@ -27,7 +27,7 @@
     ```json
     {
         "python.analysis.extraPaths": [
-            "C:/VSCode/ironpython-stubs-master/release/stubs",
+            "C:/VSCode/ironpython-stubs/release/stubs",
             "C:/RazorEnhanced/Config"
         ]
     }
