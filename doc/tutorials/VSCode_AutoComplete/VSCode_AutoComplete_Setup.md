@@ -24,13 +24,14 @@
     - Type "open user settings (json)"
     - Select "Open User Settings (JSON)" from list
     - Paste the following code in to the settings.json file.
-    '''json
+    ```json
     {
         "python.analysis.extraPaths": [
             "C:/VSCode/ironpython-stubs-master/release/stubs",
             "C:/RazorEnhanced/Config"
         ]
     }
+    ```
     - Edit paths to match your environment.
     - Save the settings.json file.
 
